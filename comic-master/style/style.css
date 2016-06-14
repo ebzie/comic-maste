@@ -1,0 +1,2761 @@
+#megamenu {
+    width: 100%;
+    min-width: 1010px;
+    margin: auto;
+    position: absolute;
+    z-index: 100;
+    margin-top: -580px;
+    top: 144px;
+}
+
+#megamenu  .maincontainer {
+    background-color: #000;
+    background-image: url(/skin/frontend/default/comics/images/stone-texture-interlaced.jpg);
+    background-repeat: repeat;
+    height: 513px;
+    width: 100%;
+    overflow:hidden;
+}
+
+#megamenu .mega_shelf {
+    background-image: url(/skin/frontend/default/comics/images/mega-shelf.jpg);
+    background-repeat: repeat-x;
+    height: 39px;
+    width: 100%;
+    position: absolute;
+}
+
+#megamenu .mega-shadow {
+	/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+	/* background: url(); */
+	background: -moz-linear-gradient(top, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0.5)), color-stop(100%,rgba(0,0,0,0))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, rgba(0,0,0,0.5) 0%,rgba(0,0,0,0) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, rgba(0,0,0,0.5) 0%,rgba(0,0,0,0) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, rgba(0,0,0,0.5) 0%,rgba(0,0,0,0) 100%); /* IE10+ */
+	background: linear-gradient(top, rgba(0,0,0,0.5) 0%,rgba(0,0,0,0) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#80000000', endColorstr='#00000000',GradientType=0 ); /* IE6-8 */
+	height: 67px;
+	width: 100%;
+	z-index: 0;
+	margin-top: 38px;
+	margin-right: auto;
+	margin-bottom: 0px;
+	margin-left: auto;
+	position: absolute;
+        pointer-events: none;
+}
+
+#megamenu .blackcontainer {
+    height: 410px;
+    background-color: #000000;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 5px;
+    -webkit-box-shadow: 0px 0px 12px 2px rgba(0, 0, 0, 1);
+    -moz-box-shadow: 0px 0px 12px 2px rgba(0, 0, 0, 1);
+    box-shadow: 0px 0px 12px 2px rgba(0, 0, 0, 1);
+    border: 3px solid #4c5458;
+    overflow: visible;
+    z-index: 500;
+    position: relative;
+    top: 50px;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 1140px;
+    min-width: 990px;
+}
+
+#megamenu .shadow {
+    height: 450px;
+    width: 100%;
+    /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+    /* background: url(); */
+    background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.17) 33%, rgba(0,0,0,0.17) 81%, rgba(0,0,0,0.83) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0)), color-stop(33%,rgba(0,0,0,0.17)), color-stop(81%,rgba(0,0,0,0.17)), color-stop(100%,rgba(0,0,0,0.83))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0.17) 33%,rgba(0,0,0,0.17) 81%,rgba(0,0,0,0.83) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0.17) 33%,rgba(0,0,0,0.17) 81%,rgba(0,0,0,0.83) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0.17) 33%,rgba(0,0,0,0.17) 81%,rgba(0,0,0,0.83) 100%); /* IE10+ */
+    background: linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0.17) 33%,rgba(0,0,0,0.17) 81%,rgba(0,0,0,0.83) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#d4000000',GradientType=0 ); /* IE6-8 */
+    position: absolute;
+    z-index: 250;
+    top: 64px;
+}
+
+#megamenu #item_container {
+    width: 960px;
+    z-index: 150;
+    height: 250px;
+    margin-right: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    padding-top: 66px;
+    position: relative;
+}
+
+#megamenu .category-container {
+    position: absolute;
+    top: 66px;
+    width: 960px;
+    
+}
+
+#megamenu .category_list {
+	float: left;
+        padding-left: 14px;
+	height: 248px;
+	width: 270px;
+}
+
+#megamenu .category_list ul {
+    padding: 0;
+    margin: 0;
+}
+
+#megamenu .feature_products {
+	float: right;
+	height: 248px;
+	width: auto;
+}
+
+#megamenu .feature_products ul {
+    margin: 0;   
+    padding: 0;
+}
+
+#megamenu .feature_holder {
+	float: left;
+	height: 248px;
+	width: 146px;
+	padding-right: 14px;
+}
+
+#megamenu .feature_thumb_container {
+    height: 199px;
+    width: 135px;
+    margin-top: 5px;
+    margin-bottom: auto;
+    margin-left: 5px;
+    position: absolute;
+    border: 2px solid #4c5458;
+    background-color: #4c5458;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    /* [disabled]z-index: 250; */
+}
+
+
+#megamenu .feature_thumb {
+    padding: 3px;
+    height: 193px;
+    width: 129px;
+    background-color: #161A1C;
+    position: relative;
+}
+
+#megamenu .feature_thumb a {
+    display: block;
+}
+
+/* This is the definition to push the ribbons into place */
+#megamenu .ribbon {
+    margin-top: -13px;
+    margin-left: -13px;
+}
+
+#megamenu .release_date {
+    font-size: 13px;
+    color: #737373;
+    width: 140px;
+    position: absolute;
+    margin-top: 220px;
+    margin-right: auto;
+    margin-left: 5px;
+    text-align: center;
+    font-family: "Droid Sans", Arial, Helvetica, Sans-serif;
+    padding-top: 8px;
+}
+
+#megamenu .categorylist {
+    border-top-width: 1px;
+    border-top-style: solid;
+    border-right-style: none;
+    border-bottom-style: none;
+    border-left-style: none;
+    border-top-color: #262626;
+    font-family: "Laffayette Comic Pro", "LaffayetteComicProRegular", Arial, Helvetica, Sans-serif;
+    font-size: 16px;
+    color: #a6a8a9;
+    width: 240px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+	
+}
+
+#megamenu ul li {
+	
+	list-style-type: none;
+	
+}
+#megamenu .seemore_container{
+	
+	height: 73px;
+	width: 153px;
+	position: absolute;
+	z-index: 1000;
+	top: 360px;
+        right: 95px;
+/*	left: 890px;*/
+}
+
+#megamenu .seemore-btn {
+	display: block;
+	height: 73px;
+	width: 153px;
+	background-image: url(/skin/frontend/default/comics/images/see-more-btn.png);
+	background-repeat: no-repeat;
+	text-indent: -9999px;
+	
+}
+
+#megamenu .seemore-btn:hover {
+	display: block;
+	height: 73px;
+	width: 153px;
+	background-image: url(/skin/frontend/default/comics/images/see-more-btn.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+	text-indent: -9999px;
+	
+}
+
+#megamenu .seemore-btn:active {
+	display: block;
+	height: 73px;
+	width: 153px;
+	background-image: url(/skin/frontend/default/comics/images/see-more-btn.png);
+	background-repeat: no-repeat;
+	background-position: bottom;
+	text-indent: -9999px;
+	
+}
+
+
+/*.mega_glow {
+	background-image: url(/skin/frontend/default/comics/images/mega_glow.png);
+	background-repeat: no-repeat;
+	background-position: center top;
+	height: 274px;
+	width: 100%;
+	position: absolute;
+	z-index: 1500;
+}
+*/
+
+#megamenu .mega_glow {
+	/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+/*background: url();*/ 
+        background-size: 133% 100%;
+	background: -moz-radial-gradient(center, ellipse contain,  rgba(204,69,4,0.6) 0%, rgba(204,69,4,0) 100%); /* FF3.6+ */
+	background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(204,69,4,0.6)), color-stop(100%,rgba(204,69,4,0))); /* Chrome,Safari4+ */
+	background: -webkit-radial-gradient(center, ellipse contain,  rgba(204,69,4,0.6) 0%,rgba(204,69,4,0) 100%); /* Chrome10+,Safari5.1+ */
+	/* [disabled]background: -o-radial-gradient(center, ellipse contain,  rgba(204,69,4,1) 0%,rgba(204,69,4,0) 100%); */ /* Opera 12+ */
+	/* [disabled]background: -ms-radial-gradient(center, ellipse contain,  rgba(204,69,4,1) 0%,rgba(204,69,4,0) 100%); */ /* W3C */
+
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc4504', endColorstr='#00cc4504',GradientType=0 ); /*  IE6-8 fallback on horizontal gradient */
+	height: 500px;
+	width: 100%;
+	position: absolute;
+	z-index: 3000;
+	background-repeat: no-repeat;
+	background-position: center top;
+	overflow: hidden;
+	margin-right: auto;
+	margin-left: auto;
+	top: -250px;
+        
+        pointer-events: none;
+}
+
+
+/** initial setup **/
+.nano-scroll {
+  position : relative;
+  width    : 100%;
+  height   : 100%;
+  overflow : hidden;
+}
+.nano-scroll .nano-content {
+  position      : absolute;
+  overflow      : scroll;
+  overflow-x    : hidden;
+  top           : 0;
+  right         : 0;
+  bottom        : 0;
+  left          : 0;
+}
+.nano-scroll .nano-content:focus {
+/*  outline: thin dotted;*/
+}
+.nano-scroll .nano-content::-webkit-scrollbar {
+  visibility: hidden;
+}
+.has-scrollbar .nano-content::-webkit-scrollbar {
+  visibility: visible;
+}
+.nano-scroll > .pane {
+  background : rgba(255,255,255,.25);
+  position   : absolute;
+  width      : 10px;
+  right      : 0;
+  top        : 0;
+  bottom     : 0;
+  visibility : hidden\9; /* Target only IE7 and IE8 with this hack */
+  opacity    : .01; 
+  -webkit-transition    : .2s;
+  -moz-transition       : .2s;
+  -o-transition         : .2s;
+  transition            : .2s;
+  -moz-border-radius    : 4px;
+  -webkit-border-radius : 4px;  
+  border-radius         : 4px;
+  width      : 8px;
+}
+.nano-scroll > .pane > .slider {
+  background: rgba(255,255,255,.5);
+  position              : relative;
+  margin                : 0 1px;
+  -moz-border-radius    : 3px;
+  -webkit-border-radius : 3px;  
+  border-radius         : 3px;
+
+  -webkit-transition    : .2s;
+  -moz-transition       : .2s;
+  -o-transition         : .2s;
+  transition            : .2s;
+}
+
+.nano-scroll > .pane > .slider:hover {
+  background: rgba(255,255,255,.85);
+}
+.nano-scroll:hover > .pane, .pane.active, .pane.flashed {
+  visibility : visible\9; /* Target only IE7 and IE8 with this hack */
+  opacity    : 0.99;
+}
+
+
+
+/*
+ * FILE 2 - specials.css
+ */
+
+#specials-container .specials-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0,0,0,0.3);
+    z-index: 19999;
+}
+#specials-container .specials-bg {
+        background: url(http://cdn2.comicsetc.com.au/skin/frontend/default/comics/images/specials/superman-specials-bg-8bit.png) no-repeat top center;
+        width: 1100px;
+        height: 875px;
+        position: absolute;
+        top: 144px;
+        left: 50%;
+        margin-left: -550px;
+        
+        z-index: 20000;
+}
+
+#specials-container .btn-close {
+    display: block;
+    position: absolute;
+    top: 54px;
+    left: 50%;
+    margin-left: -25px;
+    background: url(http://cdn2.comicsetc.com.au/skin/frontend/default/comics/images/specials/specials-close.png) no-repeat top center;
+    width: 50px;
+    height: 70px;
+    text-indent: -9999px;
+}
+
+#specials-container .btn-view-all {
+    display: block;
+    position: absolute;
+    top: 610px;
+    left: 50%;
+    margin-left: -82px;
+
+    background: url(http://cdn2.comicsetc.com.au/skin/frontend/default/comics/images/specials/specials-viewall.png) no-repeat top center;
+    width: 184px;
+    height: 92px;
+    text-indent: -9999px;
+}
+
+#specials-container .specials-holder {
+    display: block;
+    position: absolute;
+    top: 322px;
+    left: 50%;
+    margin-left: -214px;
+
+    background: url(http://cdn2.comicsetc.com.au/skin/frontend/default/comics/images/specials/specials-block.png) no-repeat top center;
+    width: 453px;
+    height: 198px;
+
+}
+
+ul.specials-carousel {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    /*    overflow: hidden;*/
+}
+ul.specials-carousel > li {
+    float: left;
+    display: block;
+    position: relative;
+    width: 156px;
+    height: 106px;
+}
+ul.specials-carousel > li > a {
+    margin-left: 15px;
+    display: block;
+}
+ul.specials-carousel > li img {
+        border: 3px solid #4c5458;
+        -webkit-border-radius: 2px;
+        -moz-border-radius: 2px;
+        border-radius: 3px;
+        
+        -webkit-box-shadow:  0px 0px 8px 0px rgba(0, 0, 0, 0.6);
+        -moz-box-shadow:  0px 0px 8px 0px rgba(0, 0, 0, 0.6);
+        box-shadow:  0px 0px 8px 0px rgba(0, 0, 0, 0.6);
+    }
+/* === hover styles ==================================================== */
+
+ul.specials-carousel .hover {
+    position: absolute;
+    width: 100px;
+    height: 150px;
+    z-index: 6;
+    top: 3px;
+    left: 18px;
+
+    /*    display: none;*/
+    -webkit-box-shadow: 0px 0px 5px 3px #c10313;
+    -moz-box-shadow: 0px 0px 5px 3px #c10313;
+    -o-box-shadow: 0px 0px 5px 3px #c10313;
+    -ms-box-shadow: 0px 0px 5px 3px #c10313;
+    box-shadow: 0px 0px 5px 3px #c10313;
+
+    /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIwLjkiLz4KICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIwLjkiLz4KICA8L2xpbmVhckdyYWRpZW50PgogIDxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9InVybCgjZ3JhZC11Y2dnLWdlbmVyYXRlZCkiIC8+Cjwvc3ZnPg==);
+    background: -moz-linear-gradient(top, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.9) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0.9)), color-stop(100%,rgba(0,0,0,0.9))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, rgba(0,0,0,0.9) 0%,rgba(0,0,0,0.9) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, rgba(0,0,0,0.9) 0%,rgba(0,0,0,0.9) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, rgba(0,0,0,0.9) 0%,rgba(0,0,0,0.9) 100%); /* IE10+ */
+    background: linear-gradient(top, rgba(0,0,0,0.9) 0%,rgba(0,0,0,0.9) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e6000000', endColorstr='#e6000000',GradientType=0 ); /* IE6-8 */
+}
+
+
+.specials-holder  .hover button.btn-cart {
+    margin: 6px 5px;
+}
+
+.specials-holder .hover .link-wishlist { 
+    position: absolute;
+    right: 0px;
+    margin: 4px;
+}
+                              
+
+
+.specials-holder .ribbon {
+    margin-top: -8px;
+    margin-left: -8px;
+}
+
+.specials-holder .hover button.btn-cart {
+    bottom: 0;
+    
+}
+
+
+
+
+/* === j carousel styles ==================================================== */
+
+.specials-holder  .jcarousel-prev, .specials-holder .jcarousel-next {
+    position: absolute;
+    top: 74px;
+    height: 56px;
+    width: 56px;
+    background:url(http://cdn2.comicsetc.com.au/skin/frontend/default/comics/images/sprites/comics-site-wide.png) no-repeat -60px -218px;
+    z-index: 20;
+    cursor: pointer;
+}
+.specials-holder  .jcarousel-prev {
+    left: -43px;
+    background-position: -60px -218px
+}
+.specials-holder .jcarousel-next {
+    right: -43px;
+    background-position: -420px -218px;
+}
+
+
+.specials-holder .jcarousel-next:hover { background-position: -454px -82px; }
+.specials-holder .jcarousel-next:active { background-position: -2px -218px; }
+.specials-holder .jcarousel-prev:hover { background-position: -304px -218px; }
+.specials-holder .jcarousel-prev:active { background-position: -362px -218px; }
+
+
+.specials-holder .jcarousel-direction-rtl {
+	direction: rtl;
+}
+.specials-holder .jcarousel-container-horizontal {
+    width: 408px;
+    margin: 0 24px 0 22px;
+/*    padding: 0px 85px 0 85px;*/
+}
+.specials-holder .jcarousel-clip {
+    overflow: hidden;
+}
+.specials-holder .jcarousel-clip-horizontal {
+    width:  408px;
+    height: 192px;
+/*    padding: 0px 4px;*/
+}
+.specials-holder .jcarousel-item {
+    width: 106px;
+    height: 156px;
+    margin-top: 20px;
+}
+.specials-holder .jcarousel-item-horizontal {
+    margin-left: 0;
+    margin-right: 0px;
+}
+.specials-holder.jcarousel-direction-rtl .jcarousel-item-horizontal {
+/*	margin-left: 10px;*/
+    margin-right: 0;
+}
+.specials-holder .jcarousel-item-placeholder {
+    background: #fff;
+    color: #000;
+}
+
+.specials-holder .product-name {
+    margin: 25px 6px 14px;
+}
+.specials-holder .price-box {
+    margin: 0 6px 14px;
+    font: 12px/13px 'LaffayetteComicProRegular', sans-serif;
+    
+}
+
+.specials-holder  .product-name a {
+        padding-top: 0px;
+        width: 100%;
+        font: 12px/13px 'LaffayetteComicProRegular', sans-serif;
+    }
+    
+
+
+
+/*
+ * FILE 3 - city.css
+ */
+/* 
+    Document   : footer-city
+    Created on : 29/02/2012, 10:09:15 AM
+    Author     : Matthew Daniels
+    Description:
+        Styling for the city footer
+*/
+
+#city-wrapper{
+    position: absolute;
+    z-index: 0;
+    top: 7px;
+    left: 0px;
+    right: 0px;
+    
+    height: 335px;
+    overflow: hidden;
+    
+    min-width: 1010px;
+}
+    #city-container{
+        position: absolute;
+        overflow: hidden;
+        height: 335px;
+        top: 0px;
+    }
+
+    html.js #city-holder{
+        opacity: 0;
+        top: 360px;
+    }
+
+        #city-content {
+            height: 335px;
+            width: 100%;
+            overflow: hidden;
+        }
+        
+            #buttonsDisplay{
+                position:absolute;
+                display:block;
+                margin:auto;
+                width:600px;
+                height:300px;
+                bottom:0px;
+            }
+                /* IE requires a transparent background on the hidden a tags to be able to use mouseenter and mouseleave events */
+/*                .social_btn_hit{
+                    background-color: rgba(0,0,0,0);
+                }
+                html.ie7 .social_btn_hit, html.ie8 .social_btn_hit{
+                    background: transparent;
+                    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#00000000,endColorstr=#00000000);
+                    zoom: 1;
+                }*/
+                
+            #clouds {
+                pointer-events: none;
+            }
+                
+            #stars {
+                position: absolute;
+                top:-35px;
+                left:190px;
+                background-repeat: no-repeat;
+                width:220px;
+                height:72px;
+/*                background-position: 0px 0px;*/
+            }
+            
+                @-webkit-keyframes starsstepupanimation {
+                    0%      { background-position: 0px 0px; }
+                    12.5%   { background-position: -220px 0px; }
+                    25%     { background-position: 0px -72px; }
+                    37.5%   { background-position: -220px -72px; }
+                    50%     { background-position: 0px -144px; }
+                    62.5%   { background-position: -220px -144px; }
+                    75%     { background-position: 0px -216px; }       /* Full off */
+                    87.5%   { background-position: -220px -216px; }    /* Full on */
+                    100%    { background-position:  0px 0px; }
+                }
+                @-webkit-keyframes starsflashanimation {
+                    0%      { background-position: 0px -216px; } 
+                    100%    { background-position:  0px 0px; }
+                }
+                @-moz-keyframes starsstepupanimation {
+                    0%      { background-position: 0px 0px; }
+                    12.5%   { background-position: -220px 0px; }
+                    25%     { background-position: 0px -72px; }
+                    37.5%   { background-position: -220px -72px; }
+                    50%     { background-position: 0px -144px; }
+                    62.5%   { background-position: -220px -144px; }
+                    75%     { background-position: 0px -216px; }       /* Full off */
+                    87.5%   { background-position: -220px  -216px; }    /* Full on */
+                    100%    { background-position:  0px 0px; }
+                }
+                @-moz-keyframes starsflashanimation {
+                    0%      { background-position: -220px -216px; }
+                    33.3%    { background-position:  0px 0px; }
+                    66.7%      { background-position: -220px -216px; } 
+                    100%    { background-position:  0px 0px; }
+                }
+                @-ms-keyframes starsstepupanimation {
+                    0%      { background-position: 0px 0px; }
+                    12.5%   { background-position: -220px 0px; }
+                    25%     { background-position: 0px -72px; }
+                    37.5%   { background-position: -220px -72px; }
+                    50%     { background-position: 0px -144px; }
+                    62.5%   { background-position: -220px -144px; }
+                    75%     { background-position: 0px -216px; }       /* Full off */
+                    87.5%   { background-position: -220px  -216px; }    /* Full on */
+                    100%    { background-position:  0px 0px; }
+                }
+                @-ms-keyframes starsflashanimation {
+                    0%      { background-position: 0px -216px; } 
+                    100%    { background-position:  0px 0px; }
+                }
+                
+            .stars-animation-step {
+                background-image: url(/skin/frontend/default/comics/images/footer/city/stars_ss_2.png);
+                animation-duration: 2.5s;
+                animation-iteration-count: 3;
+                animation-timing-function: step-start;
+                animation-name: starsstepupanimation;
+                
+                -moz-animation-duration: 2.5s;
+                -moz-animation-iteration-count: 3;
+                -moz-animation-timing-function: step-start;
+                -moz-animation-name: starsstepupanimation;
+                
+                -ms-animation-duration: 2.5s;
+                -ms-animation-iteration-count: 3;
+                -ms-animation-timing-function: step-start;
+                -ms-animation-name: starsstepupanimation;
+                
+                -o-animation-duration: 2.5s;
+                -o-animation-iteration-count: 3;
+                -o-animation-timing-function: step-start;
+                -o-animation-name: starsstepupanimation;
+                
+                -webkit-animation-duration: 2.5s;
+                -webkit-animation-iteration-count: 3;
+                -webkit-animation-timing-function: step-start;
+                -webkit-animation-name: starsstepupanimation;
+            }
+            .stars-animation-flash {
+                background-image: url(/skin/frontend/default/comics/images/footer/city/stars_ss_2.png);
+                animation-duration: 1s;
+                animation-iteration-count: 5;
+                animation-timing-function: step-start;
+                animation-name: starsflashanimation;
+                
+                -moz-animation-duration: 1s;
+                -moz-animation-iteration-count: 5;
+                -moz-animation-timing-function: step-start;
+                -moz-animation-name: starsflashanimation;
+                
+                -ms-animation-duration: 1s;
+                -ms-animation-iteration-count: 5;
+                -ms-animation-timing-function: step-start;
+                -ms-animation-name: starsflashanimation;
+                
+                -o-animation-duration: 1s;
+                -o-animation-iteration-count: 5;
+                -o-animation-timing-function: step-start;
+                -o-animation-name: starsflashanimation;
+                
+                -webkit-animation-duration: 1s;
+                -webkit-animation-iteration-count: 5;
+                -webkit-animation-timing-function: step-start;
+                -webkit-animation-name: starsflashanimation;
+            }
+            .stars-0{
+                background-image: url(/skin/frontend/default/comics/images/footer/city/stars_full.png);
+                background-position: -0px -0px;
+            }
+            .stars-1{
+                background-image: url(/skin/frontend/default/comics/images/footer/city/stars_ss_2.png);
+                background-position: -0px -0px;
+            }
+            .stars-2{
+                background-image: url(/skin/frontend/default/comics/images/footer/city/stars_ss_2.png);
+                background-position: -220px -0px;
+            }
+            .stars-3{
+                background-image: url(/skin/frontend/default/comics/images/footer/city/stars_ss_2.png);
+                background-position: -0px -72px;
+            }
+            .stars-4{
+                background-image: url(/skin/frontend/default/comics/images/footer/city/stars_ss_2.png);
+                background-position: -220px -72px;
+            }
+            .stars-5{
+                background-image: url(/skin/frontend/default/comics/images/footer/city/stars_ss_2.png);
+                background-position: -0px -144px;
+            }
+            .stars-6{
+                background-image: url(/skin/frontend/default/comics/images/footer/city/stars_ss_2.png);
+                background-position: -220px -144px;
+            }
+            .stars-7{
+                background-image: url(/skin/frontend/default/comics/images/footer/city/stars_ss_2.png);
+                background-position: -0px -216px;
+            }
+            .stars-8{
+                background-image: url(/skin/frontend/default/comics/images/footer/city/stars_ss_2.png);
+                background-position: -220px -216px;
+            }
+            
+            .out-light {
+                position:absolute;
+                width:20px;
+                height:20px;
+                background: url(/skin/frontend/default/comics/images/footer/city/outerLight.png) no-repeat
+            }
+
+
+/*
+ * FILE 4 - footer_cart.css
+ */
+/* 
+    Document   : footer_cart
+    Created on : 27/03/2012, 5:04:22 PM
+    Author     : Matthew Daniels
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+#footer-cart-wrapper {
+    height: 212px;
+    width: 100%;
+    position: fixed;
+    bottom:0;
+/*    margin-bottom: 0px;*/
+    margin-bottom: -213px;
+    z-index:999;
+    min-width: 1010px;
+}
+#footer-cart-main-container {
+    background-color: #000;
+    width: 100%;
+    height:100%;
+    margin: auto;
+    position:absolute;
+}
+.footer-cart-shadow {
+    height: 40px;
+    width: 100%;
+    background: -moz-linear-gradient(top, rgba(30,30,30,0) 0%, rgba(22,22,22,0) 28%, rgba(0,0,0,0.5) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(30,30,30,0)), color-stop(28%, rgba(22,22,22,0)), color-stop(100%, rgba(0,0,0,0.5))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, rgba(30,30,30,0) 0%, rgba(22,22,22,0) 28%, rgba(0,0,0,0.5) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, rgba(30,30,30,0) 0%, rgba(22,22,22,0) 28%, rgba(0,0,0,0.5) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, rgba(30,30,30,0) 0%, rgba(22,22,22,0) 28%, rgba(0,0,0,0.5) 100%); /* IE10+ */
+    background: linear-gradient(top, rgba(30,30,30,0) 0%, rgba(22,22,22,0) 28%, rgba(0,0,0,0.5) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#001e1e1e', endColorstr='#80000000', GradientType=0 );
+    
+    position: absolute;
+    bottom: 212px;
+    pointer-events: none;
+}
+    #footer-cart-top-bar {
+        height: 55px;
+        width: 100%;
+        min-width: 928px;
+        border-top-width: 3px;
+        border-bottom-width: 1px;
+        border-top-style: solid;
+        border-bottom-style: solid;
+        border-top-color: #CB061C;
+        border-bottom-color: #373737;
+        position: absolute;
+        top: 0px;
+        display: inline-block;
+
+        background: rgb(30,30,30); /* Old browsers */
+        background: -moz-linear-gradient(top, rgba(30,30,30,1) 19%, rgba(0,0,0,1) 78%); /* FF3.6+ */
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(19%, rgba(30,30,30,1)), color-stop(78%, rgba(0,0,0,1))); /* Chrome,Safari4+ */
+        background: -webkit-linear-gradient(top, rgba(30,30,30,1) 19%, rgba(0,0,0,1) 78%); /* Chrome10+,Safari5.1+ */
+        background: -o-linear-gradient(top, rgba(30,30,30,1) 19%, rgba(0,0,0,1) 78%); /* Opera 11.10+ */
+        background: -ms-linear-gradient(top, rgba(30,30,30,1) 19%, rgba(0,0,0,1) 78%); /* IE10+ */
+        background: linear-gradient(top, rgba(30,30,30,1) 19%, rgba(0,0,0,1) 78%); /* W3C */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e1e1e', endColorstr='#000000', GradientType=0 ); /* IE6-8 */
+    }
+    html.ie9 #footer-cart-top-bar {
+        
+    }
+    
+    
+
+        #footer-cart-center-container {
+            height: 55px;
+            min-width: 960px;
+            max-width: 1200px;
+            margin-right: auto;
+
+            margin-left: auto;
+        }
+            .footer-cart-title {
+                background-image: url(/skin/frontend/default/comics/images/footer/cart/shopping_cart.png);
+                background-repeat: no-repeat;
+                background-position: left center;
+                width: 156px;
+                height: 55px;
+                display: inline-block;
+                float: left;
+                margin-left: 32px;
+            }
+            .footer-cart-arrow {
+                background-image: url(/skin/frontend/default/comics/images/footer/cart/cart_arrow.png);
+                background-repeat: no-repeat;
+                background-position: center center;
+                height: 25px;
+                width: 25px;
+                margin-top: 13px;
+                margin-left: 19px;
+                z-index: 500;
+                display: inline;
+            }
+            .footer-cart-left-arrow {
+                float: left;
+            }
+            .footer-cart-right-arrow {
+                float: right;
+                margin-left: 0px;
+                margin-right: 19px;
+                margin-top: -42px;
+            }
+
+            .footer-cart-spacer {
+                width: 1px;
+                height: 55px;
+                position: absolute;
+            }
+
+            .last-spacer {
+                right:0px;
+                top: 0;
+            }
+            
+            .first-spacer {
+                left: 0;
+                top: 0;
+            }
+            
+            .footer-cart-wishlist {
+                background: rgb(104,20,30); /* Old browsers */
+                background: -moz-linear-gradient(top, rgba(104,20,30,1) 1%, rgba(0,0,0,1) 71%); /* FF3.6+ */
+                background: -webkit-gradient(linear, left top, left bottom, color-stop(1%, rgba(104,20,30,1)), color-stop(71%, rgba(0,0,0,1))); /* Chrome,Safari4+ */
+                background: -webkit-linear-gradient(top, rgba(104,20,30,1) 1%, rgba(0,0,0,1) 71%); /* Chrome10+,Safari5.1+ */
+                background: -o-linear-gradient(top, rgba(104,20,30,1) 1%, rgba(0,0,0,1) 71%); /* Opera 11.10+ */
+                background: -ms-linear-gradient(top, rgba(104,20,30,1) 1%, rgba(0,0,0,1) 71%); /* IE10+ */
+                background: linear-gradient(top, rgba(104,20,30,1) 1%, rgba(0,0,0,1) 71%); /* W3C */
+
+                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#68141e', endColorstr='#000000', GradientType=0 ); /* IE6-8 */
+               
+                height: 55px;
+                width: 148px;
+                float: left;
+                position: relative;
+                /* [disabled]margin-left: 32px; */
+                padding: 0;
+                font: bold 14px/55px "Droid Sans", Arial, Helvetica, sans-serif;
+                color: #FFF;
+                text-decoration: none;
+                display: inline-block;
+            }
+            html.ie9 .footer-cart-wishlist{
+                background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAA3CAIAAABCVLduAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAFFJREFUeNqsjMsNwDAIQx2yQs+dr/tf+dUkpBMUyfKzQeC5bjFAfGC50b2zfjzEMrk/qj5FY2fnTjPWTbFFsW+ujjnp0d6ag3+LAUz8P68AAwCAyEVWOPYknAAAAABJRU5ErkJggg==) repeat-x;
+            }
+            
+
+            #footer-cart-wishlist-btn:link, #footer-cart-details:link, #footer-cart-wishlist-btn:visited, #footer-cart-details:visited  {
+                color: #fff;
+                
+/*                filter: none;*/
+            }
+
+            #footer-cart-wishlist-btn:hover, #footer-cart-details:hover {
+                color: #ffd009;
+            }
+                
+                #footer-cart-wishlist-btn {
+                    width: 100%;
+                    height: 100%;
+                    margin-left: 18px;
+                    position: relative;
+                    display: inline-block;
+                }
+                /* The actual 'My Wishlist' text */
+                #footer-cart-wishlist-btn span {
+                    line-height: 55px;
+                    display: inline-block;
+                    float: right;
+                    margin-right: 40px;
+                }
+                
+                /* The star icon next to the word Wishlist */
+                #footer-cart-wishlist-btn div.yellow-star {
+                    margin-top: 18px;
+                    display: inline-block;
+                    float:left;
+                }
+            #footer-cart-details {
+                background: rgb(104,20,30);
+                background: -moz-linear-gradient(top, rgba(104,20,30,1) 1%, rgba(0,0,0,1) 71%); /* FF3.6+ */
+                background: -webkit-gradient(linear, left top, left bottom, color-stop(1%, rgba(104,20,30,1)), color-stop(71%, rgba(0,0,0,1))); /* Chrome,Safari4+ */
+                background: -webkit-linear-gradient(top, rgba(104,20,30,1) 1%, rgba(0,0,0,1) 71%); /* Chrome10+,Safari5.1+ */
+                background: -o-linear-gradient(top, rgba(104,20,30,1) 1%, rgba(0,0,0,1) 71%); /* Opera 11.10+ */
+                background: -ms-linear-gradient(top, rgba(104,20,30,1) 1%, rgba(0,0,0,1) 71%); /* IE10+ */
+                background: linear-gradient(top, rgba(104,20,30,1) 1%, rgba(0,0,0,1) 71%); /* W3C */
+
+                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#68141e', endColorstr='#000000', GradientType=0 ); /* IE6-8 */
+                
+                float: left;
+                height: 55px;
+                width: 220px;
+                font: bold 20px/55px "Droid Sans", Arial, Helvetica, sans-serif;
+                color: #FFF;
+                text-align: center;
+                position: relative;
+                text-decoration: none;
+                display: inline-block;
+                /* [disabled]margin-right: 64px; */
+                margin-left: 32px;
+            }
+            
+            
+            .cart-details-inner {
+                position: relative;
+                width: 218px;
+                margin: 0 auto;
+                display: block;
+                max-width: 218px;
+                overflow: hidden;
+                white-space: nowrap;
+            }
+            
+            .cart-wait-icon {
+                width: 218px;
+                height: 55px;
+            }
+            
+            #footer-cart-total {
+                padding-right: 8px;
+                position: relative;
+                width: auto;
+                margin-right: auto;
+                margin-bottom: auto;
+                display: inline;
+            }
+            /* Cart icon */
+            .footer-cart-icon {
+/*                background: url(/skin/frontend/default/comics/images/cart_icon.png) no-repeat center center;*/
+                height: 21px;
+                width: 21px;
+                position: relative;
+                display: inline-block;
+                top: 3px;
+            }
+
+            html.ie7 .footer-cart-icon {
+                zoom:1; 
+                display: inline; 
+            }
+            
+            /* The count of the cart */
+            #footer-cart-count {
+                margin-right: auto;
+                padding-left: 4px;
+                position: relative;
+                display: inline;
+            }
+
+/* Add to cart animations */
+.edgeLoad-zap { display:none; }
+.edgeLoad-bash { display:none; width:inherit; height: inherit; }
+.edgeLoad-zonk { display:none; }
+.edgeLoad-woosh { display:none; }
+.edgeLoad-kablam { display:none; }
+.edgeLoad-boom { display:none; }
+
+#edge-container{
+    position: fixed;
+    z-index: 9999;
+    
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    
+/*    background: rgba(255,255,255,0.1);*/
+    margin-bottom: -16px;
+    bottom: 0;
+    pointer-events: none;
+}
+#edge-inner{
+    position:relative;
+    width: 900px;
+    height: 400px;
+    margin: 0 auto;
+/*    background: rgba(255,0,0,0.1);*/
+}
+.zap, .bash, .zonk, .woosh, .kablam, .boom {
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    z-index: 10000;
+}
+/* END: add to cart animations */
+            
+/* Bottom area with carousel and items in it */            
+#footer-cart-bottom-area {
+    position: absolute;
+    top: 58px;
+    width:100%;
+}
+
+    .footer-cart-bar-shadow {
+            width: 100%;
+            height: 15px;
+            background: -moz-linear-gradient(top, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0.85) 1%, rgba(0,0,0,0) 65%, rgba(0,0,0,0) 100%); /* FF3.6+ */
+            background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0,0,0,0.85)), color-stop(1%, rgba(0,0,0,0.85)), color-stop(65%, rgba(0,0,0,0)), color-stop(100%, rgba(0,0,0,0))); /* Chrome,Safari4+ */
+            background: -webkit-linear-gradient(top, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0.85) 1%, rgba(0,0,0,0) 65%, rgba(0,0,0,0) 100%); /* Chrome10+,Safari5.1+ */
+            background: -o-linear-gradient(top, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0.85) 1%, rgba(0,0,0,0) 65%, rgba(0,0,0,0) 100%); /* Opera 11.10+ */
+            background: -ms-linear-gradient(top, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0.85) 1%, rgba(0,0,0,0) 65%, rgba(0,0,0,0) 100%); /* IE10+ */
+            background: linear-gradient(top, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0.85) 1%, rgba(0,0,0,0) 65%, rgba(0,0,0,0) 100%); /* W3C */
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d9000000', endColorstr='#00000000', GradientType=0 ); /* IE6-8 */
+            margin-top: 1px;
+            position: absolute;
+            z-index: 2;
+    }
+    .footer-cart-left-mask {
+            left: 0;
+            height: 153px;
+            /* width: 150px; */
+            width: 100px;
+            background: -moz-linear-gradient(left, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 18%, rgba(0,0,0,0) 94%, rgba(0,0,0,0) 100%); /* FF3.6+ */
+            background: -webkit-gradient(linear, left top, right top, color-stop(0%, rgba(0,0,0,1)), color-stop(18%, rgba(0,0,0,1)), color-stop(94%, rgba(0,0,0,0)), color-stop(100%, rgba(0,0,0,0))); /* Chrome,Safari4+ */
+            background: -webkit-linear-gradient(left, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 18%, rgba(0,0,0,0) 94%, rgba(0,0,0,0) 100%); /* Chrome10+,Safari5.1+ */
+            background: -o-linear-gradient(left, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 18%, rgba(0,0,0,0) 94%, rgba(0,0,0,0) 100%); /* Opera 11.10+ */
+            background: -ms-linear-gradient(left, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 18%, rgba(0,0,0,0) 94%, rgba(0,0,0,0) 100%); /* IE10+ */
+            background: linear-gradient(left, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 18%, rgba(0,0,0,0) 94%, rgba(0,0,0,0) 100%); /* W3C */
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#00000000', GradientType=1 ); /* IE6-8 */
+            margin-top: 1px;
+            position: absolute;
+            z-index: 10;
+    }
+
+    .footer-cart-right-mask {
+            right: 0;
+            height: 153px;
+         /*   width: 150px; */
+            width: 100px;
+            background: -moz-linear-gradient(left, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 6%, rgba(0,0,0,1) 82%, rgba(0,0,0,1) 100%); /* FF3.6+ */
+            background: -webkit-gradient(linear, left top, right top, color-stop(0%, rgba(0,0,0,0)), color-stop(6%, rgba(0,0,0,0)), color-stop(82%, rgba(0,0,0,1)), color-stop(100%, rgba(0,0,0,1))); /* Chrome,Safari4+ */
+            background: -webkit-linear-gradient(left, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 6%, rgba(0,0,0,1) 82%, rgba(0,0,0,1) 100%); /* Chrome10+,Safari5.1+ */
+            background: -o-linear-gradient(left, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 6%, rgba(0,0,0,1) 82%, rgba(0,0,0,1) 100%); /* Opera 11.10+ */
+            background: -ms-linear-gradient(left, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 6%, rgba(0,0,0,1) 82%, rgba(0,0,0,1) 100%); /* IE10+ */
+            background: linear-gradient(left, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 6%, rgba(0,0,0,1) 82%, rgba(0,0,0,1) 100%); /* W3C */
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#000000', GradientType=1 ); /* IE6-8 */
+            /*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#00000000', GradientType=1 ); /* IE6-8 */
+            margin-top: 1px;
+            position: absolute;
+            z-index: 10;
+    }
+
+    .footer-cart-product-container {
+            background-color: #131618;
+            height: 153px;
+            width: 990px;
+            margin-right: auto;
+            margin-left: auto;
+            margin-top: 1px;
+            position: relative;
+            z-index: 11;
+    }
+
+    
+
+#cart-products {
+    width: 990px;
+    height: 153px;
+}
+#cart-products ul {
+    list-style: none;
+    margin: 0;
+
+    height: 153px;
+   /* width: 790px !important; */
+
+}    
+    #cart-products ul li {
+        width: 131px;
+        float: left;
+        display: block;
+        position: relative;
+        border-right: 1px solid #000000;
+    }
+    #cart-products ul li:nth-child(odd) {
+        background-color: #212529;
+        
+    }
+    #cart-products ul li:nth-child(even) {
+        background-color: #131618;
+    }
+    #cart-products ul li:first-child {
+        border-left: 1px solid #000000;
+    }
+    
+    #cart-products ul li img {
+        border: 3px solid #4c5458;
+        -webkit-border-radius: 2px;
+        -moz-border-radius: 2px;
+        border-radius: 3px;
+        
+        -webkit-box-shadow:  0px 0px 8px 0px rgba(0, 0, 0, 0.6);
+        -moz-box-shadow:  0px 0px 8px 0px rgba(0, 0, 0, 0.6);
+        box-shadow:  0px 0px 8px 0px rgba(0, 0, 0, 0.6);
+    }
+    #cart-products ul li > a {
+        width: 83px;
+        margin: 0 auto;
+        display: block;
+        padding: 14px 0 14px 0;
+        zoom: 1;
+        position: relative;
+    }
+    #cart-products .hover {
+        display: none;
+        position: absolute;
+        top: -1px;
+        left: -1px;
+        z-index: 10;
+        width: 100%;
+        height: 100%;
+        background: #000;
+        cursor: pointer;
+        border: 1px solid #242424;
+    }
+    
+    #cart-products ul li div.actions {
+        width: 100%;
+        height: 21px;
+        position:relative;
+        padding-top: 0px;
+        text-align: center;
+        margin: 3px 0 15px;
+    }
+    
+    #cart-products ul li div.actions a {
+        padding: 0px;
+        cursor: pointer;
+    }
+    
+    #cart-products ul li a.link-wishlist {
+        width: 21px;
+        height: 21px;
+        zoom: 1;
+        position: relative;
+        display: inline-block;
+        right: -1px;
+        top: 3px;
+    }
+    
+    #cart-products ul li a.link-remove {
+        width:15px; 
+        height:17px;
+        zoom: 1;
+        position: relative;
+        display: inline-block;
+        right: -1px;
+        top: 3px;
+        padding: 2px 3px 2px 3px; /* make this 21x21 like link-wishlist */
+    }
+    
+    #cart-products .hover h2, #cart-products .hover h2 a {
+        color: #c5ccd0;
+        font: 12px/13px 'LaffayetteComicProRegular', sans-serif;
+        margin: 0;
+        padding: 0;
+        font-weight: normal;
+        text-align: center;
+        max-height: 43px;
+    }
+    #cart-products .hover h2 {
+        padding: 0 6px;
+        
+    }
+    
+    #cart-products .hover .price-box {
+        color: #fed108;
+        display: block;
+        padding-top: 5px;
+        text-align: center;
+        font: 12px/16px 'LaffayetteComicProRegular', sans-serif;
+        margin-bottom: 4px;
+    }
+    #cart-products .hover .qty-box {
+        color: #fed108;
+        display: block;
+        padding-top: 3px;
+        text-align: center;
+        font: 10px/11px 'LaffayetteComicProRegular', sans-serif;
+    }
+    #cart-products .hover .qty-box-1 {
+        display: none;
+    }
+
+/*    #cart-products .hover h2, #cart-products .hover .price-box {
+        display: none;
+    }*/
+    #cart-products .valign, #cart-products .valign-inner {
+        height: 153px;
+    }
+    #cart-products .valign-inner {
+        display: table;
+    }
+    #cart-products .content {
+        display: block;
+        vertical-align: middle;
+        padding: 0px;
+        width: 120px;
+        height: 141px;
+        border: 3px solid #c30019;
+        border-radius: 3px;
+        margin: 3px;
+        overflow:hidden;
+    }
+
+
+#cart-products .jcarousel-direction-rtl {
+	direction: rtl;
+}
+#cart-products .jcarousel-container-horizontal {
+   padding: 0 100px 0 100px;
+   overflow: hidden;
+
+}
+#cart-products .jcarousel-clip {
+
+
+}
+#cart-products .jcarousel-clip-horizontal {
+   /* width:  878px;
+    height: 164px;*/
+}
+#cart-products .jcarousel-item {
+    width: 131px;
+    height: 153px;
+}
+#cart-products .jcarousel-item-horizontal {
+	margin-left: 0;
+    margin-right: 0px;
+}
+#cart-products .jcarousel-direction-rtl .jcarousel-item-horizontal {
+    margin-right: 0;
+}
+#cart-products .jcarousel-item-placeholder {
+    background: #fff;
+    color: #000;
+}
+#cart-products  .jcarousel-prev, #cart-products .jcarousel-next {
+    position: absolute;
+    top: 54px;
+    height: 56px;
+    width: 56px;
+    background:url(http://cdn2.comicsetc.com.au/skin/frontend/default/comics/images/sprites/comics-site-wide.png) no-repeat -60px -218px;
+    z-index: 20;
+    cursor: pointer;
+}
+#cart-products  .jcarousel-prev {
+    left: 20px;
+    background-position: -60px -218px
+}
+#cart-products .jcarousel-next {
+    right: 12px;
+    background-position: -420px -218px;
+}
+
+
+#cart-products .jcarousel-next:hover { background-position: -454px -82px; }
+#cart-products .jcarousel-next:active { background-position: -2px -218px; }
+#cart-products .jcarousel-prev:hover { background-position: -304px -218px; }
+#cart-products .jcarousel-prev:active { background-position: -362px -218px; }
+
+
+#checkout-btn {
+    display: block;
+    position: relative;
+    float: right;
+/*    margin-right: 32px;*/
+    width: 250px;
+    height: 55px;
+    background-image:url(/skin/frontend/default/comics/images/footer/cart/checkout_now.png);
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+    overflow: hidden;
+}
+
+#checkout-btn:active { background-position: 0px -110px; }
+#checkout-btn:hover { background-position: 0px -55px; }
+
+#foot-cart-checkout-arrow {
+    background-image:url(/skin/frontend/default/comics/images/footer/cart/checkout_Arrow.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 30px;
+    height: 55px;
+/*    padding-left: 10px;*/
+    position: relative;
+    margin-left: 150px;
+}
+
+#cart-products .ribbon {
+    left: -8px;
+    top: 6px;
+}
+
+
+/*
+ * FILE 5 - hero.css
+ */
+#hero-blue-glow {
+    width: 800px;
+    height: 130px;
+    left: 200px;
+    top:20px;
+    display: inline;
+}
+#hero-yellow-glow {
+    width: 950px;
+    height: 130px;
+    top: 560px;
+    position: absolute;
+    display: inline;
+}
+#hero {
+    height: 649px;
+    width: 1055px;
+/*     height: 573px;
+    width: 1010px;
+   background: url(http://cdn2.comicsetc.com.au/skin/frontend/default/comics/images/hero-background.png) no-repeat #000;*/
+    background: url(http://cdn2.comicsetc.com.au/skin/frontend/default/comics/images/hero-background-full-interlaced.png) no-repeat;
+    margin-left: -45px;
+/*    margin-top: -38px;*/
+    top: -38px;
+    margin-bottom: -84px;
+    padding-left: 45px;
+    padding-top: 38px;
+    position: relative;
+}
+ 
+.hero-static {
+    position: absolute;
+    z-index: 1;
+    height: 573px;
+    width: 1010px;
+    background-repeat: no-repeat;
+    pointer-events: none;
+}
+.js .hero-static {
+    display: none;
+}
+.hero-title {
+    position: absolute;
+    z-index: 8;
+    left: 55px;
+    top: 48px;
+    width: 300px;
+    height: 22px;
+    background: #4f5c70;
+    font-family: 'LaffayetteComicProRegular';
+    color: #fff;
+    font-size: 16px;
+    padding-left:11px;
+    letter-spacing: 1.5px;
+    pointer-events: none;
+}
+#hero-preloader {
+    position: absolute;
+    z-index: 9;
+    left: 55px;
+    top: 48px;
+    pointer-events: none;
+    width: 256px;
+    height: 22px;
+    background: #4f5c70;
+}
+.preloader {
+    padding-left:11px;
+    margin-top: -4px;
+}
+/* This is the hero title - "Suddenly at comics..." */
+#hero-title {
+    
+}
+/* This is the text element of the title */
+.hero-title span {
+    padding-left: 2px;
+}
+/* Push the 'S' image upward a little */
+.hero-title img {
+    margin-top: -2px;
+}
+
+
+/*#hero .batman-bg { background: url(http://cdn2.comicsetc.com.au/skin/frontend/default/comics/images/batman-bg.png) no-repeat; }
+#hero .wolverine-bg { background: url(http://cdn2.comicsetc.com.au/skin/frontend/default/comics/images/hero-static-wolverine-bg.png) no-repeat; }
+#hero .ironman-bg { background: url(http://cdn2.comicsetc.com.au/skin/frontend/default/comics/images/hero-static-ironman-bg.png) no-repeat; }
+#hero .superman-bg { background: url(http://cdn2.comicsetc.com.au/skin/frontend/default/comics/images/hero-static-superman-bg.png) no-repeat; }*/
+
+/* Current styles - pre-js implementation
+#hero .batman { background: url(http://cdn2.comicsetc.com.au/skin/frontend/default/comics/images/batman.png) no-repeat; }
+#hero .wolverine { background: url(http://cdn2.comicsetc.com.au/skin/frontend/default/comics/images/hero-static-wolverine.png) no-repeat; }
+#hero .ironman { background: url(http://cdn2.comicsetc.com.au/skin/frontend/default/comics/images/hero-static-ironman.png) no-repeat; }
+#hero .superman { background: url(http://cdn2.comicsetc.com.au/skin/frontend/default/comics/images/hero-static-superman.png) no-repeat; }
+*/
+
+/* This is used for the hero hit areas */
+#hero-spacer {
+    position: absolute;
+    top: 38px;
+    left: 45px;
+    z-index: 20;
+    height: 573px;
+    width: 1010px;
+}
+
+#darkener {
+    position: absolute;
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAA9JREFUeNpiYGBg2AwQYAAAuAC01qHx9QAAAABJRU5ErkJggg==) repeat center top;
+    width: 1210px;
+    height: 1010px;
+    top: -43px;
+    z-index: 9;
+}
+
+
+/* Individual images */
+.hero-static > div {
+    position: absolute;
+    width: 1010px;
+    height: 573px;
+}
+
+/* Layering */
+.topmost-layer {
+    z-index: 10;
+}
+.normal-layer {
+    z-index: 5;
+}
+
+/* ===================== batman tile ===================== */
+/* Hover glow */
+div.batman-bg-glow-hover {
+    left: -70px;
+    top: -70px;
+    width: 533px;
+    height: 713px;
+    background: url('http://cdn2.comicsetc.com.au/skin/frontend/default/comics/images/homepage/hero/batman/batman-glow-hover.png') no-repeat;
+}
+/* Hover background - without glow */
+div.batman-bg-hover {
+    left: -5px;
+    top: -13px;
+    width: 411px;
+    height: 597px;
+    background: url('http://cdn2.comicsetc.com.au/skin/frontend/default/comics/images/homepage/hero/batman/batman-base-hover.png') no-repeat;
+}
+
+/* Hero main background (visible all the time */
+div.batman-bg {
+    background: url('http://cdn2.comicsetc.com.au/skin/frontend/default/comics/images/homepage/hero/batman/batman-bg.png') no-repeat;
+}
+/* Hero - pre-hover */
+div.batman-hero {
+    background: url('http://cdn2.comicsetc.com.au/skin/frontend/default/comics/images/homepage/hero/batman/batman-hero.png') no-repeat;
+}
+/* Hero - hover parts */
+div.batman-hero-hover {
+    left: -206px;
+    top: -103px;
+    width: 925px;
+    height: 626px;
+    background: url('http://cdn2.comicsetc.com.au/skin/frontend/default/comics/images/homepage/hero/batman/batman-hero-hover.png') no-repeat;
+}
+/* Text - pre-hover */
+div.batman-text {
+    left: 22px;
+    top: 397px;
+    width: 259px;
+    height: 125px;
+    background: url('http://cdn2.comicsetc.com.au/skin/frontend/default/comics/images/homepage/hero/batman/batman-text.png') no-repeat;
+}
+/* CTA Button - pre-hover */
+div.batman-button {
+    left: 22px;
+    top: 294px;
+    width: 182px;
+    height: 107px;
+    background: url('http://cdn2.comicsetc.com.au/skin/frontend/default/comics/images/homepage/hero/batman/batman-button.png') no-repeat;
+}
+/* speech bubble - pre-hover */
+div.batman-speech-bubble {
+    left: 8px;
+    top: 149px;
+    width: 273px;
+    height: 119px;
+    background: url('http://cdn2.comicsetc.com.au/skin/frontend/default/comics/images/homepage/hero/batman/batman-speech-bubble.png') no-repeat;
+}
+/* Text - hover */
+div.batman-text-hover {
+    left: -70px;
+    top: 396px;
+    width: 480px;
+    height: 220px;
+    background: url('http://cdn2.comicsetc.com.au/skin/frontend/default/comics/images/homepage/hero/batman/batman-text-hover.png') no-repeat;
+}
+
+
+
+/* ===================== superman tile ===================== */
+/* Hover glow */
+div.superman-bg-glow-hover {
+    left: 277px;
+    top: -74px;
+    width: 799px;
+    height: 426px;
+    background: url('http://cdn2.comicsetc.com.au/skin/frontend/default/comics/images/homepage/hero/superman/superman-glow-hover.png') no-repeat;
+}
+/* Hover background - without glow */
+div.superman-bg-hover {
+    left: 318px;
+    top: -4px;
+    width: 706px;
+    height: 294px;
+    background: url('http://cdn2.comicsetc.com.au/skin/frontend/default/comics/images/homepage/hero/superman/superman-base-hover.png') no-repeat;
+}
+
+/* Hero main background (visible all the time */
+div.superman-bg {
+    background: url('http://cdn2.comicsetc.com.au/skin/frontend/default/comics/images/homepage/hero/superman/superman-bg.png') no-repeat;
+}
+/* Hero - pre-hover */
+div.superman-hero {
+    background: url('http://cdn2.comicsetc.com.au/skin/frontend/default/comics/images/homepage/hero/superman/superman-hero.png') no-repeat;
+}
+/* Hero - hover parts */
+div.superman-hero-hover {
+    left: 271px;
+    top: -94px;
+    width: 422px;
+    height: 460px;
+    background: url('http://cdn2.comicsetc.com.au/skin/frontend/default/comics/images/homepage/hero/superman/superman-hero-hover.png') no-repeat;
+}
+/* Text - pre-hover */
+div.superman-text {
+    left: 655px;
+    top: 14px;
+    width: 297px;
+    height: 171px;
+}
+
+html.backgroundsize div.superman-text {
+    background-image: url('http://cdn2.comicsetc.com.au/skin/frontend/default/comics/images/homepage/hero/superman/superman-text.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+}
+
+html.ie7 div.superman-text, html.ie8 div.superman-text{
+    filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='skin/frontend/default/comics/images/homepage/hero/superman/superman-text.png', sizingMethod='scale');
+    -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='skin/frontend/default/comics/images/homepage/hero/superman/superman-text.png', sizingMethod='scale')";
+}
+
+/* CTA Button - pre-hover */
+div.superman-button {
+    left: 808px;
+    top: 166px;
+    width: 154px;
+    height: 80px;
+}
+
+html.backgroundsize div.superman-button {
+    background-image: url('http://cdn2.comicsetc.com.au/skin/frontend/default/comics/images/homepage/hero/superman/superman-button.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+}
+
+html.ie7 div.superman-button, html.ie8 div.superman-button{
+    filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='skin/frontend/default/comics/images/homepage/hero/superman/superman-button.png', sizingMethod='scale');
+    -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='skin/frontend/default/comics/images/homepage/hero/superman/superman-button.png', sizingMethod='scale')";
+}
+
+/* speech bubble - pre-hover */
+div.superman-speech-bubble {
+    left: 545px;
+    top: 125px;
+    width: 205px;
+    height: 75px;
+    background: url('http://cdn2.comicsetc.com.au/skin/frontend/default/comics/images/homepage/hero/superman/superman-speech-bubble.png') no-repeat;
+}
+
+
+/* Text - hover */
+div.superman-text-hover {
+    left: 674px;
+    top: -38px;
+    width: 366px;
+    height: 216px;
+    background: url('http://cdn2.comicsetc.com.au/skin/frontend/default/comics/images/homepage/hero/superman/superman-text.png') no-repeat;
+}
+/* CTA Button - hover */
+div.superman-button-hover {
+    left: 813px;
+    top: 148px;
+    width: 184px;
+    height: 95px;
+    background: url('http://cdn2.comicsetc.com.au/skin/frontend/default/comics/images/homepage/hero/superman/superman-button.png') no-repeat;
+}
+/* speech bubble - hover */
+div.superman-speech-bubble-hover {
+    left: 553px;
+    top: 109px;
+    width: 251px;
+    height: 110px;
+    background: url('http://cdn2.comicsetc.com.au/skin/frontend/default/comics/images/homepage/hero/superman/superman-speech-bubble-hover.png') no-repeat;
+}
+
+
+/* ===================== ironman tile ===================== */
+/* Hover glow */
+div.ironman-bg-glow-hover {
+    left: 563px;
+    top: 137px;
+    width: 530px;
+    height: 520px;
+    background: url('http://cdn2.comicsetc.com.au/skin/frontend/default/comics/images/homepage/hero/ironman/ironman-glow-hover.png') no-repeat;
+}
+/* Hover background - without glow */
+div.ironman-bg-hover {
+    left: 629px;
+    top: 210px;
+    width: 395px;
+    height: 377px;
+    background: url('http://cdn2.comicsetc.com.au/skin/frontend/default/comics/images/homepage/hero/ironman/ironman-base-hover.png') no-repeat;
+}
+
+/* Hero main background (visible all the time */
+div.ironman-bg {
+    background: url('http://cdn2.comicsetc.com.au/skin/frontend/default/comics/images/homepage/hero/ironman/ironman-bg.png') no-repeat;
+}
+/* Hero - pre-hover */
+div.ironman-hero {
+    background: url('http://cdn2.comicsetc.com.au/skin/frontend/default/comics/images/homepage/hero/ironman/ironman-hero.png') no-repeat;
+}
+/* Hero - hover parts */
+div.ironman-hero-hover {
+    left: 557px;
+    top: 117px;
+    width: 391px;
+    height: 544px;
+    background: url('http://cdn2.comicsetc.com.au/skin/frontend/default/comics/images/homepage/hero/ironman/ironman-hero-hover.png') no-repeat;
+}
+/* Text - pre-hover */
+div.ironman-text {
+    left: 790px;
+    top: 366px;
+    width: 197px;
+    height: 104px;
+    background: url('http://cdn2.comicsetc.com.au/skin/frontend/default/comics/images/homepage/hero/ironman/ironman-text.png') no-repeat;
+}
+
+/* CTA Button - pre-hover */
+div.ironman-button {
+    left: 817px;
+    top: 478px;
+    width: 134px;
+    height: 82px;
+}
+html.backgroundsize div.ironman-button {
+    background-image: url('http://cdn2.comicsetc.com.au/skin/frontend/default/comics/images/homepage/hero/ironman/ironman-button.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+}
+
+html.ie7 div.ironman-button, html.ie8 div.ironman-button{
+    filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='skin/frontend/default/comics/images/homepage/hero/ironman/ironman-button.png', sizingMethod='scale');
+    -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='skin/frontend/default/comics/images/homepage/hero/ironman/ironman-button.png', sizingMethod='scale')";
+}
+
+/* speech bubble - pre-hover - actually only showing on hover - uses hidden class though */
+div.ironman-speech-bubble {
+    left: 477px;
+    top: 110px;
+    width: 257px;
+    height: 146px;
+    background: url('http://cdn2.comicsetc.com.au/skin/frontend/default/comics/images/homepage/hero/ironman/ironman-speech-bubble.png') no-repeat;
+}
+
+/* Text - hover */
+div.ironman-text-hover {
+    left: 779px;
+    top: 350px;
+    width: 240px;
+    height: 127px;
+    background: url('http://cdn2.comicsetc.com.au/skin/frontend/default/comics/images/homepage/hero/ironman/ironman-text-hover.png') no-repeat;
+}
+/* CTA Button - hover */
+div.ironman-button-hover {
+    left: 809px;
+    top: 478px;
+    width: 166px;
+    height: 102px;
+    background-image: url('http://cdn2.comicsetc.com.au/skin/frontend/default/comics/images/homepage/hero/ironman/ironman-button.png');
+}
+
+
+/* ===================== wolverine tile ===================== */
+/* Hover glow */
+div.wolverine-bg-glow-hover {
+    left: 170px;
+    top: 93px;
+    width: 651px;
+    height: 567px;
+    background: url('http://cdn2.comicsetc.com.au/skin/frontend/default/comics/images/homepage/hero/wolverine/wolverine-glow-hover.png') no-repeat;
+}
+/* Hover background - without glow */
+div.wolverine-bg-hover {
+    left: 231px;
+    top: 168px;
+    width: 537px;
+    height: 426px;
+    background: url('http://cdn2.comicsetc.com.au/skin/frontend/default/comics/images/homepage/hero/wolverine/wolverine-base-hover.png') no-repeat;
+}
+
+/* Hero main background (visible all the time */
+div.wolverine-bg {
+    background: url('http://cdn2.comicsetc.com.au/skin/frontend/default/comics/images/homepage/hero/wolverine/wolverine-bg-8bit.png') no-repeat;
+}
+/* Hero - pre-hover */
+div.wolverine-hero {
+    background: url('http://cdn2.comicsetc.com.au/skin/frontend/default/comics/images/homepage/hero/wolverine/wolverine-hero-8bit.png') no-repeat;
+}
+/* Hero - hover parts */
+div.wolverine-hero-hover {
+    left: 81px;
+    top: -41px;
+    width: 439px;
+    height: 604px;
+    background: url('http://cdn2.comicsetc.com.au/skin/frontend/default/comics/images/homepage/hero/wolverine/wolverine-hero-hover-8bit.png') no-repeat;
+}
+/* Text - pre-hover */
+div.wolverine-text {
+    left: 389px;
+    top: 381px;
+    width: 316px;
+    height: 123px;
+    background: url('http://cdn2.comicsetc.com.au/skin/frontend/default/comics/images/homepage/hero/wolverine/wolverine-text.png') no-repeat;
+}
+
+/* CTA Button - pre-hover */
+div.wolverine-button {
+    left: 516px;
+    top: 453px;
+    width: 166px;
+    height: 102px;
+}
+html.backgroundsize div.wolverine-button {
+    background-image: url('http://cdn2.comicsetc.com.au/skin/frontend/default/comics/images/homepage/hero/wolverine/wolverine-button.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+}
+
+html.ie7 div.wolverine-button, html.ie8 div.wolverine-button{
+    filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='skin/frontend/default/comics/images/homepage/hero/wolverine/wolverine-button.png', sizingMethod='scale');
+    -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='skin/frontend/default/comics/images/homepage/hero/wolverine/wolverine-button.png', sizingMethod='scale')";
+}
+
+/* speech bubble - pre-hover */
+div.wolverine-speech-bubble {
+    left: 463px;
+    top: 258px;
+    width: 216px;
+    height: 100px;
+    background: url('http://cdn2.comicsetc.com.au/skin/frontend/default/comics/images/homepage/hero/wolverine/wolverine-speech-bubble.png') no-repeat;
+}
+
+/* speech bubble - hover */
+div.wolverine-speech-bubble-hover {
+    left: 448px;
+    top: 258px;
+    width: 234px;
+    height: 126px;
+    background: url('http://cdn2.comicsetc.com.au/skin/frontend/default/comics/images/homepage/hero/wolverine/wolverine-speech-bubble-hover.png') no-repeat;
+}
+
+/* Text - hover */
+div.wolverine-text-hover {
+    left: 308px;
+    top: 363px;
+    width: 503px;
+    height: 185px;
+    background: url('http://cdn2.comicsetc.com.au/skin/frontend/default/comics/images/homepage/hero/wolverine/wolverine-text-hover.png') no-repeat;
+}
+/* CTA Button - hover */
+div.wolverine-button-hover {
+    left: 516px;
+    top: 473px;
+    width: 191px;
+    height: 117px;
+    background-image: url('http://cdn2.comicsetc.com.au/skin/frontend/default/comics/images/homepage/hero/wolverine/wolverine-button.png');
+}
+
+
+
+/*
+ * FILE 6 - featured.css
+ */
+/**
+ * Originally displayed as "featured" section on homepage, styles adapted to also handle "new titles" section
+ */
+
+.homepage-products-strip {
+    background: url(http://cdn2.comicsetc.com.au/skin/frontend/default/comics/images/featured/slab-8bit-interlaced-taller.png) no-repeat;
+    width: 1010px; /* 1140 with padding */
+    height: 214px;
+    margin: 0px 0 -64px -65px;
+    padding: 38px 0px 44px 130px;
+    overflow: hidden;
+}
+.homepage-products-strip ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    height: 164px;
+    width: 1010px;
+}
+    .homepage-products-strip ul li {
+        width: 110px;
+        float: left;
+        display: block;
+        position: relative;
+    }
+    .homepage-products-strip ul li img {
+        border: 3px solid #4c5458;
+        -webkit-border-radius: 2px;
+        -moz-border-radius: 2px;
+        border-radius: 2px;
+    }
+    .homepage-products-strip ul li a {
+        width: 83px;
+        margin: 0 auto;
+        display: block;
+        padding-top: 20px;
+        zoom: 1;
+    }
+    .homepage-products-strip .ribbon {
+        margin-top:-8px;
+        margin-left:-8px;
+    }
+    .homepage-products-strip ul li a.link-wishlist {
+        width: 21px;
+        height: 21px;
+        padding-top: 0px;
+        zoom: 1;
+        margin: 4px;
+        position: absolute;
+        display: inline-block;
+        right: 0px;
+        top: 0px;
+    }
+    .homepage-products-strip ul li .product-name a {
+        padding-top: 0px;
+        width: 100%;
+        font: 12px/13px 'LaffayetteComicProRegular', sans-serif;
+    }
+    .homepage-products-strip .hover {
+/*        display: none;*/
+        position: absolute;
+        top: 2px;
+        left: 0px;
+        z-index: 10;
+        width: 120px;
+        height: 150px;
+        background: rgba(0,0,0,0.9);
+        cursor: pointer;
+        border: 3px solid #c30019;
+        -webkit-border-radius: 2px;
+        -moz-border-radius: 2px;
+        border-radius: 2px;
+    }
+    .homepage-products-strip .hover .btn-cart {
+        bottom: 0px;
+        margin: 6px;
+    }
+    /*.homepage-products-strip .hover h2 {
+        color: #c5ccd0;
+        font: 13px/16px 'LaffayetteComicProRegular', sans-serif;
+        margin: 0;
+        padding: 0;
+        font-weight: normal;
+    }
+    .homepage-products-strip .hover .price-box {
+        color: #fed108;
+        display: block;
+        padding-top: 5px;
+        font: 13px/18px 'LaffayetteComicProRegular', sans-serif;
+    }*/
+    /*.homepage-products-strip .hover h2, .homepage-products-strip .hover .price-box {
+        display: none;
+    }
+    .homepage-products-strip .valign, .homepage-products-strip .valign-inner {
+        height: 150px;
+    }
+    .homepage-products-strip .valign-inner {
+        display: table;
+    }
+    .homepage-products-strip .content {
+        display: table-cell;
+        vertical-align: middle;
+        padding: 10px;
+    }
+*/
+/* IE7 hack, else it won't be vertically centered */
+/*
+*+html .homepage-products-strip .content {
+}
+*/
+
+
+.homepage-products-strip .jcarousel-direction-rtl {
+	direction: rtl;
+}
+.homepage-products-strip .jcarousel-container-horizontal {
+    width: 880px;
+}
+.homepage-products-strip .jcarousel-clip {
+    overflow: hidden;
+}
+.homepage-products-strip .jcarousel-clip-horizontal {
+    width:  880px;
+    height: 164px;
+/*    padding: 0px 4px;*/
+}
+.homepage-products-strip .jcarousel-item {
+    width: 110px;
+    height: 128px;
+}
+.homepage-products-strip .jcarousel-item-horizontal {
+	margin-left: 0;
+    margin-right: 0px;
+}
+.homepage-products-strip .jcarousel-direction-rtl .jcarousel-item-horizontal {
+/*	margin-left: 10px;*/
+    margin-right: 0;
+}
+.homepage-products-strip .jcarousel-item-placeholder {
+    background: #fff;
+    color: #000;
+}
+
+.homepage-products-strip .jcarousel-prev, .jcarousel-next {
+    position: absolute;
+    top: 54px;
+    height: 56px;
+    width: 56px;
+    background:url(http://cdn2.comicsetc.com.au/skin/frontend/default/comics/images/sprites/comics-site-wide.png) no-repeat -60px -218px;
+    
+    cursor: pointer;
+}
+.homepage-products-strip .jcarousel-prev {
+    left: -65px;
+    background-position: -60px -218px
+}
+.homepage-products-strip .jcarousel-next {
+    right: -65px;
+    background-position: -420px -218px;
+}
+
+.homepage-products-strip .jcarousel-next:hover { background-position: -454px -82px; }
+.homepage-products-strip .jcarousel-next:active { background-position: -2px -218px; }
+.homepage-products-strip .jcarousel-prev:hover { background-position: -304px -218px; }
+.homepage-products-strip .jcarousel-prev:active { background-position: -362px -218px; }
+
+.homepage-products-strip .product-name {
+    margin: 25px 6px 14px;
+}
+.homepage-products-strip .price-box {
+    margin: 0 6px 14px;
+    
+}
+
+
+/* additions for new titles panel */
+
+#latest-products {
+    height: 300px;
+}
+
+
+
+/* viewmode controls (base styles in catalogue/viewmode-controls.css */
+
+.homepage-products-strip h1 {
+    float: left;
+}
+
+.homepage-products-strip #view-switcher {
+    float: right;
+    margin-right: 130px;
+    margin-top: 10px;
+}
+
+.homepage-products-strip #control {
+    width: 125px;
+}
+
+.homepage-products-strip .jcarousel-container {
+    clear: left;
+    padding-top: 1em;
+}
+
+.homepage-products-strip.catalogue-grid-show-prices .hover {
+    border-color: transparent;
+}
+
+.homepage-products-strip.catalogue-grid-show-prices .hover:hover {
+    border-color: #c10313;
+}
+
+
+/*
+ * FILE 7 - viewmode-controls.css
+ */
+#view-switcher {
+    margin-right: 20px;
+    float: left;
+}
+#view-switcher label, .limiter label, .sort-by label {
+    display: inline-block;
+    padding-right: 15px;
+    height: 41px;
+    color: #717580;
+    line-height: 41px;
+    float: left;
+}
+
+#control {
+    width: 192px;
+    height: 41px;
+    float: left;
+
+    background: #000;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -o-border-radius: 5px;
+    -ms-border-radius: 5px;
+    border-radius: 5px;
+
+    -webkit-box-shadow: 2px 0px 0px 0px rgba(255, 255, 255, 0.1);
+    -moz-box-shadow: 2px 0px 0px 0px rgba(255, 255, 255, 0.1);
+    -o-box-shadow: 2px 0px 0px 0px rgba(255, 255, 255, 0.1);
+    -ms-box-shadow: 2px 0px 0px 0px rgba(255, 255, 255, 0.1);
+    box-shadow: 2px 0px 0px 0px rgba(255, 255, 255, 0.1);
+}
+.viewmode-toggle div {
+    height: 41px;
+    line-height: 41px;
+    padding: 0 10px;
+    float: left;
+    cursor: pointer;
+}
+.viewmode-toggle div.active {
+    cursor: default; 
+    color: white;
+    background-color: #191919;
+    background-image: linear-gradient(180deg, #c30019 0%, #121416 100%);
+    border-radius: 6px;
+}
+
+.sort-by select {
+    width: 120px;
+    height: 43px;
+    line-height: 40px; /* for safari */
+    display: inline;
+}
+
+.sort-by div.select {
+    height: 43px;
+    line-height: 40px; /* for safari */
+}
+
+/* Show x per page */
+.limiter {
+    position: absolute;
+    top: -41px;
+    right: 64px;
+    text-align: left;
+}
+.limiter div.select div.value,
+.sort-by div.select div.value {
+    color: #FFF;
+    font-weight: normal;
+}
+
+
+.limiter div.select, .sort-by div.select {
+    -webkit-box-shadow: 2px 0px 0px 0px rgba(255, 255, 255, 0.1);
+    -moz-box-shadow: 2px 0px 0px 0px rgba(255, 255, 255, 0.1);
+    -o-box-shadow: 2px 0px 0px 0px rgba(255, 255, 255, 0.1);
+    -ms-box-shadow: 2px 0px 0px 0px rgba(255, 255, 255, 0.1);
+    box-shadow: 2px 0px 0px 0px rgba(255, 255, 255, 0.1);
+}
+.limiter div.select div.value,
+.sort-by div.select div.value {
+    padding: 13px 0px 13px 15px;
+}
+.limiter div.select span.arrow,
+.sort-by div.select span.arrow {
+    height: 41px;
+    bottom: 0px;
+    width: 40px;
+    right: 0px;
+    top: 9px;
+}
+
+/* Sort by and sort order */
+.sort-by {
+    width: 250px;
+    float: left;
+    zoom: 1;
+}
+
+.sort-by a {
+    float: right;
+    display: inline-block;
+    
+    height: 41px;
+    width: 30px;
+    opacity: 0.6;
+    
+    /* Add a greayscale filter to the element */
+    -webkit-filter: grayscale(0.85);
+    -webkit-filter: grayscale(85%); 
+    -moz-filter: grayscale(85%);
+    -ms-filter: grayscale(85%); 
+    -o-filter: grayscale(85%);
+    
+    /* add a grayscale filter - for IE */
+/*    filter: progid:DXImageTransform.Microsoft.BasicImage(grayscale=0.85);*/
+    /* Element must "hasLayout"! */
+/*    zoom: 1;*/
+}
+
+html.ie7 .sort-by a, html.ie8 .sort-by a {
+    float: none;
+    zoom: 1;
+}
+
+html.no-opacity .sort-by a, html.ie7 .sort-by a, html.ie8 .sort-by a  {
+        /* This works in IE 8 & 9 too */
+    /* ... but also 5, 6, 7 */
+    filter: alpha(opacity=60);
+
+    /* Older than Firefox 0.9 */
+    -moz-opacity:0.6;
+
+    /* Safari 1.x (pre WebKit!) */
+    -khtml-opacity: 0.6;
+    
+    /* add a grayscale filter - for IE */
+/*    filter: progid:DXImageTransform.Microsoft.BasicImage(grayscale=0.85);*/
+    /* Element must "hasLayout"! */
+    zoom: 1;
+}
+
+.sort-by a:hover, .sort-by a:active {
+    opacity: 1;
+    
+    /* Remove the greayscale filter from the element */
+    -webkit-filter: grayscale(0);
+    -webkit-filter: grayscale(0%); 
+    -moz-filter: grayscale(0%);
+    -ms-filter: grayscale(0%); 
+    -o-filter: grayscale(0%);
+    
+    /* remove the grayscale filter - for IE  */
+/*    filter: none;*/
+    /* Element must "hasLayout"! */
+    zoom: 1;
+}
+
+html.no-opacity .sort-by a:hover, html.no-opacity .sort-by a:active, html.ie7 .sort-by a:hover, html.ie8 .sort-by a:active {
+        /* This works in IE 8 & 9 too */
+    /* ... but also 5, 6, 7 */
+    filter: alpha(opacity=100);
+
+    /* Older than Firefox 0.9 */
+    -moz-opacity:1;
+
+    /* Safari 1.x (pre WebKit!) */
+    -khtml-opacity: 1;
+    
+    /* REMOVED: puts an entire grey background behind image!!  add a grayscale filter - for IE */
+/*    filter: none;*/
+    /* Element must "hasLayout"! */
+    zoom: 1;
+}
+
+a.asc span, a.desc span {
+    margin-top: 9px;
+    margin-left: 11px;
+    position: absolute;
+    display: block;
+    width: 15px;
+    height: 24px;
+    background: url(http://cdn2.comicsetc.com.au/skin/frontend/default/comics/images/catalogue/sort-arrow-sprite.png) no-repeat;
+
+}
+a.asc span { background-position: 0px 0px; }
+a.asc:hover span { background-position: -15px 0px;   }
+a.asc:active span { background-position: -30px 0px;   }
+a.desc span { background-position: -45px 0px; }
+a.desc:hover span { background-position: -60px 0px; }
+a.desc:active span { background-position: -75px 0px;}
+
+a.desc-active, a.asc-active {
+    opacity: 1;
+    
+    /* Add a greayscale filter to the element */
+    -webkit-filter: grayscale(0);    
+    -webkit-filter: grayscale(0%); 
+    -moz-filter: grayscale(0%);
+    -ms-filter: grayscale(0%); 
+    -o-filter: grayscale(0%);
+    
+    /* add a grayscale filter - for IE */
+/*    filter: none;*/
+    /* Element must "hasLayout"! */
+    zoom: 1;
+}
+html.no-opacity a.desc-active, html.no-opacity a.asc-active, html.ie7 a.desc-active, html.ie8 a.asc-active {
+    /* This works in IE 8 & 9 too */
+    /* ... but also 5, 6, 7 */
+    filter: alpha(opacity=100);
+
+    /* Older than Firefox 0.9 */
+    -moz-opacity:1;
+
+    /* Safari 1.x (pre WebKit!) */
+    -khtml-opacity: 1;
+    
+    /* add a grayscale filter - for IE */
+/*    filter: none;*/
+    /* Element must "hasLayout"! */
+    zoom: 1;
+}
+
+
+/*
+ * FILE 8 - news.css
+ */
+/* 
+    Document   : news
+    Created on : 26/03/2012, 12:17:42 PM
+    Author     : Matthew Daniels
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+#news-slab {
+    margin: -20px -20px -40px;
+    padding-left: 48px;
+    padding-top: 48px;
+    padding-bottom: 48px;
+    position: relative;
+    width: 1028px;
+    height: 735px;
+    background: url(http://cdn2.comicsetc.com.au/skin/frontend/default/comics/images/homepage/news-facebook-bg-slab-8bit-interlaced.png) no-repeat;
+}
+    .news-container {
+        width: 670px;
+        height: 500px;
+        padding-top: 20px;
+        float:left;
+        display: inline-block;
+        overflow: hidden;
+        position: relative;
+
+    }
+    .news-item {
+        position: absolute;
+        top: 20px;
+        
+        
+    }
+      #news-slab   h1.news-title {
+          color: #ffffff;
+            font: 30px/32px 'CCSmashRegular', sans-serif;
+            line-height: 42px;
+            display: block;
+            margin: 0;
+            padding-left: 8px;
+            text-shadow: -5px 4px 0px #29363d;
+            margin-right: 130px;
+/*            filter: dropshadow(color=#29363d, offx=-5, offy=4);*/
+        }
+        #news-slab   h1.news-title a {
+            color: #ffffff;
+        }
+        
+        
+
+            .news-title .larger {
+                font-size: 40px;
+            }
+
+        .nav-arrows {
+            float: right;
+            width: 130px;
+            height: 54px;
+            display: block;
+            margin: 0;
+            position: relative;
+            z-index: 2;
+        }
+        .nav-arrows .left-arrow, .nav-arrows .right-arrow {
+            display: inline-block;
+            height: 40px; 
+            width: 50px;
+            margin: 0 5px;
+            text-indent: -9999px;
+        }
+        .nav-arrows .left-arrow {
+            background: url(http://cdn2.comicsetc.com.au/skin/frontend/default/comics/images/homepage/news-arrows.png) no-repeat 0 0;
+        }
+
+        .nav-arrows .right-arrow {
+            background: url(http://cdn2.comicsetc.com.au/skin/frontend/default/comics/images/homepage/news-arrows.png) no-repeat -50px 0;
+        }
+        
+        .nav-arrows .left-arrow:hover {
+            background-position: 0 -40px;
+        }
+        .nav-arrows .left-arrow:active {
+            background-position: 0 -39px;
+        }
+        .nav-arrows .right-arrow:hover {
+            background-position: -50px -40px;
+        }
+        .nav-arrows .right-arrow:active {
+            background-position: -50px -39px;
+        }
+
+        .news-content img {
+            background: #222627;
+            border: 8px solid #222627;
+            border-radius: 1px;
+            margin-top: 10px;
+            margin-left: 0px;
+            -webkit-box-shadow: inset 8px 8px 12px 0px rgba(0, 0, 0, 0.75), 0px 0px 0px 1px rgba(86, 86, 86, 0.75);;
+            -moz-box-shadow: inset 8px 8px 12px 0px rgba(0, 0, 0, 0.75), 0px 0px 0px 1px rgba(86, 86, 86, 0.75);
+            box-shadow: inset 8px 8px 12px 0px rgba(0, 0, 0, 0.75), 0px 0px 0px 1px rgba(86, 86, 86, 0.75);
+            max-width: 640px;
+        }
+        
+        .news-content {
+            width: 650px;
+            font: 13px/18px 'Droid Sans', 'Helvetica Neue', sans-serif;
+            margin: 10px auto 20px;
+        }
+
+
+/*
+ * FILE 9 - facebook.css
+ */
+/* 
+    Document   : fbStyle
+    Created on : 20/02/2012, 12:14:34 PM
+    Author     : Matthew Daniels
+    Description:
+        Styles for facebook feed block for Comics etc website
+*/
+
+/* set a selection colour - same colour as the background blue and white text (also remove the shadow on any text) */
+.fbFeed div::-moz-selection{ background:#132143; color:#fff; text-shadow: none; }
+.fbFeed div::-webkit-selection{ background:#132143; color:#fff; text-shadow: none; }
+.fbFeed div::-o-selection{ background:#132143; color:#fff; text-shadow: none; }
+.fbFeed div::selection { background:#132143; color:#fff; text-shadow: none; } 
+ 
+/* =============================================================================
+   Facebook Feed classes
+   ========================================================================== */
+
+.fbFeed{
+    color: #000;
+    background: #132143;
+    padding: 18px 12px 8px;
+    width: 300px;
+    height: 503px;
+    /* margin-top: 43px; */
+    margin-top: -5px;
+    margin-left: 0px;
+    float: right;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+}
+/* Set the like box to transparent */
+#likeHolder{
+    opacity: 0;
+}
+
+#likeHolder .fb-like{
+    position: relative;
+    display: inline-block;
+    margin-left: 12px;
+    margin-top: 72px;
+}
+.fbHeader{
+    width: 324px;
+    height: 78px;
+    margin-top: -42px;
+    margin-left: -12px;
+    background: url('http://cdn2.comicsetc.com.au/skin/frontend/default/comics/images/homepage/headergfx-8bit.png');
+}
+.fbFeedContent{
+    line-height: 1.34;
+    width:296px;
+    height: 387px;
+    margin-top: 30px;
+    overflow: hidden;
+    font-family: 'LaffayetteComicProRegular';
+    position: relative;
+}
+
+    /* Need to make sure any of the feedContent divs have overflow hidden to limit the visible text */
+    #feedBg-one{
+        position: absolute;
+        z-index: 3;
+        background: url('http://cdn2.comicsetc.com.au/skin/frontend/default/comics/images/homepage/feedbg-1-8bit.png') no-repeat;
+    }
+    #feedBg-two{
+        position: absolute;
+        top: 122px;
+        background: url('http://cdn2.comicsetc.com.au/skin/frontend/default/comics/images/homepage/feedbg-2-8bit.png') no-repeat;
+        z-index: 2;
+    }
+    #feedBg-three{
+        position: absolute;
+        z-index: 1;
+        top: 253px;
+        background: url('http://cdn2.comicsetc.com.au/skin/frontend/default/comics/images/homepage/feedbg-3-8bit.png') no-repeat;
+    }
+
+
+        .feedItem{
+            overflow: hidden;
+            width: 296px;
+            height: 145px;
+        }
+
+        .postUser{
+            position: absolute;
+        }
+
+        /* hide the speech bubbles if the javascript is available */
+        .feedItem{
+            background-position: 8px 214px;
+            background-repeat: no-repeat;
+
+            -webkit-transition: all .5s ease-out;
+            -moz-transition: all .5s ease-out;
+            -o-transition: all .5s ease-out;
+            transition: all .5s ease-out;
+        }
+
+            #feedBg-two .feedItem{
+                background-image: url('http://cdn2.comicsetc.com.au/skin/frontend/default/comics/images/homepage/speechBubble_flipped_8bit.png');
+
+                transition-delay: 1s;
+                -moz-transition-delay: 1s;
+                -webkit-transition-delay: 1s;  
+                -o-transition-delay: 1s;
+            }
+            #feedBg-one .feedItem, #feedBg-three .feedItem{
+                background-image: url('http://cdn2.comicsetc.com.au/skin/frontend/default/comics/images/homepage/speechBubble_8bit.png');
+
+                transition-delay: 0.75s;
+                -moz-transition-delay: 0.75s;
+                -webkit-transition-delay: 0.75s;
+                -o-transition-delay: 0.75s;
+            }
+            #feedBg-three .feedItem{
+                transition-delay: 1.25s;
+                -moz-transition-delay: 1.25s;
+                -webkit-transition-delay: 1.25s;
+                -o-transition-delay: 1.25s;
+            }
+
+            .postContent{
+                width: 200px;
+                max-height: 65px;
+                padding: 16px 49px 0px 42px;
+                font-size: 12px;
+                text-align: center;
+                vertical-align: middle;
+                overflow:hidden;
+                word-wrap: break-word;
+                overflow-wrap: break-word;
+            }
+
+            #feedBg-one .feedItem  .postContent{
+                transition-delay: 1.5s;
+                -moz-transition-delay: 1.5s;
+                -webkit-transition-delay: 1.5s;
+                -o-transition-delay: 1.5s;
+            }
+            #feedBg-two .feedItem  .postContent{
+                padding: 23px 15px 0px 76px;
+
+                transition-delay: 1.75s;
+                -moz-transition-delay: 1.75s;
+                -webkit-transition-delay: 1.75s;
+                -o-transition-delay: 1.75s;
+            }
+            #feedBg-three .feedItem  .postContent{
+                transition-delay: 2s;
+                -moz-transition-delay: 2s;
+                -webkit-transition-delay: 2s;
+                -o-transition-delay: 2s;
+            }
+
+            .fbFeedContent .postUser{
+                float: right;
+
+                width: 200px;
+                top: 112px;
+                right: -200px;
+                font-size: 11px;
+
+                color: #ffb21d;
+                text-align: right;
+
+                transition-delay: 0s;
+                -moz-transition-delay: 0s;
+                -webkit-transition-delay: 0s;
+                -o-transition-delay: 0s;
+
+                transition-duration: 0.25s;
+                -moz-transition-duration: 0.25s;
+                -webkit-transition-duration: 0.25s;
+                -o-transition-duration: 0.25s;
+            }
+
+            #feedBg-two .feedItem .postUser{
+                float: left;
+                text-align: left;
+                right: 0px;
+                left: -200px;
+
+                transition-delay: 0.25s;
+                -moz-transition-delay: 0.25s;
+                -webkit-transition-delay: 0.25s;
+                -o-transition-delay: 0.25s;
+            }
+            #feedBg-three .feedItem .postUser{
+                transition-delay: 0.5s;
+                -moz-transition-delay: 0.5s;
+                -webkit-transition-delay: 0.5s; 
+                -o-transition-delay: 0.5s;
+            }
+            
+#fbLinkContainer{
+    display: block;
+    width:324px;
+    height: 95px;
+    margin-top: -5px;
+    margin-left: -12px;
+    background: url('http://cdn2.comicsetc.com.au/skin/frontend/default/comics/images/homepage/visitbtn-8bit.png');
+    outline: none;
+}
+
+
+
+/*
+ * FILE 10 - subscribe.css
+ */
+.block-subscribe { 
+    clear: both;
+    background: url(http://cdn2.comicsetc.com.au/skin/frontend/default/comics/images/homepage/bg-newsletter.jpg);
+    height: 215px;
+    width: 930px;
+    position: relative;
+    display: block;
+    bottom: 20px;
+}
+
+.block-subscribe .subscribe-hero { 
+    background: url(http://cdn2.comicsetc.com.au/skin/frontend/default/comics/images/homepage/hero-newsletter-8bit.png);
+    width: 338px;
+    height: 238px;
+
+    position: absolute;
+    bottom: 8px;
+    left: -27px;
+}
+
+.block-subscribe .subscribe-text {
+    width: 135px;
+    color: #dbaf71;
+    
+    position: absolute;
+    top: 70px;
+    left: 340px;
+    font-size: 14px;
+    line-height: 20px;
+}
+.block-subscribe .subscribe-form {
+    width: 260px;
+    top: 70px;
+    left: 485px;
+    position: absolute;
+}
+
+.block-subscribe .subscribe-form .validation-advice {
+    color: white;
+    font-weight: bold;
+    
+}
+
+.block-subscribe .subscribe-form  label {
+    font-size: 22px;
+    font-family: 'CCMonsterMashRoman', sans-serif;
+    font-weight: normal;
+    color: white;
+    padding-bottom: 20px;
+    padding-top: 4px;
+    text-shadow: 0px 2px 2px rgba(0,0,0,0.5);
+
+    
+}
+
+.block-subscribe .subscribe-form input.input-text {
+    border: 1px solid #6b030c;
+    border-bottom: 1px solid #c40414;
+    width: 220px;
+}
+
+.block-subscribe button {
+    text-indent: -9999px;
+    background: url(http://cdn2.comicsetc.com.au/skin/frontend/default/comics/images/homepage/btn-enlist-sprite.png) 0px 0px;
+    border: none;
+    height: 67px;
+    width: 130px;
+    position: absolute;
+    top: 20px;
+    left: 260px;
+}
+
+.subscribe-wait-icon {
+    height: 67px;
+    width: 130px;
+    position: absolute;
+    top: 20px;
+    left: 260px;
+    text-indent: -9999px;
+    background-position: center center;
+}
+
+
+.block-subscribe button:active {
+    background: url(http://cdn2.comicsetc.com.au/skin/frontend/default/comics/images/homepage/btn-enlist-sprite.png) 0px 68px;
+}

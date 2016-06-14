@@ -1,0 +1,3286 @@
+@font-face {
+    font-family: 'CCMonsterMashRoman';
+    src: url('http://cdn2.comicsetc.com.au/skin/frontend/default/comics/fonts/ccmonstermash-webfont.eot');
+    src: url('http://cdn2.comicsetc.com.au/skin/frontend/default/comics/fonts/ccmonstermash-webfont.eot?#iefix') format('embedded-opentype'),
+         url('http://cdn2.comicsetc.com.au/skin/frontend/default/comics/fonts/ccmonstermash-webfont.woff') format('woff'),
+         url('http://cdn2.comicsetc.com.au/skin/frontend/default/comics/fonts/ccmonstermash-webfont.ttf') format('truetype'),
+         url('http://cdn2.comicsetc.com.au/skin/frontend/default/comics/fonts/ccmonstermash-webfont.svg#CCMonsterMashRoman') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'CCMonsterMashMedium';
+    src: url('http://cdn2.comicsetc.com.au/skin/frontend/default/comics/fonts/ccmonstermash-webfont.eot');
+    src: url('http://cdn2.comicsetc.com.au/skin/frontend/default/comics/fonts/ccmonstermash-webfont.eot?#iefix') format('embedded-opentype'),
+         url('http://cdn2.comicsetc.com.au/skin/frontend/default/comics/fonts/ccmonstermash-webfont.woff') format('woff'),
+         url('http://cdn2.comicsetc.com.au/skin/frontend/default/comics/fonts/ccmonstermash-webfont.ttf') format('truetype'),
+         url('http://cdn2.comicsetc.com.au/skin/frontend/default/comics/fonts/ccmonstermash-webfont.svg#CCMonsterMashRoman') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'LaffayetteComicProRegular';
+    src: url('http://cdn2.comicsetc.com.au/skin/frontend/default/comics/fonts/laffayette_comic_pro-webfont.eot');
+    src: url('http://cdn2.comicsetc.com.au/skin/frontend/default/comics/fonts/laffayette_comic_pro-webfont.eot?#iefix') format('embedded-opentype'),
+         url('http://cdn2.comicsetc.com.au/skin/frontend/default/comics/fonts/laffayette_comic_pro-webfont.woff') format('woff'),
+         url('http://cdn2.comicsetc.com.au/skin/frontend/default/comics/fonts/laffayette_comic_pro-webfont.ttf') format('truetype'),
+         url('http://cdn2.comicsetc.com.au/skin/frontend/default/comics/fonts/laffayette_comic_pro-webfont.svg#LaffayetteComicProRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'CCSmashRegular';
+    src: url('http://cdn2.comicsetc.com.au/skin/frontend/default/comics/fonts/ccsmash-webfont.eot');
+    src: url('http://cdn2.comicsetc.com.au/skin/frontend/default/comics/fonts/ccsmash-webfont.eot?#iefix') format('embedded-opentype'),
+         url('http://cdn2.comicsetc.com.au/skin/frontend/default/comics/fonts/ccsmash-webfont.woff') format('woff'),
+         url('http://cdn2.comicsetc.com.au/skin/frontend/default/comics/fonts/ccsmash-webfont.ttf') format('truetype'),
+         url('http://cdn2.comicsetc.com.au/skin/frontend/default/comics/fonts/ccsmash-webfont.svg#CCSmashRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/*
+ * FILE 2 - typo.css
+ */
+body {
+    -webkit-font-smoothing: antialiased;
+}
+
+body, td, pre { 
+   color: #848894; font-size: 13px; line-height: 1.231em;
+   font-family: 'Droid Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+h1 {
+    font-family: 'CCSmashRegular', sans-serif;
+    font-weight: normal;
+    color: #fff;
+    font-size: 40px;
+    letter-spacing:2px;
+    line-height: 56px;
+    margin: 0;
+    text-shadow: 0px 0px 1px rgba(255,255,255,0.5), -1px -1px 2px rgba(0,0,0,0.5),   -5px 4px 0px #29363d;
+/*    filter: dropshadow(color=#29363d, offx=-6, offy=4);*/
+    -webkit-font-smoothing: antialiased;
+    
+}
+
+
+h2 {
+    font-size: 18px;
+    line-height: 1.4em;
+    color: #b4bcc2;
+    font-family: 'LaffayetteComicProRegular', sans-serif;
+    font-weight: normal;
+    text-shadow:0px 1px 1px #000;
+    -webkit-font-smoothing: antialiased;
+
+}
+
+h3 {
+    font-size: 32px;
+    line-height: 1.4em;
+    color: #E39B00;
+    font-family: 'CCMonsterMashMedium', sans-serif;
+    font-weight: normal;
+    text-shadow:0px 1px 1px #000;
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+
+}
+
+
+
+h4 {
+    font-size: 24px;
+    line-height: 1.4em;
+    color: #deac55;
+    font-family: 'CCMonsterMashRoman', sans-serif;
+    font-weight: normal;
+    text-shadow:0px 1px 1px #000;
+    text-transform: uppercase;
+    -webkit-font-smoothing: antialiased;
+
+}
+
+h5 {
+    -webkit-font-smoothing: antialiased;
+}
+
+
+p {
+    
+    
+}
+
+
+a {
+    color: #ffae00;
+    text-decoration: none;
+    -webkit-transition: color 0.42s ease;
+    -moz-transition: color 0.42s ease;
+    -o-transition: color 0.42s ease;
+    -ms-transition: color 0.42s ease;
+    transition: color 0.42s ease;
+    
+    /* Forces GPU acceleration if available */
+    -moz-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    -o-transform: translateZ(0);
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+
+    -moz-backface-visibility: hidden;
+     -moz-perspective: 1000;
+
+     -ms-backface-visibility: hidden;
+     -ms-perspective: 1000;
+
+     -o-backface-visibility: hidden;
+     -o-perspective: 1000;
+
+     -webkit-backface-visibility: hidden;
+     -webkit-perspective: 1000;
+
+     backface-visibility: hidden;
+     perspective: 1000;
+    -webkit-font-smoothing: antialiased;
+
+}
+a:visited { 
+    color: #e39b00; 
+/*    border-bottom: 1px dashed #e39b00;
+    -webkit-border-image:url(data:image/gif;base64,R0lGODlhBQABAIABAOObAAAAACH5BAEAAAEALAAAAAAFAAEAAAIDRB4FADs=) 5 0 repeat;
+    -moz-border-image:url(data:image/gif;base64,R0lGODlhBQABAIABAOObAAAAACH5BAEAAAEALAAAAAAFAAEAAAIDRB4FADs=) 5 0 repeat;
+    -o-border-image:url(data:image/gif;base64,R0lGODlhBQABAIABAOObAAAAACH5BAEAAAEALAAAAAAFAAEAAAIDRB4FADs=) 5 0 repeat;
+    border-width:0 0 1px;*/
+    border: none;
+}
+a:hover { color: #ffffff; outline: none; }
+a:focus { outline: none; }
+a:hover, a:active { outline: none; }
+
+em {
+    
+    
+}
+
+strong {
+    
+    
+}
+
+blockquote {
+    
+    
+}
+
+
+hr {
+    display: block; 
+    height: 1px; 
+    border: 0;  
+    margin: 1em 0; 
+    padding: 0;
+    border-top: 2px solid #0f1112; /* fallback for browsers without rgba support */
+    border-bottom: 1px solid #3c4444;
+    border-top: 2px solid rgba(0,0,0,0.4);
+    border-bottom: 1px solid rgba(230,255,255,0.16);
+    
+}
+
+/* ---------- CMS ONLY STYLES ---------------------------------------------*/
+
+body.cms-page-view .col-main, 
+body.cms-no-route .col-main, 
+body.blog-index-index .col-main, 
+body.blog-post-view .col-main, 
+body.mceContentBody {
+    font-size: 16px;
+    line-height: 24px;
+    color: #848894;
+    text-shadow:0px 1px 1px #000;
+}
+
+
+ body.cms-page-view .col-main ul, 
+ body.cms-no-route .col-main ul, 
+ body.mceContentBody ul, 
+ ul.ul {
+    padding:0;
+    list-style: square;
+    list-style-image:url('http://cdn2.comicsetc.com.au/skin/frontend/default/comics/images/bullet.gif');
+    list-style-position: inside;
+ }
+
+body.cms-page-view .col-main ul li, 
+body.cms-no-route .col-main ul li, 
+body.mceContentBody ul li, 
+ul.ul li {
+    margin: 8px 0;
+}
+html.ie7 ul.ul li > span{
+    position: relative;
+    left: 5px;
+    zoom: 1;
+    padding-bottom: 4px;
+}
+
+
+
+body.cms-page-view .col-main img, body.mceContentBody img {
+    padding: 10px;
+    background-color: #0f1112;
+    border-bottom: 1px solid #303636; /* fallback for browsers that dont support rgba */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2); /* transparent border for browsers that support rgba */
+    margin: 10px 0;
+    margin-right: 20px;
+    display: block;
+}
+
+
+/*
+ * FILE 3 - styles.css
+ */
+/* HTML5 ✰ Boilerplate
+ * ==|== normalize ==========================================================
+ */
+
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section { display: block; }
+audio, canvas, video { display: inline-block; *display: inline; *zoom: 1; }
+audio:not([controls]) { display: none; }
+[hidden] { display: none; }
+invisible { visibility: hidden; }
+
+html { font-size: 100%; overflow-y: scroll; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
+body { margin: 0; font-size: 13px; line-height: 16px; min-width: 1010px; overflow: hidden; text-rendering: optimizeLegibility; }
+body, button, input, select, textarea { font-family: sans-serif; color: #222; }
+
+::-moz-selection { background: #0b0d0d; color: #fff; text-shadow: none; }
+::selection { background: #0b0d0d; color: #fff; text-shadow: none; }
+
+a {
+    color: #ffae00;
+    text-decoration: none;
+    -webkit-transition: color 0.42s ease;
+    -moz-transition: color 0.42s ease;
+    -o-transition: color 0.42s ease;
+    -ms-transition: color 0.42s ease;
+    transition: color 0.42s ease;
+    
+    /* Forces GPU acceleration if available */
+    -moz-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    -o-transform: translateZ(0);
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+
+    -moz-backface-visibility: hidden;
+     -moz-perspective: 1000;
+
+     -ms-backface-visibility: hidden;
+     -ms-perspective: 1000;
+
+     -o-backface-visibility: hidden;
+     -o-perspective: 1000;
+
+     -webkit-backface-visibility: hidden;
+     -webkit-perspective: 1000;
+
+     backface-visibility: hidden;
+     perspective: 1000;
+}
+
+a:visited { 
+    color: #e39b00; 
+/*    border-bottom: 1px dashed #e39b00;
+    -webkit-border-image:url(data:image/gif;base64,R0lGODlhBQABAIABAOObAAAAACH5BAEAAAEALAAAAAAFAAEAAAIDRB4FADs=) 5 0 repeat;
+    -moz-border-image:url(data:image/gif;base64,R0lGODlhBQABAIABAOObAAAAACH5BAEAAAEALAAAAAAFAAEAAAIDRB4FADs=) 5 0 repeat;
+    -o-border-image:url(data:image/gif;base64,R0lGODlhBQABAIABAOObAAAAACH5BAEAAAEALAAAAAAFAAEAAAIDRB4FADs=) 5 0 repeat;
+    border-width:0 0 1px;*/
+    border:none;
+    outline: none;
+}
+a:hover { color: #ffffff; outline: none; }
+a:focus { outline: none; }
+a:hover, a:active { outline: none; }
+
+abbr[title] { border-bottom: 1px dotted; }
+b, strong { font-weight: bold; }
+blockquote { margin: 1em 40px; }
+dfn { font-style: italic; }
+hr { display: block; height: 1px; /*border: 0; border-top: 1px solid #ccc;*/ margin: 1em 0; padding: 0; }
+ins { background: #ff9; color: #000; text-decoration: none; }
+mark { background: #ff0; color: #000; font-style: italic; font-weight: bold; }
+pre, code, kbd, samp { font-family: monospace, monospace; _font-family: 'courier new', monospace; font-size: 1em; }
+pre { white-space: pre; white-space: pre-wrap; word-wrap: break-word; }
+q { quotes: none; }
+q:before, q:after { content: ""; content: none; }
+small { font-size: 85%; }
+sub, sup { font-size: 75%; line-height: 0; position: relative; vertical-align: baseline; }
+sup { top: -0.5em; }
+sub { bottom: -0.25em; }
+ul, ol { margin: 1em 0; padding: 0 0 0 40px; list-style: none; list-style-image: none; }
+dd { margin: 0 0 0 40px; }
+nav ul, nav ol { list-style: none; list-style-image: none; margin: 0; padding: 0; }
+img { border: 0; -ms-interpolation-mode: bicubic; vertical-align: middle; }
+svg:not(:root) { overflow: hidden; }
+figure { margin: 0; }
+
+form { margin: 0; }
+fieldset { border: 0; margin: 0; padding: 0; }
+label { cursor: pointer; }
+legend { border: 0; *margin-left: -7px; padding: 0; }
+button, input, select, textarea { font-size: 100%; margin: 0; vertical-align: baseline; *vertical-align: middle; }
+button, input { line-height: normal; *overflow: visible; }
+table button, table input { *overflow: auto; }
+button, input[type="button"], input[type="reset"], input[type="submit"] { cursor: pointer; -webkit-appearance: button; }
+input[type="checkbox"], input[type="radio"] { box-sizing: border-box; }
+input[type="search"] { -webkit-appearance: textfield; -moz-box-sizing: content-box; -webkit-box-sizing: content-box; box-sizing: content-box; }
+input[type="search"]::-webkit-search-decoration { -webkit-appearance: none; }
+button::-moz-focus-inner, input::-moz-focus-inner { border: 0; padding: 0; }
+textarea { overflow: auto; vertical-align: top; resize: vertical; }
+input:valid, textarea:valid {  }
+input:invalid, textarea:invalid { background-color: #f0dddd; }
+
+table { border-collapse: collapse; border-spacing: 0; }
+td { vertical-align: top; }
+
+
+/* ==|== non-semantic helper classes ======================================== */
+/*.ir { display: block; border: 0; text-indent: -999em; overflow: hidden; background-color: transparent; background-repeat: no-repeat; text-align: left; direction: ltr; }*/
+.ir{
+    font: 0/0 a;
+    text-shadow: none;
+    color: transparent;
+    border: 0;
+    background-color: transparent;
+}
+.ir br { display: none; }
+.hidden { display: none !important; visibility: hidden; }
+.visuallyhidden { border: 0; clip: rect(0 0 0 0); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px; }
+.visuallyhidden.focusable:active, .visuallyhidden.focusable:focus { clip: auto; height: auto; margin: 0; overflow: visible; position: static; width: auto; }
+.invisible { visibility: hidden; }
+.clearfix:before, .clearfix:after { content: ""; display: table; }
+.clearfix:after { clear: both; }
+.clearfix { zoom: 1; }
+
+/* Tools */
+/*.hidden       { display:block !important; border:0 !important; margin:0 !important; padding:0 !important; font-size:0 !important; line-height:0 !important; width:0 !important; height:0 !important; overflow:hidden !important; }*/.nobr         { white-space:nowrap !important; }
+.wrap         { white-space:normal !important; }
+.a-left       { text-align:left !important; }
+.a-center     { text-align:center !important; }
+.a-right      { text-align:right !important; }
+.v-top        { vertical-align:top; }
+.v-middle     { vertical-align:middle; }
+.f-left,
+.left         { float:left !important; }
+.f-right,
+.right        { float:right !important; }
+.f-none       { float:none !important; }
+.f-fix        { float:left; width:100%; }
+.no-display   { display:none; }
+.no-margin    { margin:0 !important; }
+.no-padding   { padding:0 !important; }
+.no-bg        { background:none !important; }
+/* ======================================================================================= */
+/* A transparent black pixel for any transparent fills that are needed - IE requires a fill to register mouse events on empty divs */
+.transparent-bg { background: url(data:image/gif;base64,R0lGODlhAQABAIAAAAAAAAAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==) repeat; }
+
+html.ie9 { filter:none; }
+
+/* Forces GPU acceleration if available */
+.accelerate { 
+    -moz-transform: translateZ(0px);-ms-transform: translateZ(0px);-o-transform: translateZ(0px);-webkit-transform: translateZ(0px);transform: translateZ(0px);
+    
+    -moz-backface-visibility: hidden;
+    -moz-perspective: 1000;
+
+    -ms-backface-visibility: hidden;
+    -ms-perspective: 1000;
+
+    -o-backface-visibility: hidden;
+    -o-perspective: 1000;
+
+    -webkit-backface-visibility: hidden;
+    -webkit-perspective: 1000;
+
+    backface-visibility: hidden;
+    perspective: 1000;
+}
+
+/* ====================== START: Animation classes ====================== */
+
+.fade { -webkit-transition: opacity 0.125s ease;-moz-transition: opacity 0.125s ease;-o-transition: opacity 0.125s ease;-ms-transition: opacity 0.125s ease;transition: opacity 0.125s ease; }
+.margin-slide { -webkit-transition: margin 0.125s ease;-moz-transition: margin 0.125s ease;-o-transition: margin 0.125s ease;-ms-transition: margin 0.125s ease;transition: margin 0.125s ease; }
+
+/* Some general classes for use with css transitions */
+html.opacity .in { opacity: 1; }
+html.opacity .out { opacity: 0; }
+
+/* IE Opacity stuff */
+html.ie7 .in, html.ie8 .in, html.no-opacity .in {
+    /* This works in IE 8 & 9 too */
+    /* ... but also 5, 6, 7 */
+    filter: alpha(opacity=100);
+
+    /* Older than Firefox 0.9 */
+    -moz-opacity:1;
+
+    /* Safari 1.x (pre WebKit!) */
+    -khtml-opacity: 1;
+}
+html.ie7 .out, html.ie8 .out, html.no-opacity .out {
+    /* This works in IE 8 & 9 too */
+    /* ... but also 5, 6, 7 */
+    filter: alpha(opacity=0);
+
+    /* Older than Firefox 0.9 */
+    -moz-opacity:0;
+
+    /* Safari 1.x (pre WebKit!) */
+    -khtml-opacity: 0;
+}
+
+/* A few transition speed helper classes */
+.fast { -webkit-transition-duration:0.25s;-moz-transition-duration:0.25s;-ms-transition-duration:0.25s;-o-transition-duration:0.25s;transition-duration: 0.25s; }
+.medium { -webkit-transition-duration:0.375s;-moz-transition-duration:0.375s;-ms-transition-duration:0.375s;-o-transition-duration:0.375s;transition-duration: 0.375s; }
+.slow { -webkit-transition-duration:0.5s;-moz-transition-duration:0.5s;-ms-transition-duration:0.5s;-o-transition-duration:0.5s;transition-duration: 0.5s; }
+
+/* Custom easing that we will be using */
+.easeInQuad{-webkit-transition-timing-function:cubic-bezier(0.55, 0.085, 0.68, 0.53);-moz-transition-timing-function:cubic-bezier(0.55, 0.085, 0.68, 0.53);-ms-transition-timing-function:cubic-bezier(0.55, 0.085, 0.68, 0.53);-o-transition-timing-function:cubic-bezier(0.55, 0.085, 0.68, 0.53);transition-timing-function:cubic-bezier(0.55, 0.085, 0.68, 0.53);}
+.easeOutQuad{-webkit-transition-timing-function:cubic-bezier(0.25, 0.46, 0.45, 0.94);-moz-transition-timing-function:cubic-bezier(0.25, 0.46, 0.45, 0.94);-ms-transition-timing-function:cubic-bezier(0.25, 0.46, 0.45, 0.94);-o-transition-timing-function:cubic-bezier(0.25, 0.46, 0.45, 0.94);transition-timing-function:cubic-bezier(0.25, 0.46, 0.45, 0.94);}
+.easeInQuart{-webkit-transition-timing-function:cubic-bezier(0.895, 0.03, 0.685, 0.22);-moz-transition-timing-function:cubic-bezier(0.895, 0.03, 0.685, 0.22);-ms-transition-timing-function:cubic-bezier(0.895, 0.03, 0.685, 0.22);-o-transition-timing-function:cubic-bezier(0.895, 0.03, 0.685, 0.22);transition-timing-function:cubic-bezier(0.895, 0.03, 0.685, 0.22);}
+.easeOutQuart{-webkit-transition-timing-function:cubic-bezier(0.165, 0.84, 0.44, 1);-moz-transition-timing-function:cubic-bezier(0.165, 0.84, 0.44, 1);-ms-transition-timing-function:cubic-bezier(0.165, 0.84, 0.44, 1);-o-transition-timing-function:cubic-bezier(0.165, 0.84, 0.44, 1);transition-timing-function:cubic-bezier(0.165, 0.84, 0.44, 1);}
+
+/* 
+
+These animations control the glows on the site.
+
+To assign it to an element, give the element the following classes:
+1. the 'glow' class below
+1. a colour class
+2. the class 'glow-effect'
+
+The styling extra classes on the styles will make sure the animations are not assigned
+when not supported
+
+*/
+.glow {
+    position:absolute;
+    
+    background-repeat: no-repeat;
+    background-position: -0px -0px;
+    
+    pointer-events: none;
+}
+html.backgroundsize .glow {
+    background-size: 100% 100%;
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+}
+
+html.backgroundsize .blue-glow {
+    background-image: url(/skin/frontend/default/comics/images/blue-glow-small.png);
+}
+html.ie7 .blue-glow, html.ie8 .blue-glow{
+    filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='skin/frontend/default/comics/images/blue-glow-small.png', sizingMethod='scale');
+    -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='skin/frontend/default/comics/images/blue-glow-small.png', sizingMethod='scale')";
+}
+
+html.backgroundsize .yellow-glow {
+    background-image: url(/skin/frontend/default/comics/images/yellow-glow-small.png);
+}
+html.ie7 .yellow-glow, html.ie8 .yellow-glow{
+    filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='skin/frontend/default/comics/images/yellow-glow-small.png', sizingMethod='scale');
+    -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='skin/frontend/default/comics/images/yellow-glow-small.png', sizingMethod='scale')";
+}
+
+
+@-webkit-keyframes glowing {
+    0% { opacity: 1; }
+    100% { opacity: 0.5; }
+}
+@-moz-keyframes glowing  {
+    0% { opacity: 1; }
+    100% { opacity: 0.5; }
+}
+@-ms-keyframes glowing {
+    0% { opacity: 1; }
+    100% { opacity: 0.5; }
+}
+/* Only allow the animation if the browser supports both css animations and opacity */
+html.cssanimations .glow-effect {
+    -webkit-animation-name: glowing;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    -webkit-animation-timing-function: ease-in-out;	
+
+    -moz-animation-name: glowing;
+    -moz-animation-duration: 2s;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-direction: alternate;
+    -moz-animation-timing-function: ease-in-out;
+
+    -ms-animation-name: glowing;
+    -ms-animation-duration: 2s;
+    -ms-animation-iteration-count: infinite;
+    -ms-animation-direction: alternate;
+    -ms-animation-timing-function: ease-in-out;	
+}
+
+/* ====================== END: animation classes ====================== */
+
+
+/* ====================== START: Media Query transitions ====================== */
+
+#top .welcome,body ul#nav, body ul#nav li a, .header .logo img  {
+    -webkit-transition: all 0.42s ease;
+    -moz-transition: all 0.42s ease;
+    -o-transition: all 0.42s ease;
+    -ms-transition: all 0.42s ease;
+    transition: all 0.42s ease;
+}
+.header .logo {
+    -webkit-transition: margin 0.42s ease;
+    -moz-transition: margin 0.42s ease;
+    -o-transition: margin 0.42s ease;
+    -ms-transition: margin 0.42s ease;
+    transition: margin 0.42s ease;
+}
+
+/* ====================== END: Media Query transitions ====================== */
+
+#waitCursorFollower {
+    background: url(http://cdn2.comicsetc.com.au/skin/frontend/default/comics/images/loading-cursors/circle_loader_blackbg-8bit.png) no-repeat -296px -2px;
+    overflow: hidden;
+    display:inline-block;
+    
+    width: 40px;
+    height: 40px;
+}
+
+body {
+    color: #a0a7bd;
+    background-color: #000;
+    font-family: 'Droid Sans', 'Helvetica Neue', sans-serif;
+    min-width: 1010px;
+}
+
+div.main {
+}
+
+.header-container {
+}
+    .header {
+        position: absolute;
+/*        z-index: 201;*/
+        z-index: 301;
+    }
+    .header a.logo img {
+/*        width: 150px;*/
+        width: 180px;
+        margin-top: 9px;
+
+    }
+    .header a.logo {
+        margin: -20px 0 0 28px;
+        display: block;
+    }
+    .logo strong {
+        display: none;
+    }
+    .quick-access {
+        display: none;
+    }
+
+/* Main navigation */
+
+.page > header {
+    width:100%;
+    min-width: 1010px;
+    margin-top:54px;
+}
+
+.nav-wrapper {
+    border-bottom: 3px solid #c30019;
+    background: url(http://cdn2.comicsetc.com.au/skin/frontend/default/comics/images/main-nav-bg.jpg) no-repeat #000;
+    z-index: 201;
+    width:100%;
+    min-width: 1010px;
+    position: relative;
+}
+
+.nav-container {
+    height: 87px;
+    margin: 0 auto;
+    width: 1140px;
+    text-align: center;
+}
+ul#nav {
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+    display: inline-block;
+}
+/* IE7 hack, else it won't be centered */
+*+html ul#nav {
+    display: inline;
+    zoom: 1;
+}
+    ul#nav li {
+        display: block;
+        float: left;
+        white-space: nowrap
+    }
+    ul#nav li.category-specials a {
+/*        background: url(http://cdn2.comicsetc.com.au/skin/frontend/default/comics/images/icon-superman.png) no-repeat 20px 50%;*/
+
+        background:url(http://cdn2.comicsetc.com.au/skin/frontend/default/comics/images/sprites/site-wide-separators.png) no-repeat -1px -155px;
+
+        width:34px; 
+        height:24px; 
+        
+        padding-left: 40px;
+    }
+        ul#nav li a {
+            color: #bfbfbf;
+            font-size: 20px;
+            font-family: 'CCMonsterMashRoman', sans-serif;
+            text-decoration: none;
+/*            background: url(http://cdn2.comicsetc.com.au/skin/frontend/default/comics/images/main-nav-separator.gif) no-repeat 0% 30%;*/
+            
+            background:url(http://cdn2.comicsetc.com.au/skin/frontend/default/comics/images/sprites/site-wide-separators.png) no-repeat -1px -112px;
+            
+            line-height: 88px;
+            padding: 0px 27px;
+        }
+        ul#nav li a:hover {
+            color: #FFF;
+        }
+
+
+h1.cms-comics-etc {
+    background-image: url(http://cdn2.comicsetc.com.au/skin/frontend/default/comics/images/cms/header-comics-etc.jpg);
+    width: 1010px;
+    height: 114px;
+    line-height: 114px;
+    text-indent: -9999px;
+    margin: 0px 0px 44px 0px;
+    -webkit-box-shadow: 0px 4px 10px 1px rgba(0, 0, 0, 0.8);
+    -moz-box-shadow: 0px 4px 10px 1px rgba(0, 0, 0, 0.8);
+    box-shadow: 0px 4px 10px 1px rgba(0, 0, 0, 0.8);
+    clear: both;
+}
+
+h1.cms-comics-header {
+    background-image: url(http://cdn2.comicsetc.com.au/skin/frontend/default/comics/images/cms/header-background.png);
+    width: 936px;
+    padding: 0 30px;
+    height: 114px;
+    line-height: 114px;
+    margin: 0px 0px 44px 0px;
+    -webkit-box-shadow: 0px 4px 10px 1px rgba(0, 0, 0, 0.8);
+    -moz-box-shadow: 0px 4px 10px 1px rgba(0, 0, 0, 0.8);
+    box-shadow: 0px 4px 10px 1px rgba(0, 0, 0, 0.8);
+    clear: both;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.main-container {
+    background: url(http://cdn2.comicsetc.com.au/skin/frontend/default/comics/images/background-tile-progressive.jpg) 0 -202px;
+}
+.main-container-inner {
+    zoom: 1;
+    padding-top: 43px;
+    /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIwLjMiLz4KICAgIDxzdG9wIG9mZnNldD0iNDAlIiBzdG9wLWNvbG9yPSIjMDAwMDAwIiBzdG9wLW9wYWNpdHk9IjAuMyIvPgogICAgPHN0b3Agb2Zmc2V0PSI4MCUiIHN0b3AtY29sb3I9IiMwMDAwMDAiIHN0b3Atb3BhY2l0eT0iMSIvPgogICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjMDAwMDAwIiBzdG9wLW9wYWNpdHk9IjEiLz4KICA8L2xpbmVhckdyYWRpZW50PgogIDxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9InVybCgjZ3JhZC11Y2dnLWdlbmVyYXRlZCkiIC8+Cjwvc3ZnPg==);
+    background: -moz-linear-gradient(top,  rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.3) 40%, rgba(0,0,0,1) 80%, rgba(0,0,0,1) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0.3)), color-stop(40%,rgba(0,0,0,0.3)), color-stop(80%,rgba(0,0,0,1)), color-stop(100%,rgba(0,0,0,1))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  rgba(0,0,0,0.3) 0%,rgba(0,0,0,0.3) 40%,rgba(0,0,0,1) 80%,rgba(0,0,0,1) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  rgba(0,0,0,0.3) 0%,rgba(0,0,0,0.3) 40%,rgba(0,0,0,1) 80%,rgba(0,0,0,1) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  rgba(0,0,0,0.3) 0%,rgba(0,0,0,0.3) 40%,rgba(0,0,0,1) 80%,rgba(0,0,0,1) 100%); /* IE10+ */
+    background: linear-gradient(top,  rgba(0,0,0,0.3) 0%,rgba(0,0,0,0.3) 40%,rgba(0,0,0,1) 80%,rgba(0,0,0,1) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4d000000', endColorstr='#000000',GradientType=0 ); /* IE6-8 */
+}
+    .main-wrapper {
+        background: url(http://cdn2.comicsetc.com.au/skin/frontend/default/comics/images/main-border-repeat-y.jpg) repeat-y;
+        max-width: 1140px;
+        margin: 0 auto;
+        position: relative;
+    }
+        .main {
+            background: url(http://cdn2.comicsetc.com.au/skin/frontend/default/comics/images/main-border-top.jpg) no-repeat;
+            padding-top: 7px;
+        }
+            .main-inner {
+                background: url(http://cdn2.comicsetc.com.au/skin/frontend/default/comics/images/stone-texture-interlaced.jpg);
+                margin: 0px auto;
+                min-height: 600px;
+                padding: 53px 58px 46px;
+                width: 1010px;
+            }
+            
+
+.col-main {
+/*    z-index: 1;*/
+/*    background: silver;*/
+}
+
+
+/* 2 column-left layout */
+.col2-left-layout .col-main {
+    width: 710px;
+    float: right;
+}
+    .col-left{
+        float: left;
+        width: 268px;
+        height:100%;
+        min-height: 800px;
+        margin-bottom:32px;
+        position: relative;
+    }
+    
+
+    
+    
+    #sidebar-blue-glow {
+        width: 130px;
+        height: 500px;
+        /*left: 30px;
+        top: 20px; */
+        left: -40px;
+        top: 20px;
+        display: inline;
+        position: absolute;
+    }
+    
+    
+    #sidebar-yellow-glow {
+        width: 130px;
+        height: 700px;
+        /*top: 210px;
+        left: 230px;*/
+        top: 150px;
+        left: 165px;
+        position: absolute;
+        display: inline;
+    }
+    
+    #sidebar-nav {
+        position: absolute;
+        width:263px;
+        height:800px;
+        min-height: 800px;
+        
+        border-radius: 8px;
+        background: #0c0e0f;
+        overflow: hidden;
+        
+        /* Small drop shadow at the bottom */
+        -webkit-box-shadow: 0px 1px 0px 0px rgba(35, 39, 41, 1);
+        -moz-box-shadow: 0px 1px 0px 0px rgba(35, 39, 41, 1);
+        box-shadow: 0px 1px 0px 0px rgba(35, 39, 41, 1);
+    }
+        #sidebar-nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            -webkit-border-top-left-radius: 8px;
+            -webkit-border-top-right-radius: 8px;
+            -moz-border-radius-topleft: 8px;
+            -moz-border-radius-topright: 8px;
+            border-top-left-radius: 8px;
+            border-top-right-radius: 8px;
+            overflow: hidden;
+            border-bottom: 1px solid #232729;
+        }
+            #sidebar-nav ul li {
+                min-height: 56px;
+                height: 56px;
+                display: block;
+                border-bottom: 1px solid black;
+                background: #0c0e0f;
+                
+                margin-top: 1px;
+
+                /* Small drop shadow at the bottom */
+                -webkit-box-shadow: 0px 1px 0px 0px rgba(35, 39, 41, 1);
+                -moz-box-shadow: 0px 1px 0px 0px rgba(35, 39, 41, 1);
+                box-shadow: 0px 1px 0px 0px rgba(35, 39, 41, 1);
+
+                -moz-border-radius-topleft: 0px;
+                -moz-border-radius-topright: 0px;
+                -moz-border-radius-bottomright: 0px;
+                -moz-border-radius-bottomleft: 0px;
+                -webkit-border-radius: 0px 0px 0px px;
+                border-radius: 0px 0px 0px px;
+            }
+            html.ie7 #sidebar-nav ul li, html.ie8 #sidebar-nav ul li  {
+                border-top: 1px solid #232729;
+                margin-top: 0px;
+            }
+            #sidebar-nav ul li:first-child {
+                margin-top: 0px;
+                -moz-border-radius-topleft: 8px;
+                -moz-border-radius-topright: 8px;
+                -moz-border-radius-bottomright: 0px;
+                -moz-border-radius-bottomleft: 0px;
+                -webkit-border-radius: 8px 8px 0px 0px;
+                border-radius: 8px 8px 0px 0px;
+            }
+            html.ie7 #sidebar-nav ul li:first-child, html.ie8 #sidebar-nav ul li:first-child  {
+                border-top: none;
+            }
+                #sidebar-nav ul li a, #sidebar-nav ul li strong {
+                    width: 246px;
+                    height: 3.73em;
+                    display: block;
+                    font: 15px/3.73em sans-serif;
+                    font-weight: bold;
+                    color: #818283;
+                    padding-left: 22px;
+                }
+                #sidebar-nav ul li.current {
+                }
+                
+                    #sidebar-nav ul li.current strong {
+                        display: block;
+                        color: #ffffff;
+                        background: url(http://cdn2.comicsetc.com.au/skin/frontend/default/comics/images/customer/side-nav-active.png) 238px center  no-repeat;
+                    }
+                
+                #sidebar-nav ul li a:visited, .sidebar-menu-item:visited {
+                    border: none;
+                    color: #818283;
+                }
+                #sidebar-nav ul li a:selected, .sidebar-menu-item:selected {
+                    border: 1px solid red;
+                    color: red;
+                }
+                #sidebar-nav ul li a:active, .sidebar-menu-item:active {
+                    background: #111415;
+                }
+                #sidebar-nav ul li a:hover, .sidebar-menu-item:hover, #sidebar-nav ul li.current {
+                    color: #fff;
+                    background: rgb(33,35,36);
+                    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAA4CAIAAACzAgW7AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAADtJREFUeNq0ysEJACAMQ9FYJxHdf0S/RSGIdw/lhaRqfYSkEAQpzMypsHDvOL/u7fm33m1VOf3HWwIMAB45L6n3zItoAAAAAElFTkSuQmCC) repeat-x;
+                    background: -moz-linear-gradient(top,  rgba(33,35,36,1) 0%, rgba(17,19,20,1) 50%, rgba(8,10,10,1) 51%, rgba(8,10,10,1) 100%);
+                    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(33,35,36,1)), color-stop(50%,rgba(17,19,20,1)), color-stop(51%,rgba(8,10,10,1)), color-stop(100%,rgba(8,10,10,1)));
+                    background: -webkit-linear-gradient(top,  rgba(33,35,36,1) 0%,rgba(17,19,20,1) 50%,rgba(8,10,10,1) 51%,rgba(8,10,10,1) 100%);
+                    background: -o-linear-gradient(top,  rgba(33,35,36,1) 0%,rgba(17,19,20,1) 50%,rgba(8,10,10,1) 51%,rgba(8,10,10,1) 100%);
+                    background: -ms-linear-gradient(top,  rgba(33,35,36,1) 0%,rgba(17,19,20,1) 50%,rgba(8,10,10,1) 51%,rgba(8,10,10,1) 100%);
+                    background: linear-gradient(top,  rgba(33,35,36,1) 0%,rgba(17,19,20,1) 50%,rgba(8,10,10,1) 51%,rgba(8,10,10,1) 100%);
+                    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#212324', endColorstr='#080a0a',GradientType=0 );
+                }
+                
+    
+#fb-root{
+    height: 0px;
+    overflow: hidden;
+}
+#g-plusone{
+    height: 29px;
+}
+.social-wrapper .social div {
+    width: 450px;
+    height: 29px;
+}
+
+
+/* Product rollover contents */
+.hover button.btn-cart {
+    border: none;
+    cursor: pointer;
+    margin: 6px 24px;
+    position: absolute;
+    bottom: 14px;
+}
+.hover button.btn-cart:active {
+    background-position: -315px -104px
+}
+.hover button.btn-cart:hover {
+    background-position: -359px -71px
+}
+.link-wishlist {
+    margin: 6px;
+    position: relative;
+    display: inline-block;
+    right: -95px;
+}
+
+.link-wishlist:hover {
+    background-position: -1px -181px
+}
+
+.product-name, .availability {
+    font: 13px/16px 'LaffayetteComicProRegular', sans-serif;
+    color: #c5ccd0;
+    margin: 0 14px 14px;
+}
+.product-name a{
+    color: #c5ccd0;
+}
+
+.product-name a:hover{
+    color: #ffffff;
+}
+
+div.price-box {
+   margin: 14px;
+   font: 13px/16px 'LaffayetteComicProRegular', sans-serif;
+   color: #fed108;
+}
+
+div.price-box .old-price {
+    display: none;
+}
+
+div.price-box .special-price .price-label {
+    display: none;
+}
+
+
+/* Wait icon for async requests */
+.wait-icon-on-black { 
+    background: url(http://cdn2.comicsetc.com.au/skin/frontend/default/comics/images/loading-cursors/circle-loader-on-black.gif) no-repeat 50% 50%;
+    position: absolute;
+}
+
+.wait-icon-on-grey { 
+    background: url(http://cdn2.comicsetc.com.au/skin/frontend/default/comics/images/loading-cursors/circle-loader.gif) no-repeat 50% 50%;
+    position: absolute;
+}
+
+.wait-icon-on-transparent-on-black { 
+    background: url(http://cdn2.comicsetc.com.au/skin/frontend/default/comics/images/loading-cursors/circle-loader-transparent-32x32-black.gif) no-repeat 50% 50%;
+    position: absolute;
+}
+.wait-icon-on-transparent-on-white { 
+    background: url(http://cdn2.comicsetc.com.au/skin/frontend/default/comics/images/loading-cursors/circle-loader-transparent-32x32-white.gif) no-repeat 50% 50%;
+    position: absolute;
+}
+
+.featured-wait-icon {
+    width: 100%;
+    height: 32px;
+    bottom: 7px;
+    margin: 0 auto;
+}
+
+.link-remove {
+    margin: 6px;
+    position: relative;
+    display: inline-block;
+    right: -8px;
+    background-position: -315px -82px;
+}
+.link-remove:hover {
+    background-position: -332px -82px
+}
+
+/* footer */
+
+/* Cart icon */
+.cart-icon { background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAVCAYAAACpF6WWAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAn1JREFUeNqclT2IU0EQx7PJS4yKeEaxCKidlabRQgLqneQaO7EQtBNB0EoQbQQ7D+wsbSzEQkHE2g9OTzixUPAVNoIKJ08RCSLnka+X9Te5WW/u3YuICz92s7vzfzO7sxMXx3Hhf1q9Me3MT5fEj4fhR/QXA1krioEiLdU5b7bLeIhNIQhHY8RKxkDaUMWKOT7I3Ca1byPso+UfLadCWTGXI+yN512Ygf2wBLfhvvte2D4SS+InvX87y5bsTXW8m+4mHIe+fmwR0a1lButhm3qT11zGe2lf4BJ8TuLZW/XGVDmsObl9JuSL8xp+RbFiqY4lmgF8hRNwDU5D29yPj+qNSfnCJ5iDY3ARXkI5c74i3ITrcA92wtskfvYNjarZ5wm/VmGhx8IUE09VUA59o7ldMViEzbAPjsApuAHvTGTSBpHsrzcOi1evFPHmDrwx3krYDWjBrN66pNF7WGdzNomfpyG5i/wQ766a9PmhtLXv6Jrc9lG4i00vc3mjiyb8LZUQIpu6eC2hXYYduslpLxe0AFf0gk7CL/PypHXQkDOdyLg/x/keKmpYzqYTa0usnWVYYzzD2NrKelc9nahm3nIIw9vbxyBFZAPDB3AOPmYvSPbozfqeZIEiGqmOZa20wkh/EhYw/kBfMXY+CI4KShK/oMIc7OvZiIfn4YA+hFATPHt+agacGVMXVp5fqKcYRbpxD+ySxDYFRoz2ypM0884Uly7O+TX1lMnBsnizRjedxPMPVxeS5gW6R8y/ZlyyL405n+upMa7qx/om/7w+hNSkWRDqI7oq/DWVnw0dFQ9FuWRelX22o4qfFRz7d6Liw5D0fOBPvmZDzWu/BRgAvhkTt9zU5YQAAAAASUVORK5CYII=); background-repeat: no-repeat; background-position: center center; }
+
+/* Close icon */
+.close-icon-x { display: inline-block; width:9px; height: 9px; background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAJCAYAAADgkQYQAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAK9JREFUeNpiYGBgmADEP4E48////wwgDARFQPwHJAflM3wAYhDrv7y8fBOQroDxmZmZvwEVaYAU5cAE0bGbm9tUoCIXsPGKiorN6ApcXFymA+XcgViOCWTU/fv3vzKggd+/f7MAqRtA/AjEz8dlnaqqahPM4Z+RrbC3t5+N5nB5kKIuJiam356enpOhbpBXVlZuAYnp6uquBzmcEWqcGhDLQ93wGOosBSBWBfEBAgwAn39mQTZ+RXsAAAAASUVORK5CYII=); background-repeat: no-repeat; background-position: center center; }
+
+/* Sprite definition for sprite sheet graphics */
+.sprite {display:inline-block; overflow:hidden; background-repeat: no-repeat;}
+
+.sprite-site-wide {display:inline-block; overflow:hidden; background-repeat: no-repeat;background-image:url(http://cdn2.comicsetc.com.au/skin/frontend/default/comics/images/sprites/comics-site-wide.png);}
+
+.sprite-vertical-site-wide {display:inline-block; overflow:hidden; background-repeat: no-repeat; background-image:url(http://cdn2.comicsetc.com.au/skin/frontend/default/comics/images/sprites/site-wide-separators.png);}
+
+.sprite-checkbox {display:inline-block; overflow:hidden; background-repeat: no-repeat;background-image:url(http://cdn2.comicsetc.com.au/skin/frontend/default/comics/css/checkboxes.png);}
+
+.checkbox-large-off {width:27px; height:31px; background-position: -2px -35px}
+.checkbox-large-on {width:27px; height:31px; background-position: -2px -2px}
+.checkbox-small-off {width:18px; height:20px; background-position: -2px -90px}
+.checkbox-small-on {width:18px; height:20px; background-position: -2px -68px}
+
+.footer-cart-separator{width:1px; height:56px; background-position: -1px -1px;position: absolute;}
+.top-separator {width:1px; height:53px; background-position: -1px -58px}
+.main-nav-separator {width:2px; height:42px; background-position: -1px -112px}
+.icon-superman {width:34px; height:24px; background-position: -1px -155px}
+
+.yellow-star {width:21px; height:21px; background-position: -1px -181px}
+.grey-star {width:21px; height:21px; background-position: -1px -202px}
+
+.add-to-cart-btn-down {width:93px; height:31px; background-position: -315px -104px}
+.add-to-cart-btn-over {width:93px; height:31px; background-position: -359px -71px}
+.add-to-cart-btn-up {width:93px; height:31px; background-position: -366px -38px}
+
+.carousel-left-btn-down {width:56px; height:56px; background-position: -362px -218px}
+.carousel-left-btn-over {width:56px; height:56px; background-position: -304px -218px}
+.carousel-left-btn-up {width:56px; height:56px; background-position: -60px -218px}
+.carousel-right-btn-down {width:56px; height:56px; background-position: -2px -218px}
+.carousel-right-btn-over {width:56px; height:56px; background-position: -454px -82px}
+.carousel-right-btn-up {width:56px; height:56px; background-position: -420px -218px}
+
+.footer-cart-arrow {width:14px; height:8px; background-position: -496px -2px}
+.footer-cart-checkout-arrow {width:30px; height:17px; background-position: -315px -42px}
+.footer-cart-checkout-now-over {width:128px; height:16px; background-position: -366px -20px}
+.footer-cart-checkout-now-up {width:128px; height:16px; background-position: -366px -2px}
+.footer-cart-title {width:156px; height:21px; background-position: -2px -42px}
+
+.header-close-over {width:180px; height:38px; background-position: -184px -2px}
+.header-close-up {width:180px; height:38px; background-position: -2px -2px}
+
+.header-login-down {width:149px; height:76px; background-position: -153px -192px}
+.header-login-over {width:149px; height:76px; background-position: -312px -140px}
+.header-login-up {width:149px; height:76px; background-position: -2px -140px}
+
+.icon-search {width:17px; height:17px; background-position: -347px -42px}
+
+.mega-menu-see-more-down {width:153px; height:73px; background-position: -157px -117px}
+.mega-menu-see-more-over {width:153px; height:73px; background-position: -2px -65px}
+.mega-menu-see-more-up {width:153px; height:73px; background-position: -160px -42px}
+
+.icon-item-remove-over {width:15px; height:17px; background-position: -332px -82px}
+.icon-item-remove-up {width:15px; height:17px; background-position: -315px -82px}
+
+
+/* Product tag ribbons */
+.ribbon {display:inline-block; position:absolute; overflow:hidden; background-repeat:no-repeat; pointer-events: none; background-image:url(http://cdn2.comicsetc.com.au/skin/frontend/default/comics/images/sprites/ribbons.png);}
+
+.ribbon-new {width:67px; height:66px; background-position: -2px -184px}
+.ribbon-preorder {width:96px; height:94px; background-position: -2px -2px}
+.ribbon-sale {width:67px; height:66px; background-position: -2px -252px}
+.ribbon-specials {width:91px; height:84px; background-position: -2px -98px}
+
+
+
+/* Product tag tags */
+
+.tag {
+    display: inline-block; padding: 4px 8px;
+    text-transform: uppercase;
+    color: white;
+    background-color: #590a15;
+    font-weight: bold;
+    font-size: 11px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    white-space:nowrap;
+}
+
+.tag-preorder { background-color: #ffa800; }
+.tag-specials { background-color: #afbb00; }
+.tag-new { background-color: #01b8ee; }
+.tag-sale { background-color: #b8141b; }
+
+
+
+/* Footer icon sprites */
+.footer-sprite {
+    background-image:url(http://cdn2.comicsetc.com.au/skin/frontend/default/comics/images/footer/footer-icons-8bit.png);
+}
+.footer-icon{
+    position: absolute;
+    left: 0px;
+    pointer-events: none;
+}
+
+.icon-cru-digital {width:20px; height:21px; background-position: -97px -118px}
+.icon-magneto {width:20px; height:23px; background-position: -75px -118px}
+
+.icon-create-account {width:38px; height:38px; background-position: -197px -202px}
+.icon-log-in {width:38px; height:38px; background-position: -197px -162px}
+.icon-new-this-week {width:38px; height:38px; background-position: -197px -122px}
+.icon-our-best-sellers {width:38px; height:38px; background-position: -200px -82px}
+.icon-pre-order-comics {width:38px; height:38px; background-position: -200px -42px}
+.icon-swing-by-the-store {width:39px; height:38px; background-position: -200px -2px}
+
+
+footer {
+    position: relative;
+    padding-top: 7px;
+    background: #000 url(http://cdn2.comicsetc.com.au/skin/frontend/default/comics/images/main-border-bottom.jpg) no-repeat 50% 0%;
+}
+
+.hulk-01 {
+    background: url(http://cdn2.comicsetc.com.au/skin/frontend/default/comics/images/hulk-01-interlaced.png) no-repeat bottom left;
+}
+
+    #hulk {
+        width: 1140px;
+        margin: 0 auto;
+        position: relative;
+        pointer-events: none;
+    }
+    #hulk-01 {
+        background: url(http://cdn2.comicsetc.com.au/skin/frontend/default/comics/images/footer/hulk-01-interlaced.png) no-repeat top left;
+        left: -85px;
+        top: -163px;
+        height: 163px;
+        width: 150px;
+        position: absolute;
+        z-index: 1;
+    }
+    #hulk-02 {
+/*        background: url(http://cdn2.comicsetc.com.au/skin/frontend/default/comics/images/footer/hulk-02.png) no-repeat top left;*/
+        background: url(http://cdn2.comicsetc.com.au/skin/frontend/default/comics/images/footer/hulk-02-interlaced.png) no-repeat top left;
+        width: 553px;
+        height: 400px;
+        position: absolute;
+        top: -65px;
+        left: -85px;
+        z-index: 1;
+    }
+
+    .footer-container {
+        background: url(http://cdn2.comicsetc.com.au/skin/frontend/default/comics/images/footer/ledge-border.gif) repeat-x;
+        padding-top: 3px;
+        margin-top: 335px;
+    }
+    .footer {
+        background: url(http://cdn2.comicsetc.com.au/skin/frontend/default/comics/images/footer/bricks-tile.jpg) repeat-x 0px 71px;
+        padding-bottom: 91px;
+    }
+        .footer .column {
+            width: 1140px;
+            margin: 0 auto;
+        }
+
+/* About us */
+#footer-about-us {
+    width: 570px;
+    float: left;
+    position: relative;
+    padding-top: 40px;
+}
+    #footer-about-us h1 {
+        color: #cacbcc;
+        font: 19px/22px 'CCMonsterMashRoman', sans-serif;
+        display: block;
+        float: left;
+        height: 170px;
+        width: 175px;
+        margin: 0;
+        padding: 0px;
+        text-shadow: 0 1px 1px #000000;
+        letter-spacing: 0px;
+    }
+    /* recycle regular logo */
+    #footer-about-us img.logo {
+        position: absolute;
+        top: 88px;
+        left: 10px;
+        width: 140px;
+    }
+    #footer-about-us p {
+        color: #717580;
+        font-size: 15px;
+        line-height: 24px;
+        margin-top: 42px;
+        padding-right: 34px;
+    }
+
+.footer-container .column > h3 {
+    color: #cacbcc;
+    font: 19px/22px 'CCMonsterMashRoman', sans-serif;
+    margin: 10px 0 0 0;
+    padding: 0px;
+}
+
+/* 4 columns navigation in footer */
+#footer-navigation {
+    float: right;
+    width: 560px;
+    padding-top: 40px;
+}
+    #footer-navigation .col {
+        float: left;
+        width: 140px;
+    }
+        #footer-navigation h3 {
+            float: left;
+            width: 140px;
+            color: #cacbcc;
+            font: 19px/22px 'CCMonsterMashRoman', sans-serif;
+            margin: 0 0 20px 0;
+            padding: 0px;
+        }
+        #footer-navigation ul {
+            clear: right;
+            width: 140px;
+            padding: 0;
+            margin: 0 0 20px 0;
+            list-style: none;
+        }
+            #footer-navigation ul li {
+                    line-height: 20px;
+            }
+                #footer-navigation ul li a {
+                    color: #717580;
+                    text-decoration: none;
+                }
+                #footer-navigation ul li a:hover {
+                    color: #ffae00;
+                }
+                
+nav.icons {
+    clear: both;
+    padding-top: 10px;
+    border-bottom: 1px solid #383838;
+    height: 87px;
+    margin-bottom: 25px;
+}
+    nav.icons ul {
+        border-top: 1px solid #383838;
+        padding: 24px 0px;
+    }
+        nav.icons ul li {
+            position: relative;
+            float: left;
+            height: 38px;
+            font: 14px/17px 'CCMonsterMashRoman', sans-serif;
+            padding: 0 10px 0 0;
+        }
+        
+        #icon-swing-by-the-store { width: 209px; }        
+        #icon-new-this-week { width: 192px; }
+        #icon-pre-order-comics { width: 196px; }
+        #icon-our-best-sellers { width: 203px; }
+        #icon-log-in { width: 181px; line-height: 33px;}
+        #icon-create-account { width: 99px; }
+
+            nav.icons ul li a {
+                color: #90989c;
+                text-decoration: none;
+                padding: 0 0 0 50px;
+                display: block;
+                height: 38px;
+            }
+            /* The icons text - block display to the right of the icon */
+            nav.icons ul li a span.icon-text{
+                position: absolute;
+                left: 54px;
+                
+                display: block;
+            }
+            
+            /* These are the icons' over states */
+            nav.icons ul li a:hover {
+                color: #FFF;
+            }
+
+            nav.icons ul li a:hover span.icon-swing-by-the-store {width:117px; height:109px; background-position: -2px -2px; margin-top: -39px; margin-left: -56px;}
+            nav.icons ul li a:hover span.icon-new-this-week {width:67px; height:75px; background-position: -71px -204px; margin-left: -22px; margin-top: -12px;}
+            nav.icons ul li a:hover span.icon-pre-order-comics {width:77px; height:93px; background-position: -121px -2px; margin-top: -39px; margin-left: -29px;}
+            nav.icons ul li a:hover span.icon-our-best-sellers {width:71px; height:85px; background-position: -2px -113px; margin-top: -19px; margin-left: -21px;}
+            nav.icons ul li a:hover span.icon-log-in {width:74px; height:105px; background-position: -121px -97px; margin-top: -11px; margin-left: -16px;}
+            nav.icons ul li a:hover span.icon-create-account {width:67px; height:106px; background-position: -2px -200px; margin-top: -19px; margin-left: -8px;}
+
+/* absolute footer nav */
+footer .column > ul {
+    margin: 0;
+    padding: 0;
+    display: inline;
+    display: block;
+    float: left;
+}
+    footer .column > ul li {
+        display: inline;
+    }
+    footer .column > ul li:first-child a {
+        padding-left: 0;
+    }
+    footer .column > ul a {
+        text-decoration: none;
+        text-transform: uppercase;
+        color: #FFF;
+        font-size: 10px;
+        line-height: 10px;
+        font-weight: bold;
+        border-right: 1px solid #4f5052;
+        padding: 0px 11px 0px 8px;
+    }
+footer .column > address {
+    display: block;
+    float: left;
+    padding-left: 8px;
+    font-size: 12px;
+    color: #717580;
+    font-style: normal;
+}
+/* Credits */
+#credits {
+    float: right;
+    margin-top: -2px;
+}
+    #credits a {
+        color: #717580;
+        font-size: 9px;
+        text-decoration: none;
+        display: inline; 
+        height: 23px;
+        line-height: 23px;
+        vertical-align: middle;
+        padding: 0 0px 0 12px;
+    }
+    #credits a:first-child {
+        /*background: url(http://cdn2.comicsetc.com.au/skin/frontend/default/comics/images/footer/icon-cru-digital.gif) no-repeat 100% 50%;*/
+        padding-right: 0px;
+    }
+/*    #credits a:last-child {
+        background: url(http://cdn2.comicsetc.com.au/skin/frontend/default/comics/images/footer/icon-magneto.gif) no-repeat 100% 50%;
+        padding: 0 0px 0 12px;
+    }*/
+    
+    #credits a span.link-text {
+        display: inline-block;
+        zoom: 1;
+    }
+    html.ie7 #credits a span.link-text {
+        padding-bottom: 4px;
+    }
+    
+    #credits a span.sprite {
+        /* inline-block with IE7 support */
+        display: inline-block; 
+
+        margin-left: 12px;
+        margin-top: -2px;
+        margin-bottom: -7px;
+    }
+    /* Push the magento logo upward by a couple of pixels */
+    #credits a:first-child span.sprite {
+        margin-top: 0px;
+    }
+    
+    html.ie7 #credits a span.sprite {
+        zoom: 1; 
+        /*display: inline;        */
+    }
+
+/* Pager */
+.pager { padding:4px 8px; text-align:center; margin-top: 12px; }
+.pager .amount { float:left; margin:0; }
+.pager .limiter { float:right; }
+.pager .limiter label, .pager .limiter > span { vertical-align:middle; padding-bottom: 28px; margin: 5px; display: inline-block;  }
+.pager .limiter select { padding:0; margin:0 0 1px; vertical-align:middle; }
+.pager .pages { margin:0 140px; }
+.pager .pages ol { display:inline; }
+.pager .pages li { display:inline; margin:0 2px; }
+.pager .pages .current {}
+
+.my-account .pager { text-align: left; }
+.my-account .pager .limiter label, 
+.my-account .pager .limiter > span { 
+    vertical-align:top; 
+    padding: 8px 0 0 0;
+    margin: 0 5px; 
+    display: inline-block;  
+}
+
+
+html.ie7 .my-account .pager .limiter label, 
+html.ie7 .my-account .pager .limiter > span, 
+html.ie8 .my-account .pager .limiter label, 
+html.ie8 .my-account .pager .limiter > span{
+    zoom: 1;
+    padding-bottom: 22px;
+}
+
+/* ==|== promo tiles ======================================================== */
+
+.after-content {
+    clear: both;
+}
+    
+.after-content .promos{
+    width: 1040px;
+    height: 230px;
+/*    background: url(http://cdn2.comicsetc.com.au/skin/frontend/default/comics/images/promo/promo_holder-8bit.png) no-repeat top left;*/
+    background: url(http://cdn2.comicsetc.com.au/skin/frontend/default/comics/images/featured/slab-8bit-interlaced.png) no-repeat top left;
+    margin-left: -65px;
+    padding: 15px 50px;
+    margin-top: 20px;
+}
+
+
+.catalogue-index-index .after-content .promos {
+    margin-left: -29px;
+}
+
+.after-content .promos .promos_bestseller {
+    width: 520px;
+    height: 200px;
+    background: url(http://cdn2.comicsetc.com.au/skin/frontend/default/comics/images/promo/promo_bestsellers.png) no-repeat top left;
+    display: block;
+    text-indent: -9999px;
+    float: right;
+}
+
+.after-content .promos .promos_preorder {
+    width: 520px;
+    height: 200px;
+    background: url(http://cdn2.comicsetc.com.au/skin/frontend/default/comics/images/promo/promo_preorder.png) no-repeat top left;
+    display: block;
+    text-indent: -9999px;
+    float: left;
+}
+
+.after-content .promos .promos_swingby {
+    width: 520px;
+    height: 200px;
+    background: url(http://cdn2.comicsetc.com.au/skin/frontend/default/comics/images/promo/promo_swingby-8bit.png) no-repeat top left;
+    display: block;
+    text-indent: -9999px;
+    float: left;
+}
+
+.after-content .promos .promos_instore {
+    width: 520px;
+    height: 200px;
+    background: url(http://cdn2.comicsetc.com.au/skin/frontend/default/comics/images/promo/promo_instore.png) no-repeat top left;
+    display: block;
+    text-indent: -9999px;
+    float: left;
+}
+
+
+/* ==|== cms pages ========================================================== */
+
+body.cms-page-view .col-main, 
+body.cms-index-noroute .col-main, 
+body.blog-post-view .col-main,
+body.blog-index-index .col-main
+{
+    width: 638px;
+    margin-right: 32px;
+}
+
+a.readmore { 
+    display: block;
+    text-align: right;
+    color: #cbd2d5;
+    font-size: 20px;
+    font-family: 'CCMonsterMashRoman', sans-serif;
+}
+
+.postWrapper h1 a,  .postWrapper h1{
+    color: white;
+    font-size: 32px;
+    line-height: 40px;
+    
+}
+
+.postWrapper .page-title  h1, .postWrapper .page-title {
+    border-bottom: none;
+    
+}
+
+/* CONTACT FORM */
+
+#contactForm button {
+    text-indent: -9999px;
+    background: url(http://cdn2.comicsetc.com.au/skin/frontend/default/images/contacts/btn-submit-enquiry-sprite.png) 0px 0px;
+    border: none;
+    height: 78px;
+    width: 190px;
+    float: right;
+}
+
+#contactForm button:active {
+    background: url(http://cdn2.comicsetc.com.au/skin/frontend/default/images/contacts/btn-submit-enquiry-sprite.png) 0px 79px;
+}
+
+#contactForm {
+    margin-bottom: 60px;
+    
+}
+
+
+
+/* ==|== media queries ====================================================== */
+
+@media only screen and (max-width: 1315px) {
+    body ul#nav {
+        padding-left: 45px;
+    }
+    body ul#nav li a {
+        padding: 0 22px;
+    }
+}
+
+/* Adjust layout width when width falls below 1250px */
+@media only screen and (max-width: 1250px) {
+    #top .welcome {
+        padding-left: 20px;
+    }
+    
+    .header a.logo img {
+        width: 150px;
+    }
+}
+
+/* Adjust layout width further when width falls below 1140px */
+@media only screen and (max-width: 1140px) {
+
+    body #top > .helper {
+        margin: 0 auto;
+        position: relative;
+        width: 100%;
+    }
+    
+    body .nav-container {
+        width: 100%;
+    }
+    
+    body ul#nav {
+        padding-left: 90px;
+    }
+    body ul#nav li a {
+        padding: 0 17px;
+    }
+    
+    .header a.logo {
+        margin-left:8px;
+    }
+    .main-container {
+        overflow: hidden;
+        min-width: 1010px;
+    }
+    .main-container-inner {
+        position: relative;
+        left: 50%;
+        width: 1140px;
+        margin-left:-570px /* half width */
+    }
+    .footer-container {
+        overflow: hidden;
+        min-width: 1010px;
+    }
+
+    body footer {
+/*        overflow: hidden;*/
+        min-width: 1010px;
+    }
+
+    body .main-wrapper {
+        width: auto;
+    }
+    .social-wrapper .social {
+        width: auto;
+    }
+    /* squeeze <p> so other elements fit on one line again*/
+    .footer .column {
+        width: 1010px;
+    }
+    #footer-about-us {
+        width: 450px;
+    }
+
+    /* Squeeze icon nav back on one line */
+    #icon-swing-by-the-store { width: 183px; }
+    #icon-new-this-week { width: 166px; }
+    #icon-pre-order-comics { width: 170px; }
+    #icon-our-best-sellers { width: 177px; }
+    #icon-log-in { width: 155px; }
+
+}
+
+
+@media only screen and (max-width: 1010px) {
+    body ul#nav {
+        padding-left: 160px;
+        min-width: 816px;
+    }
+}
+/*
+@media only screen and (min-width: 480px) {
+}
+@media only screen and (min-width: 768px) {
+}
+*/
+
+/* ==|== standard magento layout styles ======================================================= */
+
+/* Content Columns  */
+.col2-set .col-1 { float:left; width:48.5%; }
+.col2-set .col-2 { float:right; width:48.5%; }
+.col2-set .col-narrow { width:32%; }
+.col2-set .col-wide { width:65%; }
+
+.col3-set .col-1 { float:left; width:32%; }
+.col3-set .col-2 { float:left; width:32%; margin-left:2%; }
+.col3-set .col-3 { float:right; width:32%; }
+
+.col4-set .col-1 { float:left; width:23.5%; }
+.col4-set .col-2 { float:left; width:23.5%; margin:0 2%; }
+.col4-set .col-3 { float:left; width:23.5%; }
+.col4-set .col-4 { float:right; width:23.5%; }
+
+/* Some IE clears */
+html.ie7 .col2-set .col-1 { clear:both; }
+
+
+/* Clears ================================================================================ */
+.clearer:after,
+.header-container:after,
+.header-container .top-container:after,
+.header:after,
+.header .quick-access:after,
+#nav:after,
+.main:after,
+.footer:after,
+.footer-container .bottom-container:after,
+.col-main:after,
+.col2-set:after,
+.col3-set:after,
+.col3-layout .product-options-bottom .price-box:after,
+.col4-set:after,
+.search-autocomplete li:after,
+.block .block-content:after,
+.block .actions:after,
+.block li.item:after,
+.block-poll li:after,
+.block-layered-nav .currently li:after,
+.page-title:after,
+.products-grid:after,
+.products-list li.item:after,
+.box-account .box-head:after,
+.dashboard .box .box-title:after,
+.box-reviews li.item:after,
+.box-tags li.item:after,
+.pager:after,
+.sorter:after,
+.ratings:after,
+.add-to-box:after,
+.add-to-cart:after,
+.product-essential:after,
+.product-collateral:after,
+.product-view .product-img-box .more-views ul:after,
+.product-view .box-tags .form-add:after,
+.product-view .product-shop .short-description:after,
+.product-view .box-description:after,
+.product-options .options-list li:after,
+.product-options-bottom:after,
+.product-review:after,
+.cart:after,
+.cart-collaterals:after,
+.cart .crosssell li.item:after,
+.opc .step-title:after,
+.checkout-progress:after,
+.multiple-checkout .place-order:after,
+.group-select li:after,
+.form-list li:after,
+.form-list .field:after,
+.buttons-set:after,
+.page-print .print-head:after,
+.advanced-search-summary:after,
+.gift-messages-form .item:after,
+.send-friend .form-list li p:after { display:block; content:"."; clear:both; font-size:0; line-height:0; height:0; overflow:hidden; }
+
+
+/* headings */
+
+div.page-title {
+    margin: 0 0 16px 0;
+    /*background: url(http://cdn2.comicsetc.com.au/skin/frontend/default/comics/images/hr-thick.png) left bottom no-repeat; */
+    border-bottom: 1px solid #3c4444;
+    border-bottom: 1px solid rgba(230,255,255,0.16);
+    text-align: right;
+}
+
+
+div.page-title h1 {
+    text-align: left;
+    padding-bottom: 24px;
+    border-bottom: 2px solid #0f1112; /* fallback for browsers without rgba support */
+    border-bottom: 2px solid rgba(0,0,0,0.4);
+}
+
+
+/* Global Messages  */
+.success { color:#3d6611; font-weight:bold; }
+.error { color:#df280a; font-weight:bold; }
+.notice { color:#e26703; }
+
+.messages,
+.messages ul { list-style:none !important; list-style-image: none !important; margin:0 !important; padding:0 ;   background-repeat:no-repeat !important;}
+.messages { width:100%; overflow:hidden; text-shadow: none;}
+.messages li { margin:0 0 10px !important; }
+.messages li li { margin:0 0 3px !important; }
+
+.messages > li  > ul { padding: 14px 26px 14px 60px !important; background-position:14px 18px !important; }
+
+.error-msg,
+.success-msg,
+.note-msg,
+.notice-msg { 
+    border-style:none !important; 
+    border-width:1px !important; 
+    min-height:24px !important; 
+
+    font-size:24px !important; 
+    font-weight:normal !important; 
+
+    color: white !important;
+    font-family: 'CCSmashRegular', sans-serif;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    background-color: #000;
+    text-shadow: 0px 0px 1px rgba(255, 255, 255, 0.5), -1px -1px 2px rgba(0, 0, 0, 0.5), 2px 4px 3px #000;
+    line-height: 1.3em;
+}
+.error-msg { 
+    border-color:#f16048; 
+    background-color: #570712;
+        background-image: linear-gradient(bottom, #570712 40%, #000 100%);
+    background-image: -o-linear-gradient(bottom, #570712 40%, #000 100%);
+    background-image: -moz-linear-gradient(bottom, #570712 40%, #000 100%);
+    background-image: -webkit-linear-gradient(bottom, #570712 40%, #000 100%);
+    background-image: -ms-linear-gradient(bottom, #570712 40%, #000 100%);
+}
+.success-msg { 
+    border-color:#446423; 
+    background-color: #1b4600;
+        background-image: linear-gradient(bottom, #1b4600 40%, #000 100%);
+    background-image: -o-linear-gradient(bottom, #1b4600 40%, #000 100%);
+    background-image: -moz-linear-gradient(bottom, #1b4600 40%, #000 100%);
+    background-image: -webkit-linear-gradient(bottom, #1b4600 40%, #000 100%);
+    background-image: -ms-linear-gradient(bottom, #1b4600 40%, #000 100%);
+}
+.note-msg,
+.notice-msg { 
+    border-color:#fcd344; 
+    background-color: #754c00;
+    background-image: linear-gradient(bottom, rgb(117,76,0) 40%, #000 100%);
+    background-image: -o-linear-gradient(bottom, rgb(117,76,0) 40%, #000 100%);
+    background-image: -moz-linear-gradient(bottom, rgb(117,76,0) 40%, #000 100%);
+    background-image: -webkit-linear-gradient(bottom, rgb(117,76,0) 40%, #000 100%);
+    background-image: -ms-linear-gradient(bottom, rgb(117,76,0) 40%, #000 100%);
+}
+.note-msg > ul,
+.notice-msg > ul { 
+    background-image:url(http://cdn2.comicsetc.com.au/skin/frontend/default/comics/images/i_msg-notice.png); 
+}
+.error-msg > ul { 
+
+    background-image:url(http://cdn2.comicsetc.com.au/skin/frontend/default/comics/images/i_msg-error.png); 
+
+}
+.success-msg > ul { 
+    background-image:url(http://cdn2.comicsetc.com.au/skin/frontend/default/comics/images/i_msg-success.png); 
+}
+
+
+.commentDetails h4 {
+    margin-top: 0;
+    font-size: 20px;
+}
+.commentDetails h4.username {
+    float: left;
+    
+    
+}
+.commentDetails h4.date {
+    float: right;
+    color: white;
+    
+}
+.commentContent {
+    clear: both;
+    
+}
+
+
+/* ==|== print styles ======================================================= */
+
+@media print {
+  * { background: transparent !important; color: black !important; text-shadow: none !important; filter:none !important; -ms-filter: none !important; }
+  a, a:visited { text-decoration: underline; }
+  a[href]:after { content: " (" attr(href) ")"; }
+  abbr[title]:after { content: " (" attr(title) ")"; }
+  .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after { content: ""; }
+  pre, blockquote { border: 1px solid #999; page-break-inside: avoid; }
+  thead { display: table-header-group; }
+  tr, img { page-break-inside: avoid; }
+  img { max-width: 100% !important; }
+  @page { margin: 0.5cm; }
+  p, h2, h3 { orphans: 3; widows: 3; }
+  h2, h3 { page-break-after: avoid; }
+}
+
+
+
+
+/*
+ * FILE 4 - widgets.css
+ */
+/* 
+    Document   : widgets.css
+    Created on : 31/01/2012, 3:35:11 PM
+    Author     : fortunato
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+
+root { 
+    display: block;
+}
+
+
+
+
+/*
+ * FILE 5 - form.css
+ */
+/*
+ Shared form CSS here; block specfific CSS in block CSS file. Thanks :)
+*/
+
+/* generic form elements */
+
+input.input-text, textarea {
+    color: #717580;
+    font-weight: bold;
+    background-color: #000;
+    border: 1px solid #121517;
+    border-bottom: 1px solid #20262a;
+    padding: 6px 8px;
+    font-size: 15px;
+    line-height: 20px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -webkit-box-shadow: inset 0 -1px 1px rgba(32, 38, 42, .475);
+    -moz-box-shadow: inset 0 -1px 1px rgba(32, 38, 42, .475);
+    box-shadow: inset 0 -1px 1px rgba(32, 38, 42, .475);
+    
+    -webkit-transition: border linear .2s, box-shadow ease-out .25s;
+    -moz-transition: border linear .2s, box-shadow ease-out .25s;
+    -ms-transition: border linear .2s, box-shadow ease-out .25s;
+    -o-transition: border linear .2s, box-shadow ease-out .25s;
+    transition: border linear .2s, box-shadow ease-out .25s;
+}
+
+input.input-text:focus,
+textarea:focus {
+    -webkit-box-shadow: inset 0 -1px 1px rgba(128, 152, 168, .575), 0 0 8px rgba(250, 159, 0, .6);
+    -moz-box-shadow: inset 0 -1px 1px rgba(128, 152, 168, .575), 0 0 8px rgba(250, 159, 0, .6);
+    box-shadow: inset 0 -1px 1px rgba(128, 152, 168, .575), 0 0 8px rgba(250, 159, 0, .6);
+   
+}
+
+/* all select boxes use formreplacelements.js, 
+    so hide these until they are loaded */
+select {
+    visibility: hidden;
+    line-height: 20px; /* for safari */
+}
+
+
+/* form heading */
+form h2.legend {
+    font-family: 'CCMonsterMashMedium', sans-serif;
+    font-size: 32px;
+    color: #fa9f00;
+    margin: 0 0 16px 0;
+    font-weight: normal;
+}
+
+/* form layout */
+ul.form-list, ul.form-list ul {
+    padding: 0;
+    margin: 0;
+    list-style: none !important;
+    
+    /* FOR IE - @see http://reference.sitepoint.com/css/list-style */
+    list-style-image: none !important;
+    list-style-position: outside !important;
+}
+
+ul.form-list li {
+    clear: both;
+}
+
+/* form labels */
+.form-list label {
+    font-family: 'LaffayetteComicProRegular', sans-serif;
+    color: #fff;
+    font-size: 12px;
+    padding: 10px 0 8px 0;
+    display: inline-block;
+}
+
+.form-list label.required em {
+    display: none;
+}
+
+.form-list li div.input-box {
+    padding-right: 24px;
+}
+
+.form-list li.fields  div.field {
+    float: left;
+    width: 300px;
+}
+
+/* form elements, input-text, textarea, select */
+.form-list select {
+    height: 34px;
+    width: 276px;
+    line-height: 34px; /* for safari */
+    
+}
+
+
+
+.form-list input.input-text,
+.form-list textarea {
+
+    padding-right: 30px;
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+
+
+.form-list input.input-text.required-entry,
+.form-list textarea.required-entry {
+    background: black url('http://cdn2.comicsetc.com.au/skin/frontend/default/comics/images/required.png') no-repeat scroll 95% 10px;
+
+}
+.form-list li.wide input.input-text.required-entry,
+.form-list li.wide textarea.required-entry {
+    background: black url('http://cdn2.comicsetc.com.au/skin/frontend/default/comics/images/required.png') no-repeat scroll 98% 10px ;
+    
+}
+
+
+.form-list .validation-failed {
+    border: 1px solid #a36251 !important;
+    -webkit-box-shadow:  0 0 10px 3px #7e1315;
+    -moz-box-shadow:  0 0 10px 3px #7e1315;
+    box-shadow: 0 0 10px 3px #7e1315;
+
+
+}
+
+
+/* webkit - remove yellow highlight */
+input:-webkit-autofill {
+}
+
+/* half width input fields */
+.form-list input.input-text,
+.form-list textarea  {
+    width: 236px;
+}
+
+/* full width text fields */
+.form-list li.wide input.input-text, 
+.form-list li.wide textarea {
+    width: 536px;
+}
+
+
+.form-list li.wide textarea {
+    height: 170px;
+}
+
+.form-list li.wide select {
+    width: 574px;
+    
+}
+
+
+/* check boxes 
+.form-list input.checkbox {
+    margin: 4px;
+}*/
+
+.form-list li strong {
+    color: white;
+}
+
+/* select box (formelementreplaced.js) */
+div.select {
+    position: relative;
+    outline: none;
+    display: inline-block;
+    color: #717580;
+    font-weight: bold;
+    background-color: #000;
+    border: 1px solid #121517;
+    border-bottom: 1px solid #20262a;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    height: 32px;
+    
+    cursor: pointer;
+    
+    -webkit-box-shadow: inset 0 -1px 1px rgba(32, 38, 42, .475);
+    -moz-box-shadow: inset 0 -1px 1px rgba(32, 38, 42, .475);
+    box-shadow: inset 0 -1px 1px rgba(32, 38, 42, .475);
+    
+    -webkit-transition: border linear .2s, box-shadow ease-out .25s;
+    -moz-transition: border linear .2s, box-shadow ease-out .25s;
+    -ms-transition: border linear .2s, box-shadow ease-out .25s;
+    -o-transition: border linear .2s, box-shadow ease-out .25s;
+    transition: border linear .2s, box-shadow ease-out .25s;
+}
+
+html.ie7 div.select {
+    display: inline;
+    zoom: 1;
+    
+}
+
+div.select.focus {
+    -webkit-box-shadow: inset 0 -1px 1px rgba(128, 152, 168, .575), 0 0 8px rgba(250, 159, 0, .6);
+    -moz-box-shadow: inset 0 -1px 1px rgba(128, 152, 168, .575), 0 0 8px rgba(250, 159, 0, .6);
+    box-shadow: inset 0 -1px 1px rgba(128, 152, 168, .575), 0 0 8px rgba(250, 159, 0, .6);
+   
+}
+
+div.select div.value {
+    padding: 6px 20px 6px 8px;
+    line-height: 20px;
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    z-index: 0;
+    margin: 0;
+    width: 100%;
+}
+
+div.select span.arrow {
+    width: 16px;
+    height: 16px;
+    background:  url('http://cdn2.comicsetc.com.au/skin/frontend/default/comics/images/select-arrow.png') no-repeat scroll center center;
+    display: block;
+    position: absolute;
+    right: 6px;
+    top: 50%;
+    margin-top: -8px;
+    z-index: 1;
+}
+
+ul.select-dropdown, .search-autocomplete ul {
+    list-style-type: none;
+    width: 190px;
+    margin: 2px 0 0 0;
+    background-color: #020202;
+    z-index: 111;
+    padding: 0;
+    border: 1px solid #000;
+    border-top: none;
+    /* rounded corners */
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    /* glow */
+    -webkit-box-shadow: 2px 2px 0px 0px rgba(255, 255, 255, 0.1);
+    -moz-box-shadow: 2px 2px 0px 0px rgba(255, 255, 255, 0.1);
+    -o-box-shadow: 2px 2px 0px 0px rgba(255, 255, 255, 0.1);
+    -ms-box-shadow: 2px 2px 0px 0px rgba(255, 255, 255, 0.1);
+    box-shadow: 2px 2px 0px 0px rgba(255, 255, 255, 0.1);
+}
+
+ul.select-dropdown li.option:first-child, .search-autocomplete li:first-child {
+    /* rounded corners */
+    -moz-border-radius-topleft: 5px;
+    -moz-border-radius-topright: 5px;
+    -moz-border-radius-bottomright: px;
+    -moz-border-radius-bottomleft: px;
+    -webkit-border-radius: 5px 5px px px;
+    border-radius: 5px 5px px px;
+}
+ul.select-dropdown li.option:last-child, .search-autocomplete li:last-child {
+    /* rounded corners */
+    -moz-border-radius-topleft: px;
+    -moz-border-radius-topright: px;
+    -moz-border-radius-bottomright: 5px;
+    -moz-border-radius-bottomleft: 5px;
+    -webkit-border-radius: px px 5px 5px;
+    border-radius: px px 5px 5px;
+}
+
+ul.select-dropdown li.option, .search-autocomplete li {
+    padding-left: 8px;
+    font-size: 12px;
+    min-height: 32px;
+    line-height: 32px;
+    cursor: default;
+}
+    ul.select-dropdown li.selected, .search-autocomplete li:hover {
+/*        font-weight: bold !important;*/
+        color: #FFF;
+    }
+    ul.select-dropdown li.hover, ul.select-dropdown li.selected {
+/*        background: #717580;*/
+        color: #FFF;
+    }
+
+/* validation */
+.validation-advice {
+    color: #AF0000;
+}
+
+p.required {
+    color: #AF0000;
+}
+
+div.clear { clear: both; }
+*:focus {outline: none;}
+
+
+button.button, a.button {
+    display: inline-block;
+    padding: 6px 32px 6px 12px;
+    margin: 4px;
+    color: white !important;
+    white-space:nowrap !important;
+    text-transform: uppercase;
+    font-size: 11px;
+    font-weight: bold;
+    text-shadow:1px 1px 1px #000;
+    border: none;
+        
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    
+    background: url(http://cdn2.comicsetc.com.au/skin/frontend/default/comics/images/button-arrow.png) #434a4f; /* Old browsers */
+    background: url(http://cdn2.comicsetc.com.au/skin/frontend/default/comics/images/button-arrow.png), -moz-linear-gradient(top,  #434a4f 0%, #383d43 100%); /* FF3.6+ */
+    background: url(http://cdn2.comicsetc.com.au/skin/frontend/default/comics/images/button-arrow.png), -webkit-gradient(linear, left top, left bottom, color-stop(0%,#434a4f), color-stop(100%,#383d43)); /* Chrome,Safari4+ */
+    background: url(http://cdn2.comicsetc.com.au/skin/frontend/default/comics/images/button-arrow.png), -webkit-linear-gradient(top,  #434a4f 0%,#383d43 100%); /* Chrome10+,Safari5.1+ */
+    background: url(http://cdn2.comicsetc.com.au/skin/frontend/default/comics/images/button-arrow.png), -o-linear-gradient(top,  #434a4f 0%,#383d43 100%); /* Opera 11.10+ */
+    background: url(http://cdn2.comicsetc.com.au/skin/frontend/default/comics/images/button-arrow.png), -ms-linear-gradient(top,  #434a4f 0%,#383d43 100%); /* IE10+ */
+    background: url(http://cdn2.comicsetc.com.au/skin/frontend/default/comics/images/button-arrow.png), linear-gradient(top,  #434a4f 0%,#383d43 100%); /* W3C */
+    /*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#434a4f', endColorstr='#383d43',GradientType=0 ); /* IE6-9 */
+    
+    background-position: 90% center;
+    background-repeat: no-repeat;   
+}
+
+button.button:hover, a.button:hover {
+    
+    background: url(http://cdn2.comicsetc.com.au/skin/frontend/default/comics/images/button-arrow.png) #434a4f; /* Old browsers */
+    background: url(http://cdn2.comicsetc.com.au/skin/frontend/default/comics/images/button-arrow.png), -moz-linear-gradient(top,  #383d43 0%, #434a4f 100%); /* FF3.6+ */
+    background: url(http://cdn2.comicsetc.com.au/skin/frontend/default/comics/images/button-arrow.png), -webkit-gradient(linear, left top, left bottom, color-stop(0%,#383d43), color-stop(100%,#434a4f)); /* Chrome,Safari4+ */
+    background: url(http://cdn2.comicsetc.com.au/skin/frontend/default/comics/images/button-arrow.png), -webkit-linear-gradient(top,  #383d43 0%,#434a4f 100%); /* Chrome10+,Safari5.1+ */
+    background: url(http://cdn2.comicsetc.com.au/skin/frontend/default/comics/images/button-arrow.png), -o-linear-gradient(top,  #383d43 0%,#434a4f 100%); /* Opera 11.10+ */
+    background: url(http://cdn2.comicsetc.com.au/skin/frontend/default/comics/images/button-arrow.png), -ms-linear-gradient(top,  #383d43 0%,#434a4f 100%); /* IE10+ */
+    background: url(http://cdn2.comicsetc.com.au/skin/frontend/default/comics/images/button-arrow.png), linear-gradient(top,  #383d43 0%,#434a4f 100%); /* W3C */
+    /*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#383d43', endColorstr='#434a4f',GradientType=0 ); /* IE6-9 */
+    background-position: 90% center;
+    background-repeat: no-repeat;   
+}
+
+button.button:active, a.button:active {
+    background: url(http://cdn2.comicsetc.com.au/skin/frontend/default/comics/images/button-arrow.png) #282d33; /* Old browsers */
+    background: url(http://cdn2.comicsetc.com.au/skin/frontend/default/comics/images/button-arrow.png), -moz-linear-gradient(top,  #282d33 0%, #333a3f 100%); /* FF3.6+ */
+    background: url(http://cdn2.comicsetc.com.au/skin/frontend/default/comics/images/button-arrow.png), -webkit-gradient(linear, left top, left bottom, color-stop(0%,#282d33), color-stop(100%,#333a3f)); /* Chrome,Safari4+ */
+    background: url(http://cdn2.comicsetc.com.au/skin/frontend/default/comics/images/button-arrow.png), -webkit-linear-gradient(top,  #282d33 0%,#333a3f 100%); /* Chrome10+,Safari5.1+ */
+    background: url(http://cdn2.comicsetc.com.au/skin/frontend/default/comics/images/button-arrow.png), -o-linear-gradient(top,  #282d33 0%,#333a3f 100%); /* Opera 11.10+ */
+    background: url(http://cdn2.comicsetc.com.au/skin/frontend/default/comics/images/button-arrow.png), -ms-linear-gradient(top,  #282d33 0%,#333a3f 100%); /* IE10+ */
+    background: url(http://cdn2.comicsetc.com.au/skin/frontend/default/comics/images/button-arrow.png), linear-gradient(top,  #282d33 0%,#333a3f 100%); /* W3C */
+    /*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#282d33', endColorstr='#333a3f',GradientType=0 ); /* IE6-9 */
+    background-position: 90% center;
+    background-repeat: no-repeat;   
+}
+
+button.button-left, a.button-left {
+    padding: 6px 12px 6px 32px;
+    background: url(http://cdn2.comicsetc.com.au/skin/frontend/default/comics/images/button-arrow-left.png) #434a4f; /* Old browsers */
+    background: url(http://cdn2.comicsetc.com.au/skin/frontend/default/comics/images/button-arrow-left.png), -moz-linear-gradient(top,  #434a4f 0%, #383d43 100%); /* FF3.6+ */
+    background: url(http://cdn2.comicsetc.com.au/skin/frontend/default/comics/images/button-arrow-left.png), -webkit-gradient(linear, left top, left bottom, color-stop(0%,#434a4f), color-stop(100%,#383d43)); /* Chrome,Safari4+ */
+    background: url(http://cdn2.comicsetc.com.au/skin/frontend/default/comics/images/button-arrow-left.png), -webkit-linear-gradient(top,  #434a4f 0%,#383d43 100%); /* Chrome10+,Safari5.1+ */
+    background: url(http://cdn2.comicsetc.com.au/skin/frontend/default/comics/images/button-arrow-left.png), -o-linear-gradient(top,  #434a4f 0%,#383d43 100%); /* Opera 11.10+ */
+    background: url(http://cdn2.comicsetc.com.au/skin/frontend/default/comics/images/button-arrow-left.png), -ms-linear-gradient(top,  #434a4f 0%,#383d43 100%); /* IE10+ */
+    background: url(http://cdn2.comicsetc.com.au/skin/frontend/default/comics/images/button-arrow-left.png), linear-gradient(top,  #434a4f 0%,#383d43 100%); /* W3C */
+    background-position: 10% center;
+    background-repeat: no-repeat;   
+}
+
+
+button.button-left:hover, a.button-left:hover {
+    
+    background: url(http://cdn2.comicsetc.com.au/skin/frontend/default/comics/images/button-arrow-left.png) #434a4f; /* Old browsers */
+    background: url(http://cdn2.comicsetc.com.au/skin/frontend/default/comics/images/button-arrow-left.png), -moz-linear-gradient(top,  #383d43 0%, #434a4f 100%); /* FF3.6+ */
+    background: url(http://cdn2.comicsetc.com.au/skin/frontend/default/comics/images/button-arrow-left.png), -webkit-gradient(linear, left top, left bottom, color-stop(0%,#383d43), color-stop(100%,#434a4f)); /* Chrome,Safari4+ */
+    background: url(http://cdn2.comicsetc.com.au/skin/frontend/default/comics/images/button-arrow-left.png), -webkit-linear-gradient(top,  #383d43 0%,#434a4f 100%); /* Chrome10+,Safari5.1+ */
+    background: url(http://cdn2.comicsetc.com.au/skin/frontend/default/comics/images/button-arrow-left.png), -o-linear-gradient(top,  #383d43 0%,#434a4f 100%); /* Opera 11.10+ */
+    background: url(http://cdn2.comicsetc.com.au/skin/frontend/default/comics/images/button-arrow-left.png), -ms-linear-gradient(top,  #383d43 0%,#434a4f 100%); /* IE10+ */
+    background: url(http://cdn2.comicsetc.com.au/skin/frontend/default/comics/images/button-arrow-left.png), linear-gradient(top,  #383d43 0%,#434a4f 100%); /* W3C */
+    /*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#383d43', endColorstr='#434a4f',GradientType=0 ); /* IE6-9 */
+    background-position: 10% center;
+    background-repeat: no-repeat;   
+}
+
+button.button-left:active, a.button-left:active {
+    background: url(http://cdn2.comicsetc.com.au/skin/frontend/default/comics/images/button-arrow-left.png) #282d33; /* Old browsers */
+    background: url(http://cdn2.comicsetc.com.au/skin/frontend/default/comics/images/button-arrow-left.png), -moz-linear-gradient(top,  #282d33 0%, #333a3f 100%); /* FF3.6+ */
+    background: url(http://cdn2.comicsetc.com.au/skin/frontend/default/comics/images/button-arrow-left.png), -webkit-gradient(linear, left top, left bottom, color-stop(0%,#282d33), color-stop(100%,#333a3f)); /* Chrome,Safari4+ */
+    background: url(http://cdn2.comicsetc.com.au/skin/frontend/default/comics/images/button-arrow-left.png), -webkit-linear-gradient(top,  #282d33 0%,#333a3f 100%); /* Chrome10+,Safari5.1+ */
+    background: url(http://cdn2.comicsetc.com.au/skin/frontend/default/comics/images/button-arrow-left.png), -o-linear-gradient(top,  #282d33 0%,#333a3f 100%); /* Opera 11.10+ */
+    background: url(http://cdn2.comicsetc.com.au/skin/frontend/default/comics/images/button-arrow-left.png), -ms-linear-gradient(top,  #282d33 0%,#333a3f 100%); /* IE10+ */
+    background: url(http://cdn2.comicsetc.com.au/skin/frontend/default/comics/images/button-arrow-left.png), linear-gradient(top,  #282d33 0%,#333a3f 100%); /* W3C */
+    /*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#282d33', endColorstr='#333a3f',GradientType=0 ); /* IE6-9 */
+    background-position: 10% center;
+    background-repeat: no-repeat;   
+}
+
+
+html.ie7 button.button, html.ie7 a.button {
+    display: inline;
+    zoom: 1;
+}
+
+
+
+div.form-privacy { 
+    float: left;
+    font-size: 14px;
+    color: white;
+    padding-top: 28px;
+}
+
+/* === RADIO BUTTONS ======================================================== */
+
+input[type="radio"] {
+    opacity: 0;
+    float: left;
+    clear: both;
+    width: 1px;
+    height: 1px;
+}
+
+input[type="radio"] + label {
+    background: url('http://cdn2.comicsetc.com.au/skin/frontend/default/comics/images/sprites/radio.png') no-repeat 0px -100px;
+    padding:0;
+    display: inline-block;
+    appearance:none;
+    -moz-appearance:none;
+    -webkit-appearance:none;
+    height:30px;
+    padding-left: 40px;
+    vertical-align:middle;
+    line-height: 30px;
+    color: #6e6e6e;
+    margin: 4px 0;
+}
+
+input[type="radio"]:checked + label,
+input[type="radio"].checked + label{
+    background: url('http://cdn2.comicsetc.com.au/skin/frontend/default/comics/images/sprites/radio.png') no-repeat 0px 0px;
+    color: white;
+}
+
+
+
+input.radio:checked + label, 
+input.radio.checked + label{
+    background-position: 0px 0px;
+    color: white;
+}
+
+input.radio + label.radiobtn-checked,
+label.radiobtn-checked{
+    background-position: 0px 0px;
+}
+
+
+/* === CHECKBOXES =========================================================== */
+
+
+html.no-opacity input.checkbox, html.no-opacity input.radio {
+    /* This works in IE 8 & 9 too */
+    /* ... but also 5, 6, 7 */
+    filter: alpha(opacity=0);
+
+    /* Older than Firefox 0.9 */
+    -moz-opacity:0;
+
+    /* Safari 1.x (pre WebKit!) */
+    -khtml-opacity: 0;
+}
+
+input.checkbox + label {
+    padding:0;
+    display: inline-block;
+    appearance:none;
+    -moz-appearance:none;
+    -webkit-appearance:none;
+    height:30px;
+    padding-left: 30px;
+    vertical-align:middle;
+    line-height: 30px;
+    margin: 4px 0;
+
+    background: url(http://cdn2.comicsetc.com.au/skin/frontend/default/comics/images/sprites/checkboxes.png) -1px -106px no-repeat;
+}
+
+input.checkbox:checked + label, 
+input.checkbox.checked + label{
+/*    background: url(http://cdn2.comicsetc.com.au/skin/frontend/default/comics/images/sprites/checkboxes.png) -1px -78px no-repeat; */
+    background-position: -1px -78px;
+    color: white;
+}
+
+input.checkbox + label.checkbox-checked,
+label.checkbox-checked{
+    background-position: -1px -78px;
+}
+
+input.checkbox {
+    opacity: 0;
+    float: left;
+    clear: both;
+    width: 1px;
+    height: 1px;
+    margin: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Advanced search form styles. Yes I know what the header comment says but I am done fighting magento to do simple things today */
+.comics-advanced-search,
+div.comics-advanced-search h1 {
+    text-align: center;
+}
+
+.comics-advanced-search .form-list {
+    width: 550px;
+    margin: 0 auto;
+}
+
+.comics-advanced-search .form-list div.input-box {
+    padding-right: 0;
+}
+
+.comics-advanced-search .form-list input.input-text {
+    width: 100%;
+    display: block;
+    box-sizing: border-box;
+}
+
+.comics-advanced-search ul.form-list li {
+    width: 48%;
+    padding: 0 1%;
+    float: left;
+    clear: none;
+}
+
+.comics-advanced-search label {
+    display: block;
+    text-align: left;
+}
+.comics-advanced-search ul.form-list li.search-category,
+.comics-advanced-search ul.form-list li.search-description, 
+.comics-advanced-search ul.form-list li.search-price {
+    width: 98%;
+}
+
+
+.comics-advanced-search ul.form-list li.search-category select {
+	width: 100%;
+}
+
+.comics-advanced-search ul.form-list li.search-category .value {
+	text-align: left;
+
+}
+
+.comics-advanced-search ul.form-list li.search-price input.input-text {
+    display: inline;
+    width: 263px;
+}
+
+.comics-advanced-search .buttons-set {
+    clear: both;
+}
+
+
+button.btn-search-advanced span span {    
+    font-size: 18px;
+    font-family: 'CCMonsterMashMedium', sans-serif;
+    font-weight: normal;
+    color: white !important;
+    white-space:nowrap !important;
+}
+
+button.btn-search-advanced, button.btn-search-advanced:visited {
+    margin-top: 5em;
+    display: inline-block;
+    padding: 16px 58px;
+    border: none;
+    border-bottom: 1px solid #75341d;
+    
+    text-transform: uppercase;
+    text-shadow:1px 1px 1px #000;
+    
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+    
+    background:  #68020f; /* Old browsers */
+    background: -moz-linear-gradient(top,  #d24f0e 0%, #68020f 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#d24f0e), color-stop(100%,#68020f)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #d24f0e 0%,#68020f 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #d24f0e 0%,#68020f 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #d24f0e 0%,#68020f 100%); /* IE10+ */
+    background: linear-gradient(top,  #d24f0e 0%,#68020f 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d24f0e', endColorstr='#68020f',GradientType=0 ); /* IE6-9 */
+    
+    background-position: 90% center;
+    background-repeat: no-repeat;   
+}
+
+button.btn-search-advanced:hover {
+    background:  #58020f; /* Old browsers */
+    background: -moz-linear-gradient(top,  #c23f00 0%, #58020f 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#c23f00), color-stop(100%,#58020f)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #c23f00 0%,#58020f 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #c23f00 0%,#58020f 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #c23f00 0%,#58020f 100%); /* IE10+ */
+    background: linear-gradient(top,  #c23f00 0%,#58020f 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c23f00', endColorstr='#58020f',GradientType=0 ); /* IE6-9 */
+}
+
+button.btn-search-advanced:active {
+    background:  #58020f; /* Old browsers */
+    background: -moz-linear-gradient(top,  #c23f00 0%, #58020f 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#c23f00), color-stop(100%,#58020f)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #c23f00 0%,#58020f 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #c23f00 0%,#58020f 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #c23f00 0%,#58020f 100%); /* IE10+ */
+    background: linear-gradient(top,  #c23f00 0%,#58020f 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c23f00', endColorstr='#58020f',GradientType=0 ); /* IE6-9 */
+}
+
+
+/*
+ * FILE 6 - top.css
+ */
+
+#top {
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAA1CAIAAAAPnBZlAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAC5JREFUeNpiUFNTY2JgYMCJ////j4H//fsHp9HZuMSQ9DEzMjLCzGJmoD4ACDAAWAZFUnHwFLgAAAAASUVORK5CYII=) repeat-x;
+/*    background: url(http://cdn2.comicsetc.com.au/skin/frontend/default/comics/images/top/repeat-x.png) repeat-x;*/
+    border-bottom: 1px solid #383838;
+    height: 53px;
+    min-width: 1010px;
+    width:100%;
+    position: absolute;
+    z-index:203;
+}
+#top > .helper {
+    width: 1110px;
+    margin: 0 auto;
+    position: relative;
+}
+/* Left aligned stuff */
+#top .welcome, #top .nav {
+    display: block;
+    float: left;
+}
+#top .welcome, #top .welcome a, #top .welcome a:visited {
+    line-height: 48px;
+    font-family: 'CCMonsterMashRoman', sans-serif;
+    color: #c5ccd0;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+    #top .welcome:first-letter {
+        font-size: 18px;
+        color: #cc041d;
+    }
+    #top .nav > ul {
+        display: inline-block;
+        list-style: none;
+        margin: 0;
+    }
+    
+        #top .nav li.top-left-links {
+            
+            display: block;
+            float: left;
+/*            background: url(http://cdn2.comicsetc.com.au/skin/frontend/default/comics/images/top/separator.png) no-repeat top left;*/
+
+            background:url(http://cdn2.comicsetc.com.au/skin/frontend/default/comics/images/sprites/comics-site-wide.png) no-repeat -503px -12px;
+            
+            height: 54px;
+            padding-left: 1px;
+        }
+        #top .nav li.top-left-links a.top-left-function {
+            display: inline-block;
+            line-height: 54px;
+            padding: 0px 22px;
+            text-decoration: none;
+            color: #a6a6a6;
+            font-size: 14px;
+            font-weight: bold;
+        }
+        #top .nav li.top-left-links a.top-left-function:hover {
+            color: #FFF;
+/*            background: url(http://cdn2.comicsetc.com.au/skin/frontend/default/comics/images/top/hover.png) no-repeat bottom center;*/
+        }
+
+/* Right aligned stuff */
+#top > div > ul {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    list-style: none;
+    margin: 0;
+    height: 53px;
+    
+    padding-right: 1px;
+}
+#top > div > ul > li {
+    display: block;
+    float: left;
+/*    background: url(http://cdn2.comicsetc.com.au/skin/frontend/default/comics/images/top/separator.png) no-repeat top left;*/
+    background:url(http://cdn2.comicsetc.com.au/skin/frontend/default/comics/images/sprites/comics-site-wide.png) no-repeat -503px -12px;
+    
+    height: 53px;
+    padding-left: 1px; 
+}
+
+#top a.top-right-function {
+    display: inline-block;
+    zoom: 1; *display: inline; /* IE7 fix */
+    line-height: 53px;
+    padding: 0px 22px;
+/*    background: url(http://cdn2.comicsetc.com.au/skin/frontend/default/comics/images/top/repeat-x-2.png) repeat-x top left;*/
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAA1CAIAAAAPnBZlAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAFBJREFUeNqsjTEKgFAMQ9MIXsHZq3n/XbDf5qfbHxwthJe0geI6Tu4Cb4IZwTRfgA+DI7yzH9BCS+JQs5hV7jubtUi+f2VzC//p3B7/zxRgAHf+RFJqbI/ZAAAAAElFTkSuQmCC) repeat-x;
+    color: #FFF;
+    text-decoration: none;
+    height: 54px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+
+/* grey out inactive buttons */
+#top a.top-right-function.darken {
+    background: black;
+    color: #999;
+    border-bottom: 1px solid #383838;
+    height: 53px;
+}
+#top a.top-right-function.darken .icon-search {
+    opacity: 0.5;
+}
+
+
+#top a.top-right-function.open {
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAA2CAMAAAAxtAOuAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYxIDY0LjE0MDk0OSwgMjAxMC8xMi8wNy0xMDo1NzowMSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1QkM5MjNGNjkyQjFFMDExQjQ3MzlFMTVCM0IzQUZBRCIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDowODgxMjNFNkFGNzYxMUUxQjk1MzhFOTFFMTFGREM5OCIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDowODgxMjNFNUFGNzYxMUUxQjk1MzhFOTFFMTFGREM5OCIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkQ5MTUwMzc5OUEyMDY4MTE5MTA5OEVEQkU2MTUxMDFGIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjVCQzkyM0Y2OTJCMUUwMTFCNDczOUUxNUIzQjNBRkFEIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+vCX/bgAAAGZQTFRFAwMDaxMfPBQZURUdCwcHEwkLShQbJg8SIg4RNRMXjg0dKxAUZhQeeAAPXxUeGAsNWBUdQhQakgwdHQ0PEAkKgxAeBAQEeBIffhEfAQEBngkcMBIWchIfAgICiQ4eCAYGlwocAAAAfDQHNQAAAD5JREFUeNqMwgcSQwAAALDYs2iNFrX+/0lfcImXxemjtBv9fP0Fao1OJPUWKqwqmVyvlRjEDhM2s+upW4ABANeDBMaEWzq/AAAAAElFTkSuQmCC)  repeat-x;
+}
+
+    
+
+#top-search a.top-right-function {
+    padding: 0px;
+    width: 54px;
+}
+#top-search span:first-child {
+    display: inline-block;
+    margin-left: 17px;
+    margin-top: 18px;
+
+    cursor: pointer;
+}
+
+/* This is the white gradient at the bottom of each of the links in the header area */
+#top .active {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    height: 1px;
+    zoom: 1;
+    opacity: 0;
+    
+    /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIwIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjUwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmZmZmZmYiIHN0b3Atb3BhY2l0eT0iMCIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+    background: -moz-linear-gradient(left,  rgba(255,255,255,0) 0%, rgba(255,255,255,1) 50%, rgba(255,255,255,0) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(255,255,255,0)), color-stop(50%,rgba(255,255,255,1)), color-stop(100%,rgba(255,255,255,0))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(left,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 50%,rgba(255,255,255,0) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(left,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 50%,rgba(255,255,255,0) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(left,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 50%,rgba(255,255,255,0) 100%); /* IE10+ */
+    background: linear-gradient(left,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 50%,rgba(255,255,255,0) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#00ffffff',GradientType=1 ); /* IE6-8 */
+}
+
+/* IE Opacity stuff */
+html.ie7 #top .active, html.ie8 #top .active, html.no-opacity #top .active {
+    /* This works in IE 8 & 9 too */
+    /* ... but also 5, 6, 7 */
+    filter: alpha(opacity=100);
+
+    /* Older than Firefox 0.9 */
+    -moz-opacity:1;
+
+    /* Safari 1.x (pre WebKit!) */
+    -khtml-opacity: 1;
+}
+
+#top a:hover .active {
+    opacity: 1;
+}
+/* IE Opacity stuff - hover */
+html.ie7 #top a:hover .active, html.ie8 #top a:hover .active, html.no-opacity #top a:hover .active {
+    /* This works in IE 8 & 9 too */
+    /* ... but also 5, 6, 7 */
+    filter: alpha(opacity=0);
+
+    /* Older than Firefox 0.9 */
+    -moz-opacity:0;
+
+    /* Safari 1.x (pre WebKit!) */
+    -khtml-opacity: 0;
+}
+#header-cart-details {
+                
+	float: left;
+	height: 55px;
+	min-width: 100px;
+	max-width: 160px;
+	font: bold 20px/55px "Droid Sans", Arial, Helvetica, sans-serif;
+	color: #FFF;
+	text-align: center;
+	position: relative;
+	text-decoration: none;
+	display: inline-block;
+        
+            }
+            .header-cart-details-inner {
+                position: relative;
+/*                width: 100%;*/
+                margin: 0 auto;
+                display: block;
+                min-width: 100px;
+                max-width: 218px;
+                overflow: hidden;
+                white-space: nowrap;
+            }
+            #header-cart-total {
+                padding-right: 8px;
+                position: relative;
+                width: auto;
+                margin-right: auto;
+                margin-bottom: auto;
+                display: inline;
+            }
+            /* Cart icon */
+            .header-cart-icon {
+                height: 21px;
+                width: 21px;
+                position: relative;
+                display: inline-block;
+                zoom:1;
+                *display: inline;
+                margin-bottom: -5px;
+            }
+
+            /* The count of the cart */
+            #header-cart-count {
+                margin-right: auto;
+                padding-left: 4px;
+                position: relative;
+                display: inline;
+            }
+            
+            
+/* ==|== mega menu login & register shared ================================== */
+.top-login-register {
+    width: 100%;
+    height: 500px;
+    margin-top: -500px;
+    position: absolute;
+    top: 55px;
+    z-index: 202;
+}
+
+.top-login-register .close-container {
+    z-index: 1;  
+    width: 180px;
+    height: 38px;
+    margin: 0 auto 0 auto;
+    position: relative;
+}
+.top-login-register button.btn-close {
+    width: 242px;
+    height: 38px;
+    text-indent: -9999px;
+    border:0;
+    background: url(http://cdn2.comicsetc.com.au/skin/frontend/default/comics/images/top/login/login-close-v2.png) no-repeat 0 0;
+    position: absolute;
+    top: 0;
+    z-index: 5;
+}
+
+.top-login-register button.btn-close:hover {
+    background-position: 0px -38px;
+}
+
+.top-login-register .inner-container {
+    width: 100%;
+    height: 459px;
+    border-bottom: 3px #b60017 solid;
+    background: #000000; /* Old browsers */
+    background: -moz-linear-gradient(top,  #000000 0%, #070909 79%, #141819 89%, #000000 89%, #000000 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#000000), color-stop(79%,#070909), color-stop(89%,#141819), color-stop(89%,#000000), color-stop(100%,#000000)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #000000 0%,#070909 79%,#141819 89%,#000000 89%,#000000 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #000000 0%,#070909 79%,#141819 89%,#000000 89%,#000000 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #000000 0%,#070909 79%,#141819 89%,#000000 89%,#000000 100%); /* IE10+ */
+    background: linear-gradient(top,  #000000 0%,#070909 79%,#141819 89%,#000000 89%,#000000 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
+}
+html.no-cssgradients .top-login-register .inner-container{
+    filter: none;
+    background: url(http://cdn2.comicsetc.com.au/skin/frontend/default/comics/images/top/top-drawer-background-gradient.png) repeat-x bottom left #000000;
+}
+.top-login-register .wrapper {
+	width: 990px;
+	min-width: 990px;
+	margin: 0 auto;
+        position: relative;
+}
+
+
+/* ==|== mega menu login  =================================================== */
+
+
+
+/* form */
+#login-container .login-form {
+	float: left;
+	margin: 72px 0 0 57px;
+	width: 313px;
+	height: 300px;
+}
+
+#login-container .block-login .block-title h1 {
+    color: white;
+    height: 30px;
+    font: 36px/36px "CCSmashRegular", sans-serif;
+    text-shadow: -5px 3px 0px #29363D;
+/*	filter: dropshadow(color=#29363D, offx=-5, offy=3);*/
+    margin-bottom: 26px;
+}
+
+#login-container .header-forms input.input-text {
+    background-color: #000;
+    border: 1px solid #2b2b2b;
+    padding: 12px 8px 11px 8px;
+    width: 295px;
+
+    font-family: "Droid Sans", Arial, Helvetica, Sans-serif;
+    color: #717580;
+    font-weight: bold;
+    font-size: 15px;
+    margin-bottom: 4px;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+
+    -webkit-transition: border linear .2s, box-shadow ease-out .25s;
+    -moz-transition: border linear .2s, box-shadow ease-out .25s;
+    -ms-transition: border linear .2s, box-shadow ease-out .25s;
+    -o-transition: border linear .2s, box-shadow ease-out .25s;
+    transition: border linear .2s, box-shadow ease-out .25s;
+}
+
+#login-container .header-forms input.input-text:focus {
+    border: 1px solid #6f6f6f;
+    outline: none;
+}
+
+
+/* Forgot Password Button */
+#login-container .forgot-pw {
+    width: 122px;
+    z-index: 50;
+    position: relative;
+    top: -42px;
+    left: 176px;
+}
+
+#login-container a.forgot-pw-btn {
+    padding: 6px;
+
+    font-family: "Droid Sans", Arial, Helvetica, Sans-serif;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 9px;
+
+    text-shadow: 1px 1px 0px #000000;
+/*    filter: dropshadow(color=#000000, offx=1, offy=1);*/
+
+    border: 0;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    
+    
+    margin-top: 2px;
+}
+html.ie8 #login-container a.forgot-pw-btn,
+html.ie7 #login-container a.forgot-pw-btn {
+    margin-left: -4px;
+}
+
+
+/* Login Button */
+#login-container button.login-btn {
+    border: 0;
+    text-indent: -9999px;
+    width: 149px;
+    height: 76px;
+    background: url(http://cdn2.comicsetc.com.au/skin/frontend/default/comics/images/top/login/login-btn.png) no-repeat 0 0;
+    filter: none;
+    display: block;
+}
+
+#login-container button.login-btn:hover {
+    background-position: 0 -76px;
+}
+
+#login-container button.login-btn:active,
+#login-container button.login-btn:focus {
+    background-position: 0 -152px;
+}
+
+/* hero */
+
+#login-container .remember-container {
+    width: 162px;
+    height: 80px;
+    position: relative;
+    top: -180px;
+    left: 397px;
+    padding: 30px 19px 17px 19px;
+    font: 12px/17px "LaffayetteComicProRegular", Arial, Helvetica, Sans-serif;
+    text-align: center;
+    color: black; 
+    background: url(http://cdn2.comicsetc.com.au/skin/frontend/default/comics/images/top/login/login-speech-bubble.png) no-repeat;
+}
+#login-container .remember-container input.checkbox + label {
+    padding-left: 24px;
+    padding-right: 24px;
+}
+#login-container .remember-container input.checkbox:checked  + label, 
+#login-container .remember-container input.checkbox.checked  + label {
+    color: #476402;
+}
+
+#login-container .login-hero {
+    float: right;
+    margin: -30px 68px 0 0;
+    width: 540px;
+    height: 580px;
+    background: url(http://cdn2.comicsetc.com.au/skin/frontend/default/comics/images/top/login/login-hero.png) no-repeat;
+    z-index: 8;
+    pointer-events: none;
+}
+
+/* ==|== mega menu register ================================================= */
+
+
+#register-container {
+    height: 615px;
+}
+
+
+#register-container .close-container {
+    	margin: 0 auto 0 auto;
+}
+
+#register-container .inner-container, #register-container .wrapper {
+    height: 574px;
+
+}
+
+#register-container .register-form {
+    margin: 84px 0 0 0px;
+    float: left;
+    height: 380px;
+    width: 470px; 
+}
+
+#register-container h3.form-desc {
+    color: #cc041d;
+    font-size: 14px;
+    font-family: 'CCSmashRegular', sans-serif;
+    font-variant: normal;
+    font-weight: normal;
+    margin-bottom: 34px;
+}
+
+#register-container label {
+    font-size: 20px;
+    font-family: 'CCMonsterMashRoman', sans-serif;
+    color: white;
+    font-weight: normal;
+    
+}
+#register-container .register-hero {
+    position: absolute;
+    right: -20px;
+    margin: 0 -20px  0 0;
+    width: 540px;
+    height: 710px;
+    background: url(http://cdn2.comicsetc.com.au/skin/frontend/default/comics/images/top/register/register-hero-8bit.png) no-repeat top left;
+    z-index: 1;
+    pointer-events: none;
+}
+
+
+/* form */
+
+#register-container .form-list li.fields div.field {
+    width: 220px;
+
+}
+#register-container .form-list input.input-text {
+    width: 180px;
+}
+
+#register-container .form-list li.wide input.input-text {
+    width: 430px;
+}
+
+
+#register-container .form-list li div {
+    padding-right: 30px;
+}
+
+#register-container .form-list div.last-child {
+    padding-right: 0px !important;
+}
+
+
+#register-container .newsletter-container {
+    width: 180px;
+    height: 110px;
+    position: absolute;
+    left: 760px;
+    top: 100px;
+    padding: 60px 30px 40px 40px;
+    font: 12px/17px "LaffayetteComicProRegular", Arial, Helvetica, Sans-serif;
+    text-align: center;
+    color: black; 
+    background: url(http://cdn2.comicsetc.com.au/skin/frontend/default/comics/images/top/register/register-newsletter.png) no-repeat;
+    z-index: 10;
+}
+
+#register-container .newsletter-container span {
+    display: block;
+    transform:rotate(2deg);
+    -ms-transform:rotate(2deg); /* IE 9 */
+    -moz-transform:rotate(2deg); /* Firefox */
+    -webkit-transform:rotate(2deg); /* Safari and Chrome */
+    -o-transform:rotate(2deg); /* Opera */
+}
+
+#register-container .newsletter-container label {
+    color: red;
+    font-size: 16px;
+    font-family: "LaffayetteComicProRegular", Arial, Helvetica, Sans-serif;
+}
+
+/* sign up button */
+#register-container button.btn-submit {
+    border: 0;
+    text-indent: -9999px;
+    width: 200px;
+    height: 102px;
+    background: url(http://cdn2.comicsetc.com.au/skin/frontend/default/comics/images/top/register/register-btn-signup-sprite.png) no-repeat 0 0;
+    position: absolute;
+    left: 750px;
+    top: 350px;
+    z-index: 10;
+
+}
+
+#register-container button.btn-submit:hover {
+    background-position: 0 -102px;
+}
+
+#register-container button.btn-submit:active,
+#register-container button.btn-submit:focus {
+    background-position: 0 -204px;
+}
+
+
+#register-container .privacy {
+    position: absolute;
+    bottom: 24px;
+    left: 0;
+    color: #888;
+}
+
+#register-container .icon-lock {
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAANCAYAAAB/9ZQ7AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYxIDY0LjE0MDk0OSwgMjAxMC8xMi8wNy0xMDo1NzowMSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1QkM5MjNGNjkyQjFFMDExQjQ3MzlFMTVCM0IzQUZBRCIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDoyNkE2M0ExREFFRDYxMUUxQjJDRUE2RkM4MzA0MDFGRSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDoyNkE2M0ExQ0FFRDYxMUUxQjJDRUE2RkM4MzA0MDFGRSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkQ5MTUwMzc5OUEyMDY4MTE5MTA5OEVEQkU2MTUxMDFGIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjVCQzkyM0Y2OTJCMUUwMTFCNDczOUUxNUIzQjNBRkFEIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+1FPNggAAAOxJREFUeNqMkU0KgzAQhZ+lG3/wFh5BN2515U633sBL5ETu3IgewksooqCCIgpim7RJrSDtg4FJ5uVjMiOlaYqDCE6q65oMw8Dy+9Fo2zYURcG+75jnGUVRMDOH3M5G3/cRBAHCMISu65BlmdWjKBJmYXxTWJRlyWp5nn+3sW2b6McwDDiOw/KqqsT9zXVdlizLIoxUWZad//oi0wKNt1FMhD/gAOk5OsLp67piHEf0fY+madC2LbquAx0d7ZuRkyTBlVRVhWmaH7PneZdkeubt/CRrmgbLsv4jT9Mk5izR1T6XQfBDcRyThwADAM2xjBz6DlxZAAAAAElFTkSuQmCC) no-repeat center left;
+    display: block;
+    padding-left: 22px;
+}
+
+
+/* ==|== mega menu search ================================================= */
+#search-container {
+    background: url(http://cdn2.comicsetc.com.au/skin/frontend/default/comics/images/main-nav-bg.jpg) no-repeat black;
+    width: 100%;
+    height: 87px;
+    margin-top: -88px;
+    position: absolute;
+    top: 55px;
+    z-index: 202;
+}
+#search-container  .search-wrapper {
+    height: 42px !important;
+    max-height: 42px;
+    margin: 17px auto;
+    max-width: 1140px;
+    background: black;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    position: relative;
+}
+#search-container #search_mini_form {
+    height: 42px;
+}
+
+#search-container .advanced-search {
+    text-align: right;
+    padding-right: 0.5em;
+}
+#search-container .advanced-search a {
+    color: #848894;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+#search-container .btn-close {
+    background: url(http://cdn2.comicsetc.com.au/skin/frontend/default/comics/images/top/search/top-search-close-btn.png) no-repeat 0 0;
+    width: 36px;
+    height: 32px;
+    text-indent: -9999px;
+    border: none;
+    margin: 5px 3px;
+}
+#search-container .btn-search {
+    background: url(http://cdn2.comicsetc.com.au/skin/frontend/default/comics/images/top/search/top-search-btn.png) no-repeat 0 0;
+    width: 109px;
+    height: 41px;
+    text-indent: -9999px;
+    border: none;
+    float: right;
+}
+#search-container .what {
+    display: inline-block;
+    color: white;
+    font-size: 16px;
+    line-height: 20px;
+    margin-left: 10px;
+    padding-right: 20px;
+    height: 20px;
+    border-right: 1px solid #808080;
+    
+    
+}
+
+#search-container input.input-search {
+    color: white;
+    background: black;
+    border: none;
+    height: 20px;
+    padding: 11px 20px;
+    line-height: 20px;
+    margin: 0;
+width: 390px;
+    border-right: 1px solid #202020;
+}
+
+#search-container select {
+    width: 160px;
+    height: 44px;
+    line-height: 44px; /* for safari */
+
+}
+
+#search-container div.select {
+    border: none;
+    margin: 0 !important;
+    position: normal;
+    top: 0;
+
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    vertical-align: top;
+    border-right: 1px solid #202020;
+}
+#search-container div.select.no-border {
+    border: none;
+    
+}
+
+
+#search-container div.select div.value {
+   font-size: 15px;
+   color: #818283;
+   font-weight: bold;
+   padding: 11px 20px 11px 8px;
+   line-height: 20px;
+}
+
+#search-container div.select.focus div.value {
+    color: white;   
+}
+
+
+
+.search-autocomplete {
+    max-height: 350px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.search-autocomplete ul {
+    padding: 0;
+    margin-right: 0;
+    width: auto;
+}
+.search-autocomplete .amount {
+    display: none;  /* hide prices in autocomplete results */
+}
+
+
+
+/* Adjust layout width when width falls below 1250px */
+@media only screen and (max-width: 1550px) {
+    #search-container .search-wrapper {
+        width: 820px;
+    }
+    #search-container #search-input {
+        width: 138px;
+
+    }
+    #search-container .what {
+        font-size: 12px;
+        padding-right: 10px;
+        margin-left: 6px;
+    }
+}
+
+/* Adjust layout width when width falls below 1250px */
+@media only screen and (max-width: 1250px) {
+    #search-container .search-wrapper {
+        width: 820px;
+        margin-left: 180px;
+    }
+    #search-container #search-input {
+        width: 138px;
+
+    }
+    #search-container .what {
+        font-size: 12px;
+        padding-right: 10px;
+        margin-left: 6px;
+    }
+}
+
+
+
+/*
+ * FILE 7 - social.css
+ */
+
+#footer-social {
+    background: url(http://cdn2.comicsetc.com.au/skin/frontend/default/comics/images/stone-texture-interlaced.jpg) repeat-x;
+    height: 67px;
+}
+.social-wrapper {
+    height: 67px;
+    /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIwLjMiLz4KICAgIDxzdG9wIG9mZnNldD0iNDclIiBzdG9wLWNvbG9yPSIjMDAwMDAwIiBzdG9wLW9wYWNpdHk9IjAuNCIvPgogICAgPHN0b3Agb2Zmc2V0PSI1MiUiIHN0b3AtY29sb3I9IiMwMDAwMDAiIHN0b3Atb3BhY2l0eT0iMC40NiIvPgogICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjMDAwMDAwIiBzdG9wLW9wYWNpdHk9IjEiLz4KICA8L2xpbmVhckdyYWRpZW50PgogIDxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9InVybCgjZ3JhZC11Y2dnLWdlbmVyYXRlZCkiIC8+Cjwvc3ZnPg==);
+    background: -moz-linear-gradient(top, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.4) 47%, rgba(0,0,0,0.46) 52%, rgba(0,0,0,1) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0.3)), color-stop(47%,rgba(0,0,0,0.4)), color-stop(52%,rgba(0,0,0,0.46)), color-stop(100%,rgba(0,0,0,1))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, rgba(0,0,0,0.3) 0%,rgba(0,0,0,0.4) 47%,rgba(0,0,0,0.46) 52%,rgba(0,0,0,1) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, rgba(0,0,0,0.3) 0%,rgba(0,0,0,0.4) 47%,rgba(0,0,0,0.46) 52%,rgba(0,0,0,1) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, rgba(0,0,0,0.3) 0%,rgba(0,0,0,0.4) 47%,rgba(0,0,0,0.46) 52%,rgba(0,0,0,1) 100%); /* IE10+ */
+    background: linear-gradient(top, rgba(0,0,0,0.3) 0%,rgba(0,0,0,0.4) 47%,rgba(0,0,0,0.46) 52%,rgba(0,0,0,1) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4d000000', endColorstr='#000000',GradientType=0 ); /* IE6-8 */
+}
+    .social-wrapper .social {
+        width: 1140px;
+        margin: 0 auto;
+        padding: 17px 0px 0px;
+    }
+    
+    html.ie7 .g-plusone {
+        display: none;
+    }
+
+
+/*
+ * FILE 8 - cms.css
+ */
+
+
+body.cms-page-view .col-main, body.cms-index-noroute .col-main {
+    width: 638px;
+    margin-right: 32px;
+}
+
+
+/* CONTACT FORM */
+
+#contactForm button {
+    text-indent: -9999px;
+    background: url(http://cdn2.comicsetc.com.au/skin/frontend/default/comics/images/contacts/btn-submit-enquiry-sprite.png) 0px 0px;
+    border: none;
+    height: 78px;
+    width: 190px;
+    float: right;
+}
+
+#contactForm button:active {
+    background: url(http://cdn2.comicsetc.com.au/skin/frontend/default/comics/images/contacts/btn-submit-enquiry-sprite.png) 0px 79px;
+}
+
+#contactForm {
+    margin-bottom: 60px;
+    
+}

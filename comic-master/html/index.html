@@ -1,0 +1,2475 @@
+<!doctype html>
+<head>
+<title>Comics Etc</title>
+
+
+<link rel="icon" href="http://cdn2.comicsetc.com.au/skin/frontend/default/default/favicon.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="http://cdn2.comicsetc.com.au/skin/frontend/default/default/favicon.ico" type="image/x-icon" />
+
+<!-- fonts -->
+<link href="//fonts.googleapis.com/css?family=Droid+Sans:400,700" rel="stylesheet" type="text/css">
+
+<link rel="stylesheet" type="text/css" href="http://cdn2.comicsetc.com.au/media/css/ccf04b03b0afcd58b4bbf5927168ff1f.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://cdn2.comicsetc.com.au/media/css/d4be8a831d5ec5f3260232e62614a74b.css" media="print" />
+<link rel="stylesheet" type="text/css" href="http://cdn2.comicsetc.com.au/media/css/59a672be56479485b73ba48b0ee6782f.css" />
+
+<script src="/skin/frontend/default/comics/js/libs/modernizr.custom.67685.js"></script>
+<!--<script src="/skin/frontend/default/comics/js/libs/modernizr-2.5.3.js"></script>-->
+<!--<script src="/skin/frontend/default/comics/js/libs/modernizr-2.0.6.min.js"></script>-->
+
+<!-- This is the WindowOnLoad helper class -->
+<script src="/skin/frontend/default/comics/js/libs/cru/utils/WindowOnLoad.min.1.1.js"></script>
+
+
+
+<script type="text/javascript">
+//<![CDATA[
+optionalZipCountries = ["HK","IE","MO","PA"];
+//]]>
+</script>
+<!-- BEGIN GOOGLE ANALYTICS CODEs -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-79149071-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+<!-- END GOOGLE ANALYTICS CODE -->
+<div id="top">
+    <div class="helper">
+        <div class="nav">
+                        <span class="welcome"><a href="http://www.comicsetc.com.au/">Welcome To Comics Etc</a></span>
+            
+            <ul>
+<li class="top-left-links"><a href="http://www.comicsetc.com.au/about-comics-etc" title="About Us" class="top-left-function"><span>About Us</span></a></li>
+<li class="top-left-links"><a href="http://www.comicsetc.com.au/contact" title="Contact Us" class="top-left-function"><span>Contact Us</span></a></li>
+</ul>        </div>
+        <ul>
+            <li id="top-cart-summary">
+                <a class="top-right-function" title="My Cart" href="http://www.comicsetc.com.au/checkout/cart/" id="header-cart-details">
+                    <div class="header-cart-details-inner">
+                        <div id="header-cart-total">$0.00</div>
+                        <div class="header-cart-icon cart-icon"></div>
+                        <div id="header-cart-count">0</div>
+                    </div>
+                </a>
+            </li>
+                        <li id="top-register"><a class="top-right-function" href="https://www.comicsetc.com.au/customer/account/create/">Register</a></li>
+            <li id="top-login"><a class="top-right-function" href="https://www.comicsetc.com.au/customer/account/login/">Login</a></li>
+                        <li id="top-search"><a class="top-right-function" href="/catalogsearch/result"><span class="icon-search sprite-site-wide">&nbsp;</span></a></li>
+            <!-- This extra li is required for the finishing separator on the list items -->
+            <li></li>
+        </ul>
+    </div>
+</div>
+<div id="top-extra">
+
+        <div class="hidden top-login-register" id="login-container">
+        
+<div class="inner-container">
+    <div class="wrapper">
+        <div class="login-form">
+            <div class="block block-login">
+                <div class="block-title">
+                    <h1>Enter...</h1>
+                </div>
+                <form action="https://www.comicsetc.com.au/customer/account/loginPost/" method="post" class="header-forms">
+                    <div class="block-content">
+                            <input type="text" name="login[username]" id="mini-login" class="input-text" placeholder="your email address"/>
+                            <input type="password" name="login[password]" id="mini-password" class="input-text" placeholder="Password" />
+                        <div class="forgot-pw">
+                            <a href="http://www.comicsetc.com.au//customer/account/forgotpassword/" class="forgot-pw-btn button"><span>Forgotton Password?</span></a>
+                        </div>
+                        <div class="actions">
+                            <button type="submit" class="login-btn">Login</button>
+                        </div>
+                        <div class="remember-container">
+                            <span>Would thou like Thor to remember thine login details, puny human?</span><br/>
+                            <input type="checkbox" id="rememberme" name="rememberme" value="remember" class="input-checkbox checkbox" />
+                            <label for="rememberme" >Yes sir</label>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="login-hero"></div>
+    </div>
+</div>
+<div  class="close-container">
+    <button type="button" class="btn-close"><span>close</span></button>
+</div>    </div>
+    <div class="hidden top-login-register" id="register-container">
+        <div class="inner-container">
+    <div class="wrapper">
+        <div class="register-form">
+            <h1>Create an Account</h1>
+            <h3 class="form-desc">All fields are mandatory, As is your submission.</h3>
+            
+            
+                                                <form action="https://www.comicsetc.com.au/customer/account/createpost/" method="post" id="form-register-validate">
+                <div class="fieldset">
+                    <input type="hidden" name="success_url" value="" />
+                    <input type="hidden" name="error_url" value="" />
+                    <ul class="form-list">
+                        <li class="fields">
+                            <div class="field name-firstname">
+                                <label for="firstname" class="required"><em>*</em>First Name:</label>
+                                <div class="input-box">
+                                    <input type="text" id="firstname" name="firstname" value="" title="First Name" maxlength="255" class="input-text required-entry">
+                                </div>
+                            </div>
+                            <div class="field name-lastname last-child">
+                                <label for="lastname" class="required"><em>*</em>Last Name:</label>
+                                <div class="input-box">
+                                    <input type="text" id="lastname" name="lastname" value="" title="Last Name" maxlength="255" class="input-text required-entry">
+                                </div>
+                            </div>
+                        </li>
+                        <li class="wide">
+                            <label for="email_address" class="required"><em>*</em>Email Address:</label>
+                            <div class="input-box">
+                                <input type="text" name="email" id="email_address" value="" title="Email Address" class="input-text validate-email required-entry" />
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+          
+                <div class="fieldset">
+                    <ul class="form-list">
+                        <li class="fields">
+                            <div class="field">
+                                <label for="password" class="required"><em>*</em>Password:</label>
+                                <div class="input-box">
+                                    <input type="password" name="password" id="password" title="Password" class="input-text required-entry validate-password" />
+                                </div>
+                            </div>
+                            <div class="field last-child">
+                                <label for="confirmation" class="required"><em>*</em>Confirm Password:</label>
+                                <div class="input-box">
+                                    <input type="password" name="confirmation" title="Confirm Password" id="confirmation" class="input-text required-entry validate-cpassword" />
+                                </div>
+                            </div>
+                        </li>
+                                            </ul>
+                </div>
+                <div class="buttons-set">
+                    <button type="submit" title="Submit" class="btn-submit"><span><span>Submit</span></span></button>
+                </div>
+                                <div class="newsletter-container">
+                    <span>Would You Like To Stay Up To Date With 
+                    awesome Comics, Specials And new Releases?</span>
+                        <input type="checkbox" name="is_subscribed" title="Sign Up for Newsletter" value="1" id="is_subscribed" class="checkbox" />
+                    <label for="is_subscribed">Hell Yeah</label>
+                                                        </div>
+                
+
+            </form>
+        </div>
+        <div class="register-hero"></div>
+        <a href="http://www.comicsetc.com.au/privacy-policy/" class="privacy icon-lock">
+            Privacy Policy
+        </a>
+    </div>
+</div>
+<div  class="close-container">
+    <button type="button" class="btn-close"><span>close</span></button>
+</div>
+    </div>
+        <div class="hidden" id="search-container">
+        <div class="search-wrapper">
+<form id="search_mini_form" action="/catalogue/search/" method="get">
+    <button type="submit" title="Search" class="btn-search"><span><span>Search</span></span></button>
+    <button type="button" class="btn-close"><span>close</span></button>
+    <label class="what" for="search-input">What are you looking for?</label>
+    <input id="search-input" type="text" class="input-search"  name="q" value="" />
+    <select name="category_id">
+        <option value="">All Categories</option>
+                                    <option value="15">Specials</option>
+                                                                    <option value="208">Comics</option>
+                                                <option value="218">Trade Paperbacks</option>
+                                                <option value="45">Manga</option>
+                                                <option value="7">Collectables</option>
+                        </select>
+    <select name="type" class="no-border">
+        <option value="">All Products</option>
+        <option value="new-and-fresh">New And Fresh</option>
+        <option value="pre-order">Pre-Order</option>
+        <option value="on-sale">On Sale</option>
+    </select>
+    <div id="search_autocomplete" class="search-autocomplete"></div>
+
+    <div class="advanced-search"><a href="/catalogsearch/advanced/">Advanced search</a></div>
+
+    </form>
+</div>
+    </div>
+</div>
+</head>
+<body class=" cms-index-index cms-home">
+<div id="container" class="wrapper">
+        <noscript>
+        <div class="global-site-notice noscript">
+            <div class="notice-inner">
+                <p>
+                    <strong>JavaScript seems to be disabled in your browser.</strong><br />
+                    You must have JavaScript enabled in your browser to utilize the functionality of this website.                </p>
+            </div>
+        </div>
+    </noscript>
+    <div class="page">
+        <header>
+            <div class="header-container">
+    <div class="header">
+                <h1 class="logo"><strong>Comics Etc...</strong><a href="http://www.comicsetc.com.au/" title="Comics Etc..." class="logo"><img src="http://cdn2.comicsetc.com.au/skin/frontend/default/comics/images/logo-white-transparent-rotated.png" alt="Comics Etc..." /></a></h1>
+            </div>
+</div>
+
+<!-- Main nav at the top of the page -->
+<div class="nav-wrapper">
+<div class="nav-container">
+    <ul id="nav">
+        <li class="level0 nav-1 level-top first category-specials" data-category-id="15">
+<a href="http://www.comicsetc.com.au/catalogue/#!/specials" class="level-top">
+<span>Specials</span>
+</a>
+</li><li class="level0 nav-2 level-top category-new-and-fresh" data-category-id="3">
+<a href="http://www.comicsetc.com.au/catalogue/#!/new-and-fresh" class="level-top">
+<span>New &amp; Fresh</span>
+</a>
+</li><li class="level0 nav-3 level-top parent category-comics" data-category-id="208">
+<a href="http://www.comicsetc.com.au/catalogue/#!/comics" class="level-top">
+<span>Comics</span>
+</a>
+</li><li class="level0 nav-4 level-top parent category-trade-paperbacks" data-category-id="218">
+<a href="http://www.comicsetc.com.au/catalogue/#!/trade-paperbacks" class="level-top">
+<span>Trade Paperbacks</span>
+</a>
+</li><li class="level0 nav-5 level-top parent category-manga" data-category-id="45">
+<a href="http://www.comicsetc.com.au/catalogue/#!/manga" class="level-top">
+<span>Manga</span>
+</a>
+</li><li class="level0 nav-6 level-top last parent category-collectables" data-category-id="7">
+<a href="http://www.comicsetc.com.au/catalogue/#!/collectables" class="level-top">
+<span>Collectables</span>
+</a>
+</li>    </ul>
+</div>
+</div>        </header>
+        <div class="hidden accelerate" id="megamenu">
+    <div class="mega_glow"></div>
+    <div class="maincontainer">
+        <div class="blackcontainer">
+            
+            <div class="seemore_container"><a href="#" class="seemore-btn ir">See More</a></div>
+            <div id="item_container">
+                                <div class="category-container category-3 hidden">
+                                        <div class="feature_products">
+                        <ul class="items_list">
+                                                                                    <li class="feature_holder">
+                                <div class="feature_thumb_container">
+                                    <div class="feature_thumb">
+                                        <a href="http://www.comicsetc.com.au/catalogue/#!/product/lumberjanes-gotham-academy-1"><div class="ribbon ribbon-new"></div><img src="http://cdn2.comicsetc.com.au/media/catalog/product/cache/1/small_image/129x193/ddd65cf0afb2b02d0e268796e7139244/8/4/84428400542501011_1.jpg"  title="" /></a>
+                                    </div>
+                                </div>
+                                <div class="release_date">Added 02.06.2016</div>
+                            </li>
+                                                                                    <li class="feature_holder">
+                                <div class="feature_thumb_container">
+                                    <div class="feature_thumb">
+                                        <a href="http://www.comicsetc.com.au/catalogue/#!/product/merry-men-1"><div class="ribbon ribbon-new"></div><img src="http://cdn2.comicsetc.com.au/media/catalog/product/cache/1/small_image/129x193/ddd65cf0afb2b02d0e268796e7139244/6/4/64985600067500111_1.jpg"  title="" /></a>
+                                    </div>
+                                </div>
+                                <div class="release_date">Added 02.06.2016</div>
+                            </li>
+                                                                                    <li class="feature_holder">
+                                <div class="feature_thumb_container">
+                                    <div class="feature_thumb">
+                                        <a href="http://www.comicsetc.com.au/catalogue/#!/product/dredd-dust-1"><div class="ribbon ribbon-new"></div><img src="http://cdn2.comicsetc.com.au/media/catalog/product/cache/1/small_image/129x193/ddd65cf0afb2b02d0e268796e7139244/6/3/63415847675400111.jpg"  title="" /></a>
+                                    </div>
+                                </div>
+                                <div class="release_date">Added 02.06.2016</div>
+                            </li>
+                                                                                    <li class="feature_holder">
+                                <div class="feature_thumb_container">
+                                    <div class="feature_thumb">
+                                        <a href="http://www.comicsetc.com.au/catalogue/#!/product/lumberjanes-gotham-academy-1c"><div class="ribbon ribbon-new"></div><img src="http://cdn2.comicsetc.com.au/media/catalog/product/cache/1/small_image/129x193/ddd65cf0afb2b02d0e268796e7139244/8/4/84428400542501031_1.jpg"  title="" /></a>
+                                    </div>
+                                </div>
+                                <div class="release_date">Added 02.06.2016</div>
+                            </li>
+                                                                                    <li class="feature_holder">
+                                <div class="feature_thumb_container">
+                                    <div class="feature_thumb">
+                                        <a href="http://www.comicsetc.com.au/catalogue/#!/product/lumberjanes-gotham-academy-1a"><div class="ribbon ribbon-new"></div><img src="http://cdn2.comicsetc.com.au/media/catalog/product/cache/1/small_image/129x193/ddd65cf0afb2b02d0e268796e7139244/8/4/84428400542501041_1.jpg"  title="" /></a>
+                                    </div>
+                                </div>
+                                <div class="release_date">Added 02.06.2016</div>
+                            </li>
+                                                                                    <li class="feature_holder">
+                                <div class="feature_thumb_container">
+                                    <div class="feature_thumb">
+                                        <a href="http://www.comicsetc.com.au/catalogue/#!/product/lumberjanes-gotham-academy-1b"><div class="ribbon ribbon-new"></div><img src="http://cdn2.comicsetc.com.au/media/catalog/product/cache/1/small_image/129x193/ddd65cf0afb2b02d0e268796e7139244/8/4/84428400542501051_1.jpg"  title="" /></a>
+                                    </div>
+                                </div>
+                                <div class="release_date">Added 02.06.2016</div>
+                            </li>
+                                                    </ul>
+                    </div>
+                </div>
+                                <div class="category-container category-208 hidden">
+                                        <div class="category_list">
+                        <div class="nano-scroll">
+                            <div class="nano-content">
+                                <ul>
+                                                                        <li class="categorylist"><a href="http://www.comicsetc.com.au/catalogue/#!/comics/dc-comic">DC Comics</a></li>
+                                                                        <li class="categorylist"><a href="http://www.comicsetc.com.au/catalogue/#!/comics/de-comic">Dynamite Entertainment</a></li>
+                                                                        <li class="categorylist"><a href="http://www.comicsetc.com.au/catalogue/#!/comics/dark-horse-comic">Dark Horse Comics</a></li>
+                                                                        <li class="categorylist"><a href="http://www.comicsetc.com.au/catalogue/#!/comics/idw-comic">IDW Publishing</a></li>
+                                                                        <li class="categorylist"><a href="http://www.comicsetc.com.au/catalogue/#!/comics/image-comic">Image Comics</a></li>
+                                                                        <li class="categorylist"><a href="http://www.comicsetc.com.au/catalogue/#!/comics/marvel-comic">Marvel Comics</a></li>
+                                                                        <li class="categorylist"><a href="http://www.comicsetc.com.au/catalogue/#!/comics/boom-studios">Boom Studios</a></li>
+                                                                    </ul>
+                            </div>
+                        </div>
+                    </div>
+                                        <div class="feature_products">
+                        <ul class="items_list">
+                                                                                    <li class="feature_holder">
+                                <div class="feature_thumb_container">
+                                    <div class="feature_thumb">
+                                        <a href="http://www.comicsetc.com.au/catalogue/#!/product/dungeons-dragons-2"><div class="ribbon ribbon-preorder"></div><img src="http://cdn2.comicsetc.com.au/media/catalog/product/cache/1/small_image/129x193/ddd65cf0afb2b02d0e268796e7139244/8/2/82771401055800211.jpg"  title="" /></a>
+                                    </div>
+                                </div>
+                                <div class="release_date">Added 16.05.2016</div>
+                            </li>
+                                                                                    <li class="feature_holder">
+                                <div class="feature_thumb_container">
+                                    <div class="feature_thumb">
+                                        <a href="http://www.comicsetc.com.au/catalogue/#!/product/titans-rebirth-1-dc-universe-rebirth"><div class="ribbon ribbon-preorder"></div><img src="http://cdn2.comicsetc.com.au/media/catalog/product/cache/1/small_image/129x193/ddd65cf0afb2b02d0e268796e7139244/7/6/76194134021000111.jpg"  title="" /></a>
+                                    </div>
+                                </div>
+                                <div class="release_date">Added 17.05.2016</div>
+                            </li>
+                                                                                    <li class="feature_holder">
+                                <div class="feature_thumb_container">
+                                    <div class="feature_thumb">
+                                        <a href="http://www.comicsetc.com.au/catalogue/#!/product/superman-1-dc-universe-rebirth"><div class="ribbon ribbon-preorder"></div><img src="http://cdn2.comicsetc.com.au/media/catalog/product/cache/1/small_image/129x193/ddd65cf0afb2b02d0e268796e7139244/7/6/76194134192700111.jpg"  title="" /></a>
+                                    </div>
+                                </div>
+                                <div class="release_date">Added 17.05.2016</div>
+                            </li>
+                                                                                    <li class="feature_holder">
+                                <div class="feature_thumb_container">
+                                    <div class="feature_thumb">
+                                        <a href="http://www.comicsetc.com.au/catalogue/#!/product/batman-1-dc-universe-rebirth"><div class="ribbon ribbon-preorder"></div><img src="http://cdn2.comicsetc.com.au/media/catalog/product/cache/1/small_image/129x193/ddd65cf0afb2b02d0e268796e7139244/7/6/76194134182800111_1.jpg"  title="" /></a>
+                                    </div>
+                                </div>
+                                <div class="release_date">Added 17.05.2016</div>
+                            </li>
+                                                    </ul>
+                    </div>
+                </div>
+                                <div class="category-container category-218 hidden">
+                                        <div class="category_list">
+                        <div class="nano-scroll">
+                            <div class="nano-content">
+                                <ul>
+                                                                        <li class="categorylist"><a href="http://www.comicsetc.com.au/catalogue/#!/trade-paperbacks/avatar">Avatar</a></li>
+                                                                        <li class="categorylist"><a href="http://www.comicsetc.com.au/catalogue/#!/trade-paperbacks/boom-studios">Boom Studios</a></li>
+                                                                        <li class="categorylist"><a href="http://www.comicsetc.com.au/catalogue/#!/trade-paperbacks/dc">DC</a></li>
+                                                                        <li class="categorylist"><a href="http://www.comicsetc.com.au/catalogue/#!/trade-paperbacks/dc-comics-vertigo">DC Comics Vertigo</a></li>
+                                                                        <li class="categorylist"><a href="http://www.comicsetc.com.au/catalogue/#!/trade-paperbacks/dark-horse">Dark Horse</a></li>
+                                                                        <li class="categorylist"><a href="http://www.comicsetc.com.au/catalogue/#!/trade-paperbacks/dynamite-entertainment">Dynamite Entertainment</a></li>
+                                                                        <li class="categorylist"><a href="http://www.comicsetc.com.au/catalogue/#!/trade-paperbacks/idw-publishing">IDW Publishing</a></li>
+                                                                        <li class="categorylist"><a href="http://www.comicsetc.com.au/catalogue/#!/trade-paperbacks/image">Image</a></li>
+                                                                        <li class="categorylist"><a href="http://www.comicsetc.com.au/catalogue/#!/trade-paperbacks/marvel">Marvel</a></li>
+                                                                    </ul>
+                            </div>
+                        </div>
+                    </div>
+                                        <div class="feature_products">
+                        <ul class="items_list">
+                                                                                    <li class="feature_holder">
+                                <div class="feature_thumb_container">
+                                    <div class="feature_thumb">
+                                        <a href="http://www.comicsetc.com.au/catalogue/#!/product/52-book-1"><div class="ribbon ribbon-preorder"></div><img src="http://cdn2.comicsetc.com.au/media/catalog/product/cache/1/small_image/129x193/ddd65cf0afb2b02d0e268796e7139244/9/7/978140126325653499.jpg"  title="" /></a>
+                                    </div>
+                                </div>
+                                <div class="release_date">Added 06.06.2016</div>
+                            </li>
+                                                                                    <li class="feature_holder">
+                                <div class="feature_thumb_container">
+                                    <div class="feature_thumb">
+                                        <a href="http://www.comicsetc.com.au/catalogue/#!/product/abe-sapien-volume-7"><div class="ribbon ribbon-preorder"></div><img src="http://cdn2.comicsetc.com.au/media/catalog/product/cache/1/small_image/129x193/ddd65cf0afb2b02d0e268796e7139244/9/7/978161655891851999.jpg"  title="" /></a>
+                                    </div>
+                                </div>
+                                <div class="release_date">Added 06.06.2016</div>
+                            </li>
+                                                                                    <li class="feature_holder">
+                                <div class="feature_thumb_container">
+                                    <div class="feature_thumb">
+                                        <a href="http://www.comicsetc.com.au/catalogue/#!/product/all-star-section-eight"><div class="ribbon ribbon-preorder"></div><img src="http://cdn2.comicsetc.com.au/media/catalog/product/cache/1/small_image/129x193/ddd65cf0afb2b02d0e268796e7139244/9/7/978140126326351699.jpg"  title="" /></a>
+                                    </div>
+                                </div>
+                                <div class="release_date">Added 06.06.2016</div>
+                            </li>
+                                                                                    <li class="feature_holder">
+                                <div class="feature_thumb_container">
+                                    <div class="feature_thumb">
+                                        <a href="http://www.comicsetc.com.au/catalogue/#!/product/batman-earth-one-volume-2"><div class="ribbon ribbon-preorder"></div><img src="http://cdn2.comicsetc.com.au/media/catalog/product/cache/1/small_image/129x193/ddd65cf0afb2b02d0e268796e7139244/9/7/978140126251851499.jpg"  title="" /></a>
+                                    </div>
+                                </div>
+                                <div class="release_date">Added 07.06.2016</div>
+                            </li>
+                                                    </ul>
+                    </div>
+                </div>
+                                <div class="category-container category-45 hidden">
+                                        <div class="category_list">
+                        <div class="nano-scroll">
+                            <div class="nano-content">
+                                <ul>
+                                                                        <li class="categorylist"><a href="http://www.comicsetc.com.au/catalogue/#!/manga/dark-horse">Dark Horse</a></li>
+                                                                        <li class="categorylist"><a href="http://www.comicsetc.com.au/catalogue/#!/manga/viz">VIZ</a></li>
+                                                                    </ul>
+                            </div>
+                        </div>
+                    </div>
+                                        <div class="feature_products">
+                        <ul class="items_list">
+                                                                                    <li class="feature_holder">
+                                <div class="feature_thumb_container">
+                                    <div class="feature_thumb">
+                                        <a href="http://www.comicsetc.com.au/catalogue/#!/product/food-wars-shokugeki-no-volume-12"><div class="ribbon ribbon-preorder"></div><img src="http://cdn2.comicsetc.com.au/media/catalog/product/cache/1/small_image/129x193/ddd65cf0afb2b02d0e268796e7139244/9/7/978142158508650999.jpg"  title="" /></a>
+                                    </div>
+                                </div>
+                                <div class="release_date">Added 26.05.2016</div>
+                            </li>
+                                                                                    <li class="feature_holder">
+                                <div class="feature_thumb_container">
+                                    <div class="feature_thumb">
+                                        <a href="http://www.comicsetc.com.au/catalogue/#!/product/new-lone-wolf-and-cub-volume-09"><div class="ribbon ribbon-new"></div><img src="http://cdn2.comicsetc.com.au/media/catalog/product/cache/1/small_image/129x193/ddd65cf0afb2b02d0e268796e7139244/9/7/978161655364751399.jpg"  title="" /></a>
+                                    </div>
+                                </div>
+                                <div class="release_date">Added 24.05.2016</div>
+                            </li>
+                                                                                    <li class="feature_holder">
+                                <div class="feature_thumb_container">
+                                    <div class="feature_thumb">
+                                        <a href="http://www.comicsetc.com.au/catalogue/#!/manga/product/monster-hunter-flash-hunter-volume-2"><img src="http://cdn2.comicsetc.com.au/media/catalog/product/cache/1/small_image/129x193/ddd65cf0afb2b02d0e268796e7139244/9/7/978142158426351099.jpg"  title="" /></a>
+                                    </div>
+                                </div>
+                                <div class="release_date">Added 26.05.2016</div>
+                            </li>
+                                                                                    <li class="feature_holder">
+                                <div class="feature_thumb_container">
+                                    <div class="feature_thumb">
+                                        <a href="http://www.comicsetc.com.au/catalogue/#!/product/everyone-s-getting-married-volume-1"><img src="http://cdn2.comicsetc.com.au/media/catalog/product/cache/1/small_image/129x193/ddd65cf0afb2b02d0e268796e7139244/9/7/978142158715850999.jpg"  title="" /></a>
+                                    </div>
+                                </div>
+                                <div class="release_date">Added 26.05.2016</div>
+                            </li>
+                                                    </ul>
+                    </div>
+                </div>
+                                <div class="category-container category-7 hidden">
+                                        <div class="category_list">
+                        <div class="nano-scroll">
+                            <div class="nano-content">
+                                <ul>
+                                                                        <li class="categorylist"><a href="http://www.comicsetc.com.au/catalogue/#!/collectables/novelty">Novelty</a></li>
+                                                                        <li class="categorylist"><a href="http://www.comicsetc.com.au/catalogue/#!/collectables/statue">Statue</a></li>
+                                                                        <li class="categorylist"><a href="http://www.comicsetc.com.au/catalogue/#!/collectables/supplies">Supplies</a></li>
+                                                                        <li class="categorylist"><a href="http://www.comicsetc.com.au/catalogue/#!/collectables/toy">Toy</a></li>
+                                                                    </ul>
+                            </div>
+                        </div>
+                    </div>
+                                        <div class="feature_products">
+                        <ul class="items_list">
+                                                                                    <li class="feature_holder">
+                                <div class="feature_thumb_container">
+                                    <div class="feature_thumb">
+                                        <a href="http://www.comicsetc.com.au/catalogue/#!/product/batman-vs-superman-dawn-of-justice-superman-statue"><div class="ribbon ribbon-new"></div><img src="http://cdn2.comicsetc.com.au/media/catalog/product/cache/1/small_image/129x193/ddd65cf0afb2b02d0e268796e7139244/7/6/761941335094.jpg"  title="" /></a>
+                                    </div>
+                                </div>
+                                <div class="release_date">Added 18.01.2016</div>
+                            </li>
+                                                                                    <li class="feature_holder">
+                                <div class="feature_thumb_container">
+                                    <div class="feature_thumb">
+                                        <a href="http://www.comicsetc.com.au/catalogue/#!/product/batman-vs-superman-dawn-of-justice-armored-batman-statue"><div class="ribbon ribbon-new"></div><img src="http://cdn2.comicsetc.com.au/media/catalog/product/cache/1/small_image/129x193/ddd65cf0afb2b02d0e268796e7139244/7/6/761941335896.jpg"  title="" /></a>
+                                    </div>
+                                </div>
+                                <div class="release_date">Added 21.03.2016</div>
+                            </li>
+                                                                                    <li class="feature_holder">
+                                <div class="feature_thumb_container">
+                                    <div class="feature_thumb">
+                                        <a href="http://www.comicsetc.com.au/catalogue/#!/product/batman-arkham-knight-figure-rh"><img src="http://cdn2.comicsetc.com.au/media/catalog/product/cache/1/small_image/129x193/ddd65cf0afb2b02d0e268796e7139244/7/6/761941336039.jpg"  title="" /></a>
+                                    </div>
+                                </div>
+                                <div class="release_date">Added 15.02.2016</div>
+                            </li>
+                                                                                    <li class="feature_holder">
+                                <div class="feature_thumb_container">
+                                    <div class="feature_thumb">
+                                        <a href="http://www.comicsetc.com.au/catalogue/#!/product/deadpool-standard-vinyl-decal"><img src="http://cdn2.comicsetc.com.au/media/catalog/product/cache/1/small_image/129x193/ddd65cf0afb2b02d0e268796e7139244/8/1/811308022515.jpg"  title="" /></a>
+                                    </div>
+                                </div>
+                                <div class="release_date">Added 20.05.2016</div>
+                            </li>
+                                                    </ul>
+                    </div>
+                </div>
+                            </div>
+        </div>
+        <div class="shadow"></div>
+    </div>
+    <div class="mega_shelf"></div>
+    <div class="mega-shadow"></div>
+</div>        <div class="main-container col1-layout">
+        <div class="main-container-inner">
+            <div class="main-wrapper">
+            <div class="main">
+            <div class="main-inner">
+                                <div role="main" class="col-main">
+                                        <div class="std"><!-- No CMS content here --></div><!-- <div id="darkener" class="hidden"></div> -->
+<div id="hero-blue-glow" class="glow blue-glow"></div>
+<div id="hero-yellow-glow" class="glow yellow-glow"></div>
+<div id="hero">
+   <!--  <div id="hero-title" class="hero-title out"><img src="http://cdn2.comicsetc.com.au/skin/frontend/default/comics/images/hero-suddenly-s.png" alt="S"/><span>UDDENLY AT COMICS ETC...</span></div>
+    <div id="hero-preloader" class="hero-title fade out"><img src="http://cdn2.comicsetc.com.au/skin/frontend/default/comics/images/hero-loading-l.png" alt="L"/><span>OADING...</span><img src="http://cdn2.comicsetc.com.au/skin/frontend/default/comics/images/loading-cursors/hero-loader-gfx.gif" alt="loading" width="81" height="18" class="preloader"/></div> -->
+
+   <!--  <div id="batman-hero" class="hero-static normal-layer"></div>
+    <div id="superman-hero" class="hero-static normal-layer"></div>
+    <div id="wolverine-hero" class="hero-static normal-layer"></div>
+    <div id="ironman-hero" class="hero-static normal-layer"></div> -->
+
+   <!--  <img src="/js/spacer.gif" alt="" id="hero-spacer" usemap="#hero-map" /> -->
+<!-- </div>
+<map name="hero-map">
+    <area shape="poly" coords="690,239,999,282,1000,561,770,561" href="/catalogue/#!/best-sellers" id="ironman-map"/>
+    <area shape="poly" coords="357,181,395,10,999,10,1000,270" href="/catalogue/#!/new-and-fresh" id="superman-map" />
+    <area shape="poly" coords="355,192,269,562,754,561,678,237" href="/blog/" id="wolverine-map" />
+    <area shape="poly" coords="10,10,385,9,256,563,11,562" href="/catalogue/#!/comics" id="batman-map" /> -->
+</map>
+<div id="latest-products" class="homepage-products-strip">
+
+    <div class="hp-catalogue-header">
+        <h1>New Titles</h1>
+        <div id="view-switcher">
+            <label>View</label>
+            <div id="control" class="viewmode-toggle">
+                <div data-state="grid_state" id="control-grid-hp-new" class="active">Covers</div>
+                <div data-state="grid_detail_state" id="control-grid-details-hp-new">Details</div>
+            </div>
+        </div>
+    </div>
+
+    <ul class="hidden">
+                    <li class="item" data-product-id="102309"  data-product-price="6.4">
+                <a href="http://www.comicsetc.com.au/catalogue/#!/product/tank-girl-2-girls-1-tank-2">
+                    <div class="ribbon ribbon-preorder"></div>                    <img src="http://cdn2.comicsetc.com.au/media/catalog/product/cache/1/small_image/79x118/ddd65cf0afb2b02d0e268796e7139244/0/7/07447068271400211.jpg" height="118" alt="Tank Girls Two Girls One Tank #2" />
+                </a>
+                
+                    <div class="hover invisible accelerate">
+                        
+                        <!-- Wishlist star in to right hand corner-->
+                                                                                    <a title="Add / Remove item from wishlist" href="https://www.comicsetc.com.au/wishlist/index/add/product/102309/form_key/IfbWj54qxKyEEmFO/" class="link-wishlist grey-star sprite-vertical-site-wide ir">Add to Wishlist</a>
+                                                                            
+                        <!-- Product name -->
+                        <h2 class="product-name"><a href="http://www.comicsetc.com.au/catalogue/#!/product/tank-girl-2-girls-1-tank-2" title="Tank Girls Two Girls One Tank #2">Tank Girls Two Girls One Tank #2</a></h2>
+                                                
+                        <!-- Product price -->
+                        
+
+                
+    <div class="price-box">
+                                                            <span class="regular-price" id="product-price-102309">
+                                            <span class="price">$6.40</span>                                    </span>
+                        
+        </div>
+
+                        
+                        <!-- Action area -->
+                        <div class="actions">
+                                                            <button type="button" title="Add to Cart" class="btn-cart add-to-cart-btn-up sprite-site-wide ir"><span><span>Add to Cart</span></span></button>
+                                                   </div>
+                    </div>
+            </li>
+                        <li class="item" data-product-id="102307"  data-product-price="6.4">
+                <a href="http://www.comicsetc.com.au/catalogue/#!/product/vikings-2">
+                    <div class="ribbon ribbon-preorder"></div>                    <img src="http://cdn2.comicsetc.com.au/media/catalog/product/cache/1/small_image/79x118/ddd65cf0afb2b02d0e268796e7139244/0/7/07447068302500211.jpg" height="118" alt="Vikings #2" />
+                </a>
+                
+                    <div class="hover invisible accelerate">
+                        
+                        <!-- Wishlist star in to right hand corner-->
+                                                                                    <a title="Add / Remove item from wishlist" href="https://www.comicsetc.com.au/wishlist/index/add/product/102307/form_key/IfbWj54qxKyEEmFO/" class="link-wishlist grey-star sprite-vertical-site-wide ir">Add to Wishlist</a>
+                                                                            
+                        <!-- Product name -->
+                        <h2 class="product-name"><a href="http://www.comicsetc.com.au/catalogue/#!/product/vikings-2" title="Vikings #2">Vikings #2</a></h2>
+                                                
+                        <!-- Product price -->
+                        
+
+                
+    <div class="price-box">
+                                                            <span class="regular-price" id="product-price-102307">
+                                            <span class="price">$6.40</span>                                    </span>
+                        
+        </div>
+
+                        
+                        <!-- Action area -->
+                        <div class="actions">
+                                                            <button type="button" title="Add to Cart" class="btn-cart add-to-cart-btn-up sprite-site-wide ir"><span><span>Add to Cart</span></span></button>
+                                                   </div>
+                    </div>
+            </li>
+                        <li class="item" data-product-id="102304"  data-product-price="6.4">
+                <a href="http://www.comicsetc.com.au/catalogue/#!/product/simpsons-comics-230">
+                    <div class="ribbon ribbon-preorder"></div>                    <img src="http://cdn2.comicsetc.com.au/media/catalog/product/cache/1/small_image/79x118/ddd65cf0afb2b02d0e268796e7139244/7/9/79834202851523011.jpg" height="118" alt="Simpsons Comics #230" />
+                </a>
+                
+                    <div class="hover invisible accelerate">
+                        
+                        <!-- Wishlist star in to right hand corner-->
+                                                                                    <a title="Add / Remove item from wishlist" href="https://www.comicsetc.com.au/wishlist/index/add/product/102304/form_key/IfbWj54qxKyEEmFO/" class="link-wishlist grey-star sprite-vertical-site-wide ir">Add to Wishlist</a>
+                                                                            
+                        <!-- Product name -->
+                        <h2 class="product-name"><a href="http://www.comicsetc.com.au/catalogue/#!/product/simpsons-comics-230" title="Simpsons Comics #230">Simpsons Comics #230</a></h2>
+                                                
+                        <!-- Product price -->
+                        
+
+                
+    <div class="price-box">
+                                                            <span class="regular-price" id="product-price-102304">
+                                            <span class="price">$6.40</span>                                    </span>
+                        
+        </div>
+
+                        
+                        <!-- Action area -->
+                        <div class="actions">
+                                                            <button type="button" title="Add to Cart" class="btn-cart add-to-cart-btn-up sprite-site-wide ir"><span><span>Add to Cart</span></span></button>
+                                                   </div>
+                    </div>
+            </li>
+                        <li class="item" data-product-id="102297"  data-product-price="6.4">
+                <a href="http://www.comicsetc.com.au/catalogue/#!/product/joyners-1">
+                    <div class="ribbon ribbon-preorder"></div>                    <img src="http://cdn2.comicsetc.com.au/media/catalog/product/cache/1/small_image/79x118/ddd65cf0afb2b02d0e268796e7139244/8/4/84428400563000111_1.jpg" height="118" alt="The Joyners #1" />
+                </a>
+                
+                    <div class="hover invisible accelerate">
+                        
+                        <!-- Wishlist star in to right hand corner-->
+                                                                                    <a title="Add / Remove item from wishlist" href="https://www.comicsetc.com.au/wishlist/index/add/product/102297/form_key/IfbWj54qxKyEEmFO/" class="link-wishlist grey-star sprite-vertical-site-wide ir">Add to Wishlist</a>
+                                                                            
+                        <!-- Product name -->
+                        <h2 class="product-name"><a href="http://www.comicsetc.com.au/catalogue/#!/product/joyners-1" title="The Joyners #1">The Joyners #1</a></h2>
+                                                
+                        <!-- Product price -->
+                        
+
+                
+    <div class="price-box">
+                                                            <span class="regular-price" id="product-price-102297">
+                                            <span class="price">$6.40</span>                                    </span>
+                        
+        </div>
+
+                        
+                        <!-- Action area -->
+                        <div class="actions">
+                                                            <button type="button" title="Add to Cart" class="btn-cart add-to-cart-btn-up sprite-site-wide ir"><span><span>Add to Cart</span></span></button>
+                                                   </div>
+                    </div>
+            </li>
+                        <li class="item" data-product-id="102299"  data-product-price="6.4">
+                <a href="http://www.comicsetc.com.au/catalogue/#!/product/klaus-6">
+                    <div class="ribbon ribbon-preorder"></div>                    <img src="http://cdn2.comicsetc.com.au/media/catalog/product/cache/1/small_image/79x118/ddd65cf0afb2b02d0e268796e7139244/8/4/84428400511100611_1.jpg" height="118" alt="Klaus #6" />
+                </a>
+                
+                    <div class="hover invisible accelerate">
+                        
+                        <!-- Wishlist star in to right hand corner-->
+                                                                                    <a title="Add / Remove item from wishlist" href="https://www.comicsetc.com.au/wishlist/index/add/product/102299/form_key/IfbWj54qxKyEEmFO/" class="link-wishlist grey-star sprite-vertical-site-wide ir">Add to Wishlist</a>
+                                                                            
+                        <!-- Product name -->
+                        <h2 class="product-name"><a href="http://www.comicsetc.com.au/catalogue/#!/product/klaus-6" title="Klaus #6">Klaus #6</a></h2>
+                                                
+                        <!-- Product price -->
+                        
+
+                
+    <div class="price-box">
+                                                            <span class="regular-price" id="product-price-102299">
+                                            <span class="price">$6.40</span>                                    </span>
+                        
+        </div>
+
+                        
+                        <!-- Action area -->
+                        <div class="actions">
+                                                            <button type="button" title="Add to Cart" class="btn-cart add-to-cart-btn-up sprite-site-wide ir"><span><span>Add to Cart</span></span></button>
+                                                   </div>
+                    </div>
+            </li>
+                        <li class="item" data-product-id="102294"  data-product-price="6.4">
+                <a href="http://www.comicsetc.com.au/catalogue/#!/product/independence-day-5">
+                    <div class="ribbon ribbon-preorder"></div>                    <img src="http://cdn2.comicsetc.com.au/media/catalog/product/cache/1/small_image/79x118/ddd65cf0afb2b02d0e268796e7139244/0/7/07447068114400511.jpg" height="118" alt="Independence Day #5" />
+                </a>
+                
+                    <div class="hover invisible accelerate">
+                        
+                        <!-- Wishlist star in to right hand corner-->
+                                                                                    <a title="Add / Remove item from wishlist" href="https://www.comicsetc.com.au/wishlist/index/add/product/102294/form_key/IfbWj54qxKyEEmFO/" class="link-wishlist grey-star sprite-vertical-site-wide ir">Add to Wishlist</a>
+                                                                            
+                        <!-- Product name -->
+                        <h2 class="product-name"><a href="http://www.comicsetc.com.au/catalogue/#!/product/independence-day-5" title="Independence Day #5">Independence Day #5</a></h2>
+                                                
+                        <!-- Product price -->
+                        
+
+                
+    <div class="price-box">
+                                                            <span class="regular-price" id="product-price-102294">
+                                            <span class="price">$6.40</span>                                    </span>
+                        
+        </div>
+
+                        
+                        <!-- Action area -->
+                        <div class="actions">
+                                                            <button type="button" title="Add to Cart" class="btn-cart add-to-cart-btn-up sprite-site-wide ir"><span><span>Add to Cart</span></span></button>
+                                                   </div>
+                    </div>
+            </li>
+                        <li class="item" data-product-id="102291"  data-product-price="6.4">
+                <a href="http://www.comicsetc.com.au/catalogue/#!/product/smosh-2">
+                    <div class="ribbon ribbon-preorder"></div>                    <img src="http://cdn2.comicsetc.com.au/media/catalog/product/cache/1/small_image/79x118/ddd65cf0afb2b02d0e268796e7139244/7/2/72513024752002011.jpg" height="118" alt="SMOSH #2" />
+                </a>
+                
+                    <div class="hover invisible accelerate">
+                        
+                        <!-- Wishlist star in to right hand corner-->
+                                                                                    <a title="Add / Remove item from wishlist" href="https://www.comicsetc.com.au/wishlist/index/add/product/102291/form_key/IfbWj54qxKyEEmFO/" class="link-wishlist grey-star sprite-vertical-site-wide ir">Add to Wishlist</a>
+                                                                            
+                        <!-- Product name -->
+                        <h2 class="product-name"><a href="http://www.comicsetc.com.au/catalogue/#!/product/smosh-2" title="SMOSH #2">SMOSH #2</a></h2>
+                                                
+                        <!-- Product price -->
+                        
+
+                
+    <div class="price-box">
+                                                            <span class="regular-price" id="product-price-102291">
+                                            <span class="price">$6.40</span>                                    </span>
+                        
+        </div>
+
+                        
+                        <!-- Action area -->
+                        <div class="actions">
+                                                            <button type="button" title="Add to Cart" class="btn-cart add-to-cart-btn-up sprite-site-wide ir"><span><span>Add to Cart</span></span></button>
+                                                   </div>
+                    </div>
+            </li>
+                        <li class="item" data-product-id="102293"  data-product-price="19.5">
+                <a href="http://www.comicsetc.com.au/catalogue/#!/product/spidey-volume-1-now">
+                    <div class="ribbon ribbon-preorder"></div>                    <img src="http://cdn2.comicsetc.com.au/media/catalog/product/cache/1/small_image/79x118/ddd65cf0afb2b02d0e268796e7139244/images/catalog/product/placeholder/small_image.jpg" height="118" alt="Spidey Volume 1 NOW!" />
+                </a>
+                
+                    <div class="hover invisible accelerate">
+                        
+                        <!-- Wishlist star in to right hand corner-->
+                                                                                    <a title="Add / Remove item from wishlist" href="https://www.comicsetc.com.au/wishlist/index/add/product/102293/form_key/IfbWj54qxKyEEmFO/" class="link-wishlist grey-star sprite-vertical-site-wide ir">Add to Wishlist</a>
+                                                                            
+                        <!-- Product name -->
+                        <h2 class="product-name"><a href="http://www.comicsetc.com.au/catalogue/#!/product/spidey-volume-1-now" title="Spidey Volume 1 NOW!">Spidey Volume 1 NOW!</a></h2>
+                                                
+                        <!-- Product price -->
+                        
+
+                
+    <div class="price-box">
+                                                            <span class="regular-price" id="product-price-102293">
+                                            <span class="price">$19.50</span>                                    </span>
+                        
+        </div>
+
+                        
+                        <!-- Action area -->
+                        <div class="actions">
+                                                            <button type="button" title="Add to Cart" class="btn-cart add-to-cart-btn-up sprite-site-wide ir"><span><span>Add to Cart</span></span></button>
+                                                   </div>
+                    </div>
+            </li>
+                        <li class="item" data-product-id="102290"  data-product-price="6.4">
+                <a href="http://www.comicsetc.com.au/catalogue/#!/product/hip-hop-family-tree-10">
+                    <div class="ribbon ribbon-preorder"></div>                    <img src="http://cdn2.comicsetc.com.au/media/catalog/product/cache/1/small_image/79x118/ddd65cf0afb2b02d0e268796e7139244/6/0/60922436876901011.jpg" height="118" alt="Hip-Hop Family Tree #10" />
+                </a>
+                
+                    <div class="hover invisible accelerate">
+                        
+                        <!-- Wishlist star in to right hand corner-->
+                                                                                    <a title="Add / Remove item from wishlist" href="https://www.comicsetc.com.au/wishlist/index/add/product/102290/form_key/IfbWj54qxKyEEmFO/" class="link-wishlist grey-star sprite-vertical-site-wide ir">Add to Wishlist</a>
+                                                                            
+                        <!-- Product name -->
+                        <h2 class="product-name"><a href="http://www.comicsetc.com.au/catalogue/#!/product/hip-hop-family-tree-10" title="Hip-Hop Family Tree #10">Hip-Hop Family Tree #10</a></h2>
+                                                
+                        <!-- Product price -->
+                        
+
+                
+    <div class="price-box">
+                                                            <span class="regular-price" id="product-price-102290">
+                                            <span class="price">$6.40</span>                                    </span>
+                        
+        </div>
+
+                        
+                        <!-- Action area -->
+                        <div class="actions">
+                                                            <button type="button" title="Add to Cart" class="btn-cart add-to-cart-btn-up sprite-site-wide ir"><span><span>Add to Cart</span></span></button>
+                                                   </div>
+                    </div>
+            </li>
+                        <li class="item" data-product-id="102286"  data-product-price="6.4">
+                <a href="http://www.comicsetc.com.au/catalogue/#!/product/dejah-thoris-5">
+                    <div class="ribbon ribbon-preorder"></div>                    <img src="http://cdn2.comicsetc.com.au/media/catalog/product/cache/1/small_image/79x118/ddd65cf0afb2b02d0e268796e7139244/7/2/72513024475805011.jpg" height="118" alt="Dejah Thoris #5" />
+                </a>
+                
+                    <div class="hover invisible accelerate">
+                        
+                        <!-- Wishlist star in to right hand corner-->
+                                                                                    <a title="Add / Remove item from wishlist" href="https://www.comicsetc.com.au/wishlist/index/add/product/102286/form_key/IfbWj54qxKyEEmFO/" class="link-wishlist grey-star sprite-vertical-site-wide ir">Add to Wishlist</a>
+                                                                            
+                        <!-- Product name -->
+                        <h2 class="product-name"><a href="http://www.comicsetc.com.au/catalogue/#!/product/dejah-thoris-5" title="Dejah Thoris #5">Dejah Thoris #5</a></h2>
+                                                
+                        <!-- Product price -->
+                        
+
+                
+    <div class="price-box">
+                                                            <span class="regular-price" id="product-price-102286">
+                                            <span class="price">$6.40</span>                                    </span>
+                        
+        </div>
+
+                        
+                        <!-- Action area -->
+                        <div class="actions">
+                                                            <button type="button" title="Add to Cart" class="btn-cart add-to-cart-btn-up sprite-site-wide ir"><span><span>Add to Cart</span></span></button>
+                                                   </div>
+                    </div>
+            </li>
+                        <li class="item" data-product-id="102287"  data-product-price="6.4">
+                <a href="http://www.comicsetc.com.au/catalogue/#!/product/devolution-5">
+                    <div class="ribbon ribbon-preorder"></div>                    <img src="http://cdn2.comicsetc.com.au/media/catalog/product/cache/1/small_image/79x118/ddd65cf0afb2b02d0e268796e7139244/7/2/72513024365205011.jpg" height="118" alt="Devolution #5" />
+                </a>
+                
+                    <div class="hover invisible accelerate">
+                        
+                        <!-- Wishlist star in to right hand corner-->
+                                                                                    <a title="Add / Remove item from wishlist" href="https://www.comicsetc.com.au/wishlist/index/add/product/102287/form_key/IfbWj54qxKyEEmFO/" class="link-wishlist grey-star sprite-vertical-site-wide ir">Add to Wishlist</a>
+                                                                            
+                        <!-- Product name -->
+                        <h2 class="product-name"><a href="http://www.comicsetc.com.au/catalogue/#!/product/devolution-5" title="Devolution #5">Devolution #5</a></h2>
+                                                
+                        <!-- Product price -->
+                        
+
+                
+    <div class="price-box">
+                                                            <span class="regular-price" id="product-price-102287">
+                                            <span class="price">$6.40</span>                                    </span>
+                        
+        </div>
+
+                        
+                        <!-- Action area -->
+                        <div class="actions">
+                                                            <button type="button" title="Add to Cart" class="btn-cart add-to-cart-btn-up sprite-site-wide ir"><span><span>Add to Cart</span></span></button>
+                                                   </div>
+                    </div>
+            </li>
+                        <li class="item" data-product-id="102284"  data-product-price="6.4">
+                <a href="http://www.comicsetc.com.au/catalogue/#!/product/assassin-s-creed-templars-3">
+                    <div class="ribbon ribbon-preorder"></div>                    <img src="http://cdn2.comicsetc.com.au/media/catalog/product/cache/1/small_image/79x118/ddd65cf0afb2b02d0e268796e7139244/0/7/07447068267700311.jpg" height="118" alt="Assassin's Creed Templars #3" />
+                </a>
+                
+                    <div class="hover invisible accelerate">
+                        
+                        <!-- Wishlist star in to right hand corner-->
+                                                                                    <a title="Add / Remove item from wishlist" href="https://www.comicsetc.com.au/wishlist/index/add/product/102284/form_key/IfbWj54qxKyEEmFO/" class="link-wishlist grey-star sprite-vertical-site-wide ir">Add to Wishlist</a>
+                                                                            
+                        <!-- Product name -->
+                        <h2 class="product-name"><a href="http://www.comicsetc.com.au/catalogue/#!/product/assassin-s-creed-templars-3" title="Assassin's Creed Templars #3">Assassin's Creed Templars #3</a></h2>
+                                                
+                        <!-- Product price -->
+                        
+
+                
+    <div class="price-box">
+                                                            <span class="regular-price" id="product-price-102284">
+                                            <span class="price">$6.40</span>                                    </span>
+                        
+        </div>
+
+                        
+                        <!-- Action area -->
+                        <div class="actions">
+                                                            <button type="button" title="Add to Cart" class="btn-cart add-to-cart-btn-up sprite-site-wide ir"><span><span>Add to Cart</span></span></button>
+                                                   </div>
+                    </div>
+            </li>
+                        <li class="item" data-product-id="102280"  data-product-price="9">
+                <a href="http://www.comicsetc.com.au/catalogue/#!/product/dc-universe-rebirth-1-2nd-dc-universe-rebirth">
+                    <div class="ribbon ribbon-preorder"></div>                    <img src="http://cdn2.comicsetc.com.au/media/catalog/product/cache/1/small_image/79x118/ddd65cf0afb2b02d0e268796e7139244/7/6/76194134013500112.jpg" height="118" alt="DC Universe Rebirth #1 2nd Printing (DC Universe Rebirth)" />
+                </a>
+                
+                    <div class="hover invisible accelerate">
+                        
+                        <!-- Wishlist star in to right hand corner-->
+                                                                                    <a title="Add / Remove item from wishlist" href="https://www.comicsetc.com.au/wishlist/index/add/product/102280/form_key/IfbWj54qxKyEEmFO/" class="link-wishlist grey-star sprite-vertical-site-wide ir">Add to Wishlist</a>
+                                                                            
+                        <!-- Product name -->
+                        <h2 class="product-name"><a href="http://www.comicsetc.com.au/catalogue/#!/product/dc-universe-rebirth-1-2nd-dc-universe-rebirth" title="DC Universe Rebirth #1 2nd Printing (DC Universe Rebirth)">DC Universe Rebirth #1 2nd Printing (DC Universe Rebirth)</a></h2>
+                                                
+                        <!-- Product price -->
+                        
+
+                
+    <div class="price-box">
+                                                            <span class="regular-price" id="product-price-102280">
+                                            <span class="price">$9.00</span>                                    </span>
+                        
+        </div>
+
+                        
+                        <!-- Action area -->
+                        <div class="actions">
+                                                            <button type="button" title="Add to Cart" class="btn-cart add-to-cart-btn-up sprite-site-wide ir"><span><span>Add to Cart</span></span></button>
+                                                   </div>
+                    </div>
+            </li>
+                        <li class="item" data-product-id="102272"  data-product-price="6.4">
+                <a href="http://www.comicsetc.com.au/catalogue/#!/product/my-little-pony-friendship-14100">
+                    <div class="ribbon ribbon-preorder"></div>                    <img src="http://cdn2.comicsetc.com.au/media/catalog/product/cache/1/small_image/79x118/ddd65cf0afb2b02d0e268796e7139244/8/2/82771400398704311.jpg" height="118" alt="My Little Pony Friendship is Magic #43" />
+                </a>
+                
+                    <div class="hover invisible accelerate">
+                        
+                        <!-- Wishlist star in to right hand corner-->
+                                                                                    <a title="Add / Remove item from wishlist" href="https://www.comicsetc.com.au/wishlist/index/add/product/102272/form_key/IfbWj54qxKyEEmFO/" class="link-wishlist grey-star sprite-vertical-site-wide ir">Add to Wishlist</a>
+                                                                            
+                        <!-- Product name -->
+                        <h2 class="product-name"><a href="http://www.comicsetc.com.au/catalogue/#!/product/my-little-pony-friendship-14100" title="My Little Pony Friendship is Magic #43">My Little Pony Friendship is Magic #43</a></h2>
+                                                
+                        <!-- Product price -->
+                        
+
+                
+    <div class="price-box">
+                                                            <span class="regular-price" id="product-price-102272">
+                                            <span class="price">$6.40</span>                                    </span>
+                        
+        </div>
+
+                        
+                        <!-- Action area -->
+                        <div class="actions">
+                                                            <button type="button" title="Add to Cart" class="btn-cart add-to-cart-btn-up sprite-site-wide ir"><span><span>Add to Cart</span></span></button>
+                                                   </div>
+                    </div>
+            </li>
+                        <li class="item" data-product-id="102273"  data-product-price="5">
+                <a href="http://www.comicsetc.com.au/catalogue/#!/product/new-suicide-squad-21">
+                    <div class="ribbon ribbon-preorder"></div>                    <img src="http://cdn2.comicsetc.com.au/media/catalog/product/cache/1/small_image/79x118/ddd65cf0afb2b02d0e268796e7139244/7/6/76194132184402111.jpg" height="118" alt="New Suicide Squad #21" />
+                </a>
+                
+                    <div class="hover invisible accelerate">
+                        
+                        <!-- Wishlist star in to right hand corner-->
+                                                                                    <a title="Add / Remove item from wishlist" href="https://www.comicsetc.com.au/wishlist/index/add/product/102273/form_key/IfbWj54qxKyEEmFO/" class="link-wishlist grey-star sprite-vertical-site-wide ir">Add to Wishlist</a>
+                                                                            
+                        <!-- Product name -->
+                        <h2 class="product-name"><a href="http://www.comicsetc.com.au/catalogue/#!/product/new-suicide-squad-21" title="New Suicide Squad #21">New Suicide Squad #21</a></h2>
+                                                
+                        <!-- Product price -->
+                        
+
+                
+    <div class="price-box">
+                                                            <span class="regular-price" id="product-price-102273">
+                                            <span class="price">$5.00</span>                                    </span>
+                        
+        </div>
+
+                        
+                        <!-- Action area -->
+                        <div class="actions">
+                                                            <button type="button" title="Add to Cart" class="btn-cart add-to-cart-btn-up sprite-site-wide ir"><span><span>Add to Cart</span></span></button>
+                                                   </div>
+                    </div>
+            </li>
+                        <li class="item" data-product-id="102274"  data-product-price="6.4">
+                <a href="http://www.comicsetc.com.au/catalogue/#!/product/nova-8">
+                    <div class="ribbon ribbon-preorder"></div>                    <img src="http://cdn2.comicsetc.com.au/media/catalog/product/cache/1/small_image/79x118/ddd65cf0afb2b02d0e268796e7139244/7/5/75960608353400811_1.jpg" height="118" alt="Nova #8" />
+                </a>
+                
+                    <div class="hover invisible accelerate">
+                        
+                        <!-- Wishlist star in to right hand corner-->
+                                                                                    <a title="Add / Remove item from wishlist" href="https://www.comicsetc.com.au/wishlist/index/add/product/102274/form_key/IfbWj54qxKyEEmFO/" class="link-wishlist grey-star sprite-vertical-site-wide ir">Add to Wishlist</a>
+                                                                            
+                        <!-- Product name -->
+                        <h2 class="product-name"><a href="http://www.comicsetc.com.au/catalogue/#!/product/nova-8" title="Nova #8">Nova #8</a></h2>
+                                                
+                        <!-- Product price -->
+                        
+
+                
+    <div class="price-box">
+                                                            <span class="regular-price" id="product-price-102274">
+                                            <span class="price">$6.40</span>                                    </span>
+                        
+        </div>
+
+                        
+                        <!-- Action area -->
+                        <div class="actions">
+                                                            <button type="button" title="Add to Cart" class="btn-cart add-to-cart-btn-up sprite-site-wide ir"><span><span>Add to Cart</span></span></button>
+                                                   </div>
+                    </div>
+            </li>
+                        <li class="item" data-product-id="102275"  data-product-price="6.4">
+                <a href="http://www.comicsetc.com.au/catalogue/#!/product/october-faction-17">
+                    <div class="ribbon ribbon-preorder"></div>                    <img src="http://cdn2.comicsetc.com.au/media/catalog/product/cache/1/small_image/79x118/ddd65cf0afb2b02d0e268796e7139244/8/2/82771400727501711.jpg" height="118" alt="The October Faction #17" />
+                </a>
+                
+                    <div class="hover invisible accelerate">
+                        
+                        <!-- Wishlist star in to right hand corner-->
+                                                                                    <a title="Add / Remove item from wishlist" href="https://www.comicsetc.com.au/wishlist/index/add/product/102275/form_key/IfbWj54qxKyEEmFO/" class="link-wishlist grey-star sprite-vertical-site-wide ir">Add to Wishlist</a>
+                                                                            
+                        <!-- Product name -->
+                        <h2 class="product-name"><a href="http://www.comicsetc.com.au/catalogue/#!/product/october-faction-17" title="The October Faction #17">The October Faction #17</a></h2>
+                                                
+                        <!-- Product price -->
+                        
+
+                
+    <div class="price-box">
+                                                            <span class="regular-price" id="product-price-102275">
+                                            <span class="price">$6.40</span>                                    </span>
+                        
+        </div>
+
+                        
+                        <!-- Action area -->
+                        <div class="actions">
+                                                            <button type="button" title="Add to Cart" class="btn-cart add-to-cart-btn-up sprite-site-wide ir"><span><span>Add to Cart</span></span></button>
+                                                   </div>
+                    </div>
+            </li>
+                        <li class="item" data-product-id="102276"  data-product-price="6.4">
+                <a href="http://www.comicsetc.com.au/catalogue/#!/product/patsy-walker-aka-hellcat-7">
+                    <div class="ribbon ribbon-preorder"></div>                    <img src="http://cdn2.comicsetc.com.au/media/catalog/product/cache/1/small_image/79x118/ddd65cf0afb2b02d0e268796e7139244/7/5/75960608407400711_1.jpg" height="118" alt="Patsy Walker AKA Hellcat #7" />
+                </a>
+                
+                    <div class="hover invisible accelerate">
+                        
+                        <!-- Wishlist star in to right hand corner-->
+                                                                                    <a title="Add / Remove item from wishlist" href="https://www.comicsetc.com.au/wishlist/index/add/product/102276/form_key/IfbWj54qxKyEEmFO/" class="link-wishlist grey-star sprite-vertical-site-wide ir">Add to Wishlist</a>
+                                                                            
+                        <!-- Product name -->
+                        <h2 class="product-name"><a href="http://www.comicsetc.com.au/catalogue/#!/product/patsy-walker-aka-hellcat-7" title="Patsy Walker AKA Hellcat #7">Patsy Walker AKA Hellcat #7</a></h2>
+                                                
+                        <!-- Product price -->
+                        
+
+                
+    <div class="price-box">
+                                                            <span class="regular-price" id="product-price-102276">
+                                            <span class="price">$6.40</span>                                    </span>
+                        
+        </div>
+
+                        
+                        <!-- Action area -->
+                        <div class="actions">
+                                                            <button type="button" title="Add to Cart" class="btn-cart add-to-cart-btn-up sprite-site-wide ir"><span><span>Add to Cart</span></span></button>
+                                                   </div>
+                    </div>
+            </li>
+                        <li class="item" data-product-id="102277"  data-product-price="23">
+                <a href="http://www.comicsetc.com.au/catalogue/#!/product/patsy-walker-aka-hellcat-volume-1">
+                    <div class="ribbon ribbon-preorder"></div>                    <img src="http://cdn2.comicsetc.com.au/media/catalog/product/cache/1/small_image/79x118/ddd65cf0afb2b02d0e268796e7139244/images/catalog/product/placeholder/small_image.jpg" height="118" alt="Patsy Walker AKA Hellcat Volume 1 NOW!" />
+                </a>
+                
+                    <div class="hover invisible accelerate">
+                        
+                        <!-- Wishlist star in to right hand corner-->
+                                                                                    <a title="Add / Remove item from wishlist" href="https://www.comicsetc.com.au/wishlist/index/add/product/102277/form_key/IfbWj54qxKyEEmFO/" class="link-wishlist grey-star sprite-vertical-site-wide ir">Add to Wishlist</a>
+                                                                            
+                        <!-- Product name -->
+                        <h2 class="product-name"><a href="http://www.comicsetc.com.au/catalogue/#!/product/patsy-walker-aka-hellcat-volume-1" title="Patsy Walker AKA Hellcat Volume 1 NOW!">Patsy Walker AKA Hellcat Volume 1 NOW!</a></h2>
+                                                
+                        <!-- Product price -->
+                        
+
+                
+    <div class="price-box">
+                                                            <span class="regular-price" id="product-price-102277">
+                                            <span class="price">$23.00</span>                                    </span>
+                        
+        </div>
+
+                        
+                        <!-- Action area -->
+                        <div class="actions">
+                                                            <button type="button" title="Add to Cart" class="btn-cart add-to-cart-btn-up sprite-site-wide ir"><span><span>Add to Cart</span></span></button>
+                                                   </div>
+                    </div>
+            </li>
+                        <li class="item" data-product-id="102279"  data-product-price="5">
+                <a href="http://www.comicsetc.com.au/catalogue/#!/product/poison-ivy-circle-of-life-6">
+                    <div class="ribbon ribbon-preorder"></div>                    <img src="http://cdn2.comicsetc.com.au/media/catalog/product/cache/1/small_image/79x118/ddd65cf0afb2b02d0e268796e7139244/7/6/76194133551300611.jpg" height="118" alt="Poison Ivy Circle of Life and Death #6" />
+                </a>
+                
+                    <div class="hover invisible accelerate">
+                        
+                        <!-- Wishlist star in to right hand corner-->
+                                                                                    <a title="Add / Remove item from wishlist" href="https://www.comicsetc.com.au/wishlist/index/add/product/102279/form_key/IfbWj54qxKyEEmFO/" class="link-wishlist grey-star sprite-vertical-site-wide ir">Add to Wishlist</a>
+                                                                            
+                        <!-- Product name -->
+                        <h2 class="product-name"><a href="http://www.comicsetc.com.au/catalogue/#!/product/poison-ivy-circle-of-life-6" title="Poison Ivy Circle of Life and Death #6">Poison Ivy Circle of Life and Death #6</a></h2>
+                                                
+                        <!-- Product price -->
+                        
+
+                
+    <div class="price-box">
+                                                            <span class="regular-price" id="product-price-102279">
+                                            <span class="price">$5.00</span>                                    </span>
+                        
+        </div>
+
+                        
+                        <!-- Action area -->
+                        <div class="actions">
+                                                            <button type="button" title="Add to Cart" class="btn-cart add-to-cart-btn-up sprite-site-wide ir"><span><span>Add to Cart</span></span></button>
+                                                   </div>
+                    </div>
+            </li>
+                        <li class="item" data-product-id="102268"  data-product-price="35">
+                <a href="http://www.comicsetc.com.au/catalogue/#!/product/x-files-season-11-volume-2-hc">
+                    <div class="ribbon ribbon-preorder"></div>                    <img src="http://cdn2.comicsetc.com.au/media/catalog/product/cache/1/small_image/79x118/ddd65cf0afb2b02d0e268796e7139244/9/7/978163140643052499.jpg" height="118" alt="The X-Files Season 11 Volume 2 HC" />
+                </a>
+                
+                    <div class="hover invisible accelerate">
+                        
+                        <!-- Wishlist star in to right hand corner-->
+                                                                                    <a title="Add / Remove item from wishlist" href="https://www.comicsetc.com.au/wishlist/index/add/product/102268/form_key/IfbWj54qxKyEEmFO/" class="link-wishlist grey-star sprite-vertical-site-wide ir">Add to Wishlist</a>
+                                                                            
+                        <!-- Product name -->
+                        <h2 class="product-name"><a href="http://www.comicsetc.com.au/catalogue/#!/product/x-files-season-11-volume-2-hc" title="The X-Files Season 11 Volume 2 HC">The X-Files Season 11 Volume 2 HC</a></h2>
+                                                
+                        <!-- Product price -->
+                        
+
+                
+    <div class="price-box">
+                                                            <span class="regular-price" id="product-price-102268">
+                                            <span class="price">$35.00</span>                                    </span>
+                        
+        </div>
+
+                        
+                        <!-- Action area -->
+                        <div class="actions">
+                                                            <button type="button" title="Add to Cart" class="btn-cart add-to-cart-btn-up sprite-site-wide ir"><span><span>Add to Cart</span></span></button>
+                                                   </div>
+                    </div>
+            </li>
+                        <li class="item" data-product-id="102269"  data-product-price="8">
+                <a href="http://www.comicsetc.com.au/catalogue/#!/product/a-year-of-marvels-incredible">
+                    <div class="ribbon ribbon-preorder"></div>                    <img src="http://cdn2.comicsetc.com.au/media/catalog/product/cache/1/small_image/79x118/ddd65cf0afb2b02d0e268796e7139244/7/5/75960608483800211_1.jpg" height="118" alt="A Year of Marvels The Incredible #1" />
+                </a>
+                
+                    <div class="hover invisible accelerate">
+                        
+                        <!-- Wishlist star in to right hand corner-->
+                                                                                    <a title="Add / Remove item from wishlist" href="https://www.comicsetc.com.au/wishlist/index/add/product/102269/form_key/IfbWj54qxKyEEmFO/" class="link-wishlist grey-star sprite-vertical-site-wide ir">Add to Wishlist</a>
+                                                                            
+                        <!-- Product name -->
+                        <h2 class="product-name"><a href="http://www.comicsetc.com.au/catalogue/#!/product/a-year-of-marvels-incredible" title="A Year of Marvels The Incredible #1">A Year of Marvels The Incredible #1</a></h2>
+                                                
+                        <!-- Product price -->
+                        
+
+                
+    <div class="price-box">
+                                                            <span class="regular-price" id="product-price-102269">
+                                            <span class="price">$8.00</span>                                    </span>
+                        
+        </div>
+
+                        
+                        <!-- Action area -->
+                        <div class="actions">
+                                                            <button type="button" title="Add to Cart" class="btn-cart add-to-cart-btn-up sprite-site-wide ir"><span><span>Add to Cart</span></span></button>
+                                                   </div>
+                    </div>
+            </li>
+                        <li class="item" data-product-id="102270"  data-product-price="18.5">
+                <a href="http://www.comicsetc.com.au/catalogue/#!/product/outcast-volume-3">
+                    <div class="ribbon ribbon-preorder"></div>                    <img src="http://cdn2.comicsetc.com.au/media/catalog/product/cache/1/small_image/79x118/ddd65cf0afb2b02d0e268796e7139244/9/7/978163215693851499.jpg" height="118" alt="Outcast Volume 3" />
+                </a>
+                
+                    <div class="hover invisible accelerate">
+                        
+                        <!-- Wishlist star in to right hand corner-->
+                                                                                    <a title="Add / Remove item from wishlist" href="https://www.comicsetc.com.au/wishlist/index/add/product/102270/form_key/IfbWj54qxKyEEmFO/" class="link-wishlist grey-star sprite-vertical-site-wide ir">Add to Wishlist</a>
+                                                                            
+                        <!-- Product name -->
+                        <h2 class="product-name"><a href="http://www.comicsetc.com.au/catalogue/#!/product/outcast-volume-3" title="Outcast Volume 3">Outcast Volume 3</a></h2>
+                                                
+                        <!-- Product price -->
+                        
+
+                
+    <div class="price-box">
+                                                            <span class="regular-price" id="product-price-102270">
+                                            <span class="price">$18.50</span>                                    </span>
+                        
+        </div>
+
+                        
+                        <!-- Action area -->
+                        <div class="actions">
+                                                            <button type="button" title="Add to Cart" class="btn-cart add-to-cart-btn-up sprite-site-wide ir"><span><span>Add to Cart</span></span></button>
+                                                   </div>
+                    </div>
+            </li>
+                        <li class="item" data-product-id="102271"  data-product-price="13.5">
+                <a href="http://www.comicsetc.com.au/catalogue/#!/product/ringside-volume-1">
+                    <div class="ribbon ribbon-preorder"></div>                    <img src="http://cdn2.comicsetc.com.au/media/catalog/product/cache/1/small_image/79x118/ddd65cf0afb2b02d0e268796e7139244/9/7/978163215695250999.jpg" height="118" alt="Ringside Volume 1" />
+                </a>
+                
+                    <div class="hover invisible accelerate">
+                        
+                        <!-- Wishlist star in to right hand corner-->
+                                                                                    <a title="Add / Remove item from wishlist" href="https://www.comicsetc.com.au/wishlist/index/add/product/102271/form_key/IfbWj54qxKyEEmFO/" class="link-wishlist grey-star sprite-vertical-site-wide ir">Add to Wishlist</a>
+                                                                            
+                        <!-- Product name -->
+                        <h2 class="product-name"><a href="http://www.comicsetc.com.au/catalogue/#!/product/ringside-volume-1" title="Ringside Volume 1">Ringside Volume 1</a></h2>
+                                                
+                        <!-- Product price -->
+                        
+
+                
+    <div class="price-box">
+                                                            <span class="regular-price" id="product-price-102271">
+                                            <span class="price">$13.50</span>                                    </span>
+                        
+        </div>
+
+                        
+                        <!-- Action area -->
+                        <div class="actions">
+                                                            <button type="button" title="Add to Cart" class="btn-cart add-to-cart-btn-up sprite-site-wide ir"><span><span>Add to Cart</span></span></button>
+                                                   </div>
+                    </div>
+            </li>
+                        <li class="item" data-product-id="102267"  data-product-price="18.5">
+                <a href="http://www.comicsetc.com.au/catalogue/#!/product/sex-criminals-volume-3">
+                    <div class="ribbon ribbon-preorder"></div>                    <img src="http://cdn2.comicsetc.com.au/media/catalog/product/cache/1/small_image/79x118/ddd65cf0afb2b02d0e268796e7139244/9/7/978163215542951499.jpg" height="118" alt="Sex Criminals Volume 3" />
+                </a>
+                
+                    <div class="hover invisible accelerate">
+                        
+                        <!-- Wishlist star in to right hand corner-->
+                                                                                    <a title="Add / Remove item from wishlist" href="https://www.comicsetc.com.au/wishlist/index/add/product/102267/form_key/IfbWj54qxKyEEmFO/" class="link-wishlist grey-star sprite-vertical-site-wide ir">Add to Wishlist</a>
+                                                                            
+                        <!-- Product name -->
+                        <h2 class="product-name"><a href="http://www.comicsetc.com.au/catalogue/#!/product/sex-criminals-volume-3" title="Sex Criminals Volume 3">Sex Criminals Volume 3</a></h2>
+                                                
+                        <!-- Product price -->
+                        
+
+                
+    <div class="price-box">
+                                                            <span class="regular-price" id="product-price-102267">
+                                            <span class="price">$18.50</span>                                    </span>
+                        
+        </div>
+
+                        
+                        <!-- Action area -->
+                        <div class="actions">
+                                                            <button type="button" title="Add to Cart" class="btn-cart add-to-cart-btn-up sprite-site-wide ir"><span><span>Add to Cart</span></span></button>
+                                                   </div>
+                    </div>
+            </li>
+                        <li class="item" data-product-id="102265"  data-product-price="6.4">
+                <a href="http://www.comicsetc.com.au/catalogue/#!/product/star-wars-4573">
+                    <div class="ribbon ribbon-preorder"></div>                    <img src="http://cdn2.comicsetc.com.au/media/catalog/product/cache/1/small_image/79x118/ddd65cf0afb2b02d0e268796e7139244/7/5/75960608113402011_1.jpg" height="118" alt="Star Wars #20" />
+                </a>
+                
+                    <div class="hover invisible accelerate">
+                        
+                        <!-- Wishlist star in to right hand corner-->
+                                                                                    <a title="Add / Remove item from wishlist" href="https://www.comicsetc.com.au/wishlist/index/add/product/102265/form_key/IfbWj54qxKyEEmFO/" class="link-wishlist grey-star sprite-vertical-site-wide ir">Add to Wishlist</a>
+                                                                            
+                        <!-- Product name -->
+                        <h2 class="product-name"><a href="http://www.comicsetc.com.au/catalogue/#!/product/star-wars-4573" title="Star Wars #20">Star Wars #20</a></h2>
+                                                
+                        <!-- Product price -->
+                        
+
+                
+    <div class="price-box">
+                                                            <span class="regular-price" id="product-price-102265">
+                                            <span class="price">$6.40</span>                                    </span>
+                        
+        </div>
+
+                        
+                        <!-- Action area -->
+                        <div class="actions">
+                                                            <button type="button" title="Add to Cart" class="btn-cart add-to-cart-btn-up sprite-site-wide ir"><span><span>Add to Cart</span></span></button>
+                                                   </div>
+                    </div>
+            </li>
+                        <li class="item" data-product-id="102266"  data-product-price="6.4">
+                <a href="http://www.comicsetc.com.au/catalogue/#!/product/transformers-54">
+                    <div class="ribbon ribbon-preorder"></div>                    <img src="http://cdn2.comicsetc.com.au/media/catalog/product/cache/1/small_image/79x118/ddd65cf0afb2b02d0e268796e7139244/8/2/82771400306205411.jpg" height="118" alt="Transformers #54" />
+                </a>
+                
+                    <div class="hover invisible accelerate">
+                        
+                        <!-- Wishlist star in to right hand corner-->
+                                                                                    <a title="Add / Remove item from wishlist" href="https://www.comicsetc.com.au/wishlist/index/add/product/102266/form_key/IfbWj54qxKyEEmFO/" class="link-wishlist grey-star sprite-vertical-site-wide ir">Add to Wishlist</a>
+                                                                            
+                        <!-- Product name -->
+                        <h2 class="product-name"><a href="http://www.comicsetc.com.au/catalogue/#!/product/transformers-54" title="Transformers #54">Transformers #54</a></h2>
+                                                
+                        <!-- Product price -->
+                        
+
+                
+    <div class="price-box">
+                                                            <span class="regular-price" id="product-price-102266">
+                                            <span class="price">$6.40</span>                                    </span>
+                        
+        </div>
+
+                        
+                        <!-- Action area -->
+                        <div class="actions">
+                                                            <button type="button" title="Add to Cart" class="btn-cart add-to-cart-btn-up sprite-site-wide ir"><span><span>Add to Cart</span></span></button>
+                                                   </div>
+                    </div>
+            </li>
+                        <li class="item" data-product-id="102256"  data-product-price="6.4">
+                <a href="http://www.comicsetc.com.au/catalogue/#!/product/scarlet-218">
+                    <div class="ribbon ribbon-preorder"></div>                    <img src="http://cdn2.comicsetc.com.au/media/catalog/product/cache/1/small_image/79x118/ddd65cf0afb2b02d0e268796e7139244/7/5/75960607361001011_1.jpg" height="118" alt="Scarlet #10" />
+                </a>
+                
+                    <div class="hover invisible accelerate">
+                        
+                        <!-- Wishlist star in to right hand corner-->
+                                                                                    <a title="Add / Remove item from wishlist" href="https://www.comicsetc.com.au/wishlist/index/add/product/102256/form_key/IfbWj54qxKyEEmFO/" class="link-wishlist grey-star sprite-vertical-site-wide ir">Add to Wishlist</a>
+                                                                            
+                        <!-- Product name -->
+                        <h2 class="product-name"><a href="http://www.comicsetc.com.au/catalogue/#!/product/scarlet-218" title="Scarlet #10">Scarlet #10</a></h2>
+                                                
+                        <!-- Product price -->
+                        
+
+                
+    <div class="price-box">
+                                                            <span class="regular-price" id="product-price-102256">
+                                            <span class="price">$6.40</span>                                    </span>
+                        
+        </div>
+
+                        
+                        <!-- Action area -->
+                        <div class="actions">
+                                                            <button type="button" title="Add to Cart" class="btn-cart add-to-cart-btn-up sprite-site-wide ir"><span><span>Add to Cart</span></span></button>
+                                                   </div>
+                    </div>
+            </li>
+                        <li class="item" data-product-id="102257"  data-product-price="6.4">
+                <a href="http://www.comicsetc.com.au/catalogue/#!/product/scooby-apocalypse-2">
+                    <div class="ribbon ribbon-preorder"></div>                    <img src="http://cdn2.comicsetc.com.au/media/catalog/product/cache/1/small_image/79x118/ddd65cf0afb2b02d0e268796e7139244/7/6/76194133864400211.jpg" height="118" alt="Scooby Apocalypse #2" />
+                </a>
+                
+                    <div class="hover invisible accelerate">
+                        
+                        <!-- Wishlist star in to right hand corner-->
+                                                                                    <a title="Add / Remove item from wishlist" href="https://www.comicsetc.com.au/wishlist/index/add/product/102257/form_key/IfbWj54qxKyEEmFO/" class="link-wishlist grey-star sprite-vertical-site-wide ir">Add to Wishlist</a>
+                                                                            
+                        <!-- Product name -->
+                        <h2 class="product-name"><a href="http://www.comicsetc.com.au/catalogue/#!/product/scooby-apocalypse-2" title="Scooby Apocalypse #2">Scooby Apocalypse #2</a></h2>
+                                                
+                        <!-- Product price -->
+                        
+
+                
+    <div class="price-box">
+                                                            <span class="regular-price" id="product-price-102257">
+                                            <span class="price">$6.40</span>                                    </span>
+                        
+        </div>
+
+                        
+                        <!-- Action area -->
+                        <div class="actions">
+                                                            <button type="button" title="Add to Cart" class="btn-cart add-to-cart-btn-up sprite-site-wide ir"><span><span>Add to Cart</span></span></button>
+                                                   </div>
+                    </div>
+            </li>
+                        <li class="item" data-product-id="102258"  data-product-price="8">
+                <a href="http://www.comicsetc.com.au/catalogue/#!/product/scooby-apocalypse-2-variant">
+                    <div class="ribbon ribbon-preorder"></div>                    <img src="http://cdn2.comicsetc.com.au/media/catalog/product/cache/1/small_image/79x118/ddd65cf0afb2b02d0e268796e7139244/7/6/76194133864400221.jpg" height="118" alt="Scooby Apocalypse #2 Variant" />
+                </a>
+                
+                    <div class="hover invisible accelerate">
+                        
+                        <!-- Wishlist star in to right hand corner-->
+                                                                                    <a title="Add / Remove item from wishlist" href="https://www.comicsetc.com.au/wishlist/index/add/product/102258/form_key/IfbWj54qxKyEEmFO/" class="link-wishlist grey-star sprite-vertical-site-wide ir">Add to Wishlist</a>
+                                                                            
+                        <!-- Product name -->
+                        <h2 class="product-name"><a href="http://www.comicsetc.com.au/catalogue/#!/product/scooby-apocalypse-2-variant" title="Scooby Apocalypse #2 Variant">Scooby Apocalypse #2 Variant</a></h2>
+                                                
+                        <!-- Product price -->
+                        
+
+                
+    <div class="price-box">
+                                                            <span class="regular-price" id="product-price-102258">
+                                            <span class="price">$8.00</span>                                    </span>
+                        
+        </div>
+
+                        
+                        <!-- Action area -->
+                        <div class="actions">
+                                                            <button type="button" title="Add to Cart" class="btn-cart add-to-cart-btn-up sprite-site-wide ir"><span><span>Add to Cart</span></span></button>
+                                                   </div>
+                    </div>
+            </li>
+                        <li class="item" data-product-id="102259"  data-product-price="6.4">
+                <a href="http://www.comicsetc.com.au/catalogue/#!/product/spider-gwen-1930">
+                    <div class="ribbon ribbon-preorder"></div>                    <img src="http://cdn2.comicsetc.com.au/media/catalog/product/cache/1/small_image/79x118/ddd65cf0afb2b02d0e268796e7139244/7/5/75960608313800911_1.jpg" height="118" alt="Spider-Gwen #9" />
+                </a>
+                
+                    <div class="hover invisible accelerate">
+                        
+                        <!-- Wishlist star in to right hand corner-->
+                                                                                    <a title="Add / Remove item from wishlist" href="https://www.comicsetc.com.au/wishlist/index/add/product/102259/form_key/IfbWj54qxKyEEmFO/" class="link-wishlist grey-star sprite-vertical-site-wide ir">Add to Wishlist</a>
+                                                                            
+                        <!-- Product name -->
+                        <h2 class="product-name"><a href="http://www.comicsetc.com.au/catalogue/#!/product/spider-gwen-1930" title="Spider-Gwen #9">Spider-Gwen #9</a></h2>
+                                                
+                        <!-- Product price -->
+                        
+
+                
+    <div class="price-box">
+                                                            <span class="regular-price" id="product-price-102259">
+                                            <span class="price">$6.40</span>                                    </span>
+                        
+        </div>
+
+                        
+                        <!-- Action area -->
+                        <div class="actions">
+                                                            <button type="button" title="Add to Cart" class="btn-cart add-to-cart-btn-up sprite-site-wide ir"><span><span>Add to Cart</span></span></button>
+                                                   </div>
+                    </div>
+            </li>
+                        <li class="item" data-product-id="102260"  data-product-price="6.4">
+                <a href="http://www.comicsetc.com.au/catalogue/#!/product/spidey-7">
+                    <div class="ribbon ribbon-preorder"></div>                    <img src="http://cdn2.comicsetc.com.au/media/catalog/product/cache/1/small_image/79x118/ddd65cf0afb2b02d0e268796e7139244/7/5/75960608356500711_1.jpg" height="118" alt="Spidey #7" />
+                </a>
+                
+                    <div class="hover invisible accelerate">
+                        
+                        <!-- Wishlist star in to right hand corner-->
+                                                                                    <a title="Add / Remove item from wishlist" href="https://www.comicsetc.com.au/wishlist/index/add/product/102260/form_key/IfbWj54qxKyEEmFO/" class="link-wishlist grey-star sprite-vertical-site-wide ir">Add to Wishlist</a>
+                                                                            
+                        <!-- Product name -->
+                        <h2 class="product-name"><a href="http://www.comicsetc.com.au/catalogue/#!/product/spidey-7" title="Spidey #7">Spidey #7</a></h2>
+                                                
+                        <!-- Product price -->
+                        
+
+                
+    <div class="price-box">
+                                                            <span class="regular-price" id="product-price-102260">
+                                            <span class="price">$6.40</span>                                    </span>
+                        
+        </div>
+
+                        
+                        <!-- Action area -->
+                        <div class="actions">
+                                                            <button type="button" title="Add to Cart" class="btn-cart add-to-cart-btn-up sprite-site-wide ir"><span><span>Add to Cart</span></span></button>
+                                                   </div>
+                    </div>
+            </li>
+                        <li class="item" data-product-id="102261"  data-product-price="6.4">
+                <a href="http://www.comicsetc.com.au/catalogue/#!/product/squadron-supreme-8">
+                    <div class="ribbon ribbon-preorder"></div>                    <img src="http://cdn2.comicsetc.com.au/media/catalog/product/cache/1/small_image/79x118/ddd65cf0afb2b02d0e268796e7139244/7/5/75960608316900811_1.jpg" height="118" alt="Squadron Supreme #8" />
+                </a>
+                
+                    <div class="hover invisible accelerate">
+                        
+                        <!-- Wishlist star in to right hand corner-->
+                                                                                    <a title="Add / Remove item from wishlist" href="https://www.comicsetc.com.au/wishlist/index/add/product/102261/form_key/IfbWj54qxKyEEmFO/" class="link-wishlist grey-star sprite-vertical-site-wide ir">Add to Wishlist</a>
+                                                                            
+                        <!-- Product name -->
+                        <h2 class="product-name"><a href="http://www.comicsetc.com.au/catalogue/#!/product/squadron-supreme-8" title="Squadron Supreme #8">Squadron Supreme #8</a></h2>
+                                                
+                        <!-- Product price -->
+                        
+
+                
+    <div class="price-box">
+                                                            <span class="regular-price" id="product-price-102261">
+                                            <span class="price">$6.40</span>                                    </span>
+                        
+        </div>
+
+                        
+                        <!-- Action area -->
+                        <div class="actions">
+                                                            <button type="button" title="Add to Cart" class="btn-cart add-to-cart-btn-up sprite-site-wide ir"><span><span>Add to Cart</span></span></button>
+                                                   </div>
+                    </div>
+            </li>
+                        <li class="item" data-product-id="102262"  data-product-price="19.5">
+                <a href="http://www.comicsetc.com.au/catalogue/#!/product/squadron-supreme-volume-1-now">
+                    <div class="ribbon ribbon-preorder"></div>                    <img src="http://cdn2.comicsetc.com.au/media/catalog/product/cache/1/small_image/79x118/ddd65cf0afb2b02d0e268796e7139244/images/catalog/product/placeholder/small_image.jpg" height="118" alt="Squadron Supreme Volume 1 NOW!" />
+                </a>
+                
+                    <div class="hover invisible accelerate">
+                        
+                        <!-- Wishlist star in to right hand corner-->
+                                                                                    <a title="Add / Remove item from wishlist" href="https://www.comicsetc.com.au/wishlist/index/add/product/102262/form_key/IfbWj54qxKyEEmFO/" class="link-wishlist grey-star sprite-vertical-site-wide ir">Add to Wishlist</a>
+                                                                            
+                        <!-- Product name -->
+                        <h2 class="product-name"><a href="http://www.comicsetc.com.au/catalogue/#!/product/squadron-supreme-volume-1-now" title="Squadron Supreme Volume 1 NOW!">Squadron Supreme Volume 1 NOW!</a></h2>
+                                                
+                        <!-- Product price -->
+                        
+
+                
+    <div class="price-box">
+                                                            <span class="regular-price" id="product-price-102262">
+                                            <span class="price">$19.50</span>                                    </span>
+                        
+        </div>
+
+                        
+                        <!-- Action area -->
+                        <div class="actions">
+                                                            <button type="button" title="Add to Cart" class="btn-cart add-to-cart-btn-up sprite-site-wide ir"><span><span>Add to Cart</span></span></button>
+                                                   </div>
+                    </div>
+            </li>
+                        <li class="item" data-product-id="102248"  data-product-price="6.4">
+                <a href="http://www.comicsetc.com.au/catalogue/#!/product/transformers-till-all-are-1">
+                    <div class="ribbon ribbon-preorder"></div>                    <img src="http://cdn2.comicsetc.com.au/media/catalog/product/cache/1/small_image/79x118/ddd65cf0afb2b02d0e268796e7139244/8/2/82771401096100111.jpg" height="118" alt="Transformers Till All Are One #1" />
+                </a>
+                
+                    <div class="hover invisible accelerate">
+                        
+                        <!-- Wishlist star in to right hand corner-->
+                                                                                    <a title="Add / Remove item from wishlist" href="https://www.comicsetc.com.au/wishlist/index/add/product/102248/form_key/IfbWj54qxKyEEmFO/" class="link-wishlist grey-star sprite-vertical-site-wide ir">Add to Wishlist</a>
+                                                                            
+                        <!-- Product name -->
+                        <h2 class="product-name"><a href="http://www.comicsetc.com.au/catalogue/#!/product/transformers-till-all-are-1" title="Transformers Till All Are One #1">Transformers Till All Are One #1</a></h2>
+                                                
+                        <!-- Product price -->
+                        
+
+                
+    <div class="price-box">
+                                                            <span class="regular-price" id="product-price-102248">
+                                            <span class="price">$6.40</span>                                    </span>
+                        
+        </div>
+
+                        
+                        <!-- Action area -->
+                        <div class="actions">
+                                                            <button type="button" title="Add to Cart" class="btn-cart add-to-cart-btn-up sprite-site-wide ir"><span><span>Add to Cart</span></span></button>
+                                                   </div>
+                    </div>
+            </li>
+                        <li class="item" data-product-id="102250"  data-product-price="6.4">
+                <a href="http://www.comicsetc.com.au/catalogue/#!/product/uncanny-inhumans-10">
+                    <div class="ribbon ribbon-preorder"></div>                    <img src="http://cdn2.comicsetc.com.au/media/catalog/product/cache/1/small_image/79x118/ddd65cf0afb2b02d0e268796e7139244/7/5/75960608181301011_1.jpg" height="118" alt="The Uncanny Inhumans #10" />
+                </a>
+                
+                    <div class="hover invisible accelerate">
+                        
+                        <!-- Wishlist star in to right hand corner-->
+                                                                                    <a title="Add / Remove item from wishlist" href="https://www.comicsetc.com.au/wishlist/index/add/product/102250/form_key/IfbWj54qxKyEEmFO/" class="link-wishlist grey-star sprite-vertical-site-wide ir">Add to Wishlist</a>
+                                                                            
+                        <!-- Product name -->
+                        <h2 class="product-name"><a href="http://www.comicsetc.com.au/catalogue/#!/product/uncanny-inhumans-10" title="The Uncanny Inhumans #10">The Uncanny Inhumans #10</a></h2>
+                                                
+                        <!-- Product price -->
+                        
+
+                
+    <div class="price-box">
+                                                            <span class="regular-price" id="product-price-102250">
+                                            <span class="price">$6.40</span>                                    </span>
+                        
+        </div>
+
+                        
+                        <!-- Action area -->
+                        <div class="actions">
+                                                            <button type="button" title="Add to Cart" class="btn-cart add-to-cart-btn-up sprite-site-wide ir"><span><span>Add to Cart</span></span></button>
+                                                   </div>
+                    </div>
+            </li>
+                        <li class="item" data-product-id="102251"  data-product-price="6.4">
+                <a href="http://www.comicsetc.com.au/catalogue/#!/product/uncanny-x-men-8">
+                    <div class="ribbon ribbon-preorder"></div>                    <img src="http://cdn2.comicsetc.com.au/media/catalog/product/cache/1/small_image/79x118/ddd65cf0afb2b02d0e268796e7139244/7/5/75960608331200811_1.jpg" height="118" alt="Uncanny X-Men #8" />
+                </a>
+                
+                    <div class="hover invisible accelerate">
+                        
+                        <!-- Wishlist star in to right hand corner-->
+                                                                                    <a title="Add / Remove item from wishlist" href="https://www.comicsetc.com.au/wishlist/index/add/product/102251/form_key/IfbWj54qxKyEEmFO/" class="link-wishlist grey-star sprite-vertical-site-wide ir">Add to Wishlist</a>
+                                                                            
+                        <!-- Product name -->
+                        <h2 class="product-name"><a href="http://www.comicsetc.com.au/catalogue/#!/product/uncanny-x-men-8" title="Uncanny X-Men #8">Uncanny X-Men #8</a></h2>
+                                                
+                        <!-- Product price -->
+                        
+
+                
+    <div class="price-box">
+                                                            <span class="regular-price" id="product-price-102251">
+                                            <span class="price">$6.40</span>                                    </span>
+                        
+        </div>
+
+                        
+                        <!-- Action area -->
+                        <div class="actions">
+                                                            <button type="button" title="Add to Cart" class="btn-cart add-to-cart-btn-up sprite-site-wide ir"><span><span>Add to Cart</span></span></button>
+                                                   </div>
+                    </div>
+            </li>
+                        <li class="item" data-product-id="102252"  data-product-price="6.4">
+                <a href="http://www.comicsetc.com.au/catalogue/#!/product/vote-loki-1">
+                    <div class="ribbon ribbon-preorder"></div>                    <img src="http://cdn2.comicsetc.com.au/media/catalog/product/cache/1/small_image/79x118/ddd65cf0afb2b02d0e268796e7139244/7/5/75960608538500111_1.jpg" height="118" alt="Vote Loki #1" />
+                </a>
+                
+                    <div class="hover invisible accelerate">
+                        
+                        <!-- Wishlist star in to right hand corner-->
+                                                                                    <a title="Add / Remove item from wishlist" href="https://www.comicsetc.com.au/wishlist/index/add/product/102252/form_key/IfbWj54qxKyEEmFO/" class="link-wishlist grey-star sprite-vertical-site-wide ir">Add to Wishlist</a>
+                                                                            
+                        <!-- Product name -->
+                        <h2 class="product-name"><a href="http://www.comicsetc.com.au/catalogue/#!/product/vote-loki-1" title="Vote Loki #1">Vote Loki #1</a></h2>
+                                                
+                        <!-- Product price -->
+                        
+
+                
+    <div class="price-box">
+                                                            <span class="regular-price" id="product-price-102252">
+                                            <span class="price">$6.40</span>                                    </span>
+                        
+        </div>
+
+                        
+                        <!-- Action area -->
+                        <div class="actions">
+                                                            <button type="button" title="Add to Cart" class="btn-cart add-to-cart-btn-up sprite-site-wide ir"><span><span>Add to Cart</span></span></button>
+                                                   </div>
+                    </div>
+            </li>
+                        <li class="item" data-product-id="102253"  data-product-price="20">
+                <a href="http://www.comicsetc.com.au/catalogue/#!/product/vote-loki-1-variant">
+                    <div class="ribbon ribbon-preorder"></div>                    <img src="http://cdn2.comicsetc.com.au/media/catalog/product/cache/1/small_image/79x118/ddd65cf0afb2b02d0e268796e7139244/7/5/75960608538500121_1.jpg" height="118" alt="Vote Loki #1 Variant" />
+                </a>
+                
+                    <div class="hover invisible accelerate">
+                        
+                        <!-- Wishlist star in to right hand corner-->
+                                                                                    <a title="Add / Remove item from wishlist" href="https://www.comicsetc.com.au/wishlist/index/add/product/102253/form_key/IfbWj54qxKyEEmFO/" class="link-wishlist grey-star sprite-vertical-site-wide ir">Add to Wishlist</a>
+                                                                            
+                        <!-- Product name -->
+                        <h2 class="product-name"><a href="http://www.comicsetc.com.au/catalogue/#!/product/vote-loki-1-variant" title="Vote Loki #1 Variant">Vote Loki #1 Variant</a></h2>
+                                                
+                        <!-- Product price -->
+                        
+
+                
+    <div class="price-box">
+                                                            <span class="regular-price" id="product-price-102253">
+                                            <span class="price">$20.00</span>                                    </span>
+                        
+        </div>
+
+                        
+                        <!-- Action area -->
+                        <div class="actions">
+                                                            <button type="button" title="Add to Cart" class="btn-cart add-to-cart-btn-up sprite-site-wide ir"><span><span>Add to Cart</span></span></button>
+                                                   </div>
+                    </div>
+            </li>
+                        <li class="item" data-product-id="102254"  data-product-price="6.4">
+                <a href="http://www.comicsetc.com.au/catalogue/#!/product/walt-disney-comics-732">
+                    <div class="ribbon ribbon-preorder"></div>                    <img src="http://cdn2.comicsetc.com.au/media/catalog/product/cache/1/small_image/79x118/ddd65cf0afb2b02d0e268796e7139244/8/2/82771400889073211.jpg" height="118" alt="Walt Disney Comics and Stories #732" />
+                </a>
+                
+                    <div class="hover invisible accelerate">
+                        
+                        <!-- Wishlist star in to right hand corner-->
+                                                                                    <a title="Add / Remove item from wishlist" href="https://www.comicsetc.com.au/wishlist/index/add/product/102254/form_key/IfbWj54qxKyEEmFO/" class="link-wishlist grey-star sprite-vertical-site-wide ir">Add to Wishlist</a>
+                                                                            
+                        <!-- Product name -->
+                        <h2 class="product-name"><a href="http://www.comicsetc.com.au/catalogue/#!/product/walt-disney-comics-732" title="Walt Disney Comics and Stories #732">Walt Disney Comics and Stories #732</a></h2>
+                                                
+                        <!-- Product price -->
+                        
+
+                
+    <div class="price-box">
+                                                            <span class="regular-price" id="product-price-102254">
+                                            <span class="price">$6.40</span>                                    </span>
+                        
+        </div>
+
+                        
+                        <!-- Action area -->
+                        <div class="actions">
+                                                            <button type="button" title="Add to Cart" class="btn-cart add-to-cart-btn-up sprite-site-wide ir"><span><span>Add to Cart</span></span></button>
+                                                   </div>
+                    </div>
+            </li>
+                </ul>
+</div>
+<div id="news-slab">
+<div class="news-container">
+    <nav class="nav-arrows">
+        <a title="Previous" class="left-arrow">Previous</a>
+        <a title="Next" class="right-arrow">Next</a>
+    </nav>
+        <article class="news-item active  ">
+        <div class="post-list-item">
+            <header>
+            <h1 class="news-title"><a href="http://www.comicsetc.com.au/blog/2016/06/09/shipping-thursday-the-16th-of-june-2016/">Shipping Thursday the 16th of June 2016</a></h1>
+        </header>
+        <section class="news-content">
+                            <div class="featured-image">
+                    <a href="http://www.comicsetc.com.au/blog/2016/06/09/shipping-thursday-the-16th-of-june-2016/" title="Shipping Thursday the 16th of June 2016"><img src="http://www.comicsetc.com.au/blog-admin/wp-content/uploads/2016/06/2016-Week-24-Banner.jpg" alt="Shipping Thursday the 16th of June 2016"/></a>
+                </div>
+                    </section>
+    </div>    </article>
+    <article class="news-item hidden  ">
+        <div class="post-list-item">
+            <header>
+            <h1 class="news-title"><a href="http://www.comicsetc.com.au/blog/2016/06/02/shipping-thursday-the-9th-of-june-2016/">Shipping Thursday the 9th of June 2016</a></h1>
+        </header>
+        <section class="news-content">
+                            <div class="featured-image">
+                    <a href="http://www.comicsetc.com.au/blog/2016/06/02/shipping-thursday-the-9th-of-june-2016/" title="Shipping Thursday the 9th of June 2016"><img src="http://www.comicsetc.com.au/blog-admin/wp-content/uploads/2016/06/2016-Week-23-Banner.jpg" alt="Shipping Thursday the 9th of June 2016"/></a>
+                </div>
+                    </section>
+    </div>    </article>
+    <article class="news-item hidden  ">
+        <div class="post-list-item">
+            <header>
+            <h1 class="news-title"><a href="http://www.comicsetc.com.au/blog/2016/05/26/shipping-thursday-the-2nd-of-june-2016/">Shipping Thursday the 2nd of June 2016</a></h1>
+        </header>
+        <section class="news-content">
+                            <div class="featured-image">
+                    <a href="http://www.comicsetc.com.au/blog/2016/05/26/shipping-thursday-the-2nd-of-june-2016/" title="Shipping Thursday the 2nd of June 2016"><img src="http://www.comicsetc.com.au/blog-admin/wp-content/uploads/2016/05/2016-Week-22-Banner.jpg" alt="Shipping Thursday the 2nd of June 2016"/></a>
+                </div>
+                    </section>
+    </div>    </article>
+    <article class="news-item hidden  ">
+        <div class="post-list-item">
+            <header>
+            <h1 class="news-title"><a href="http://www.comicsetc.com.au/blog/2016/05/24/back-in-stock-new-fresh/">Back in Stock + New &amp; Fresh</a></h1>
+        </header>
+        <section class="news-content">
+                            <div class="featured-image">
+                    <a href="http://www.comicsetc.com.au/blog/2016/05/24/back-in-stock-new-fresh/" title="Back in Stock + New &amp; Fresh"><img src="http://www.comicsetc.com.au/blog-admin/wp-content/uploads/2016/05/sea-shipment-blog-post-banner.jpg" alt="Back in Stock + New &amp; Fresh"/></a>
+                </div>
+                    </section>
+    </div>    </article>
+    <article class="news-item hidden  ">
+        <div class="post-list-item">
+            <header>
+            <h1 class="news-title"><a href="http://www.comicsetc.com.au/blog/2016/05/19/shipping-thursday-the-26th-of-may-2016/">Shipping Thursday the 26th of May 2016</a></h1>
+        </header>
+        <section class="news-content">
+                            <div class="featured-image">
+                    <a href="http://www.comicsetc.com.au/blog/2016/05/19/shipping-thursday-the-26th-of-may-2016/" title="Shipping Thursday the 26th of May 2016"><img src="http://www.comicsetc.com.au/blog-admin/wp-content/uploads/2016/05/2016-Week-21-Banner.jpg" alt="Shipping Thursday the 26th of May 2016"/></a>
+                </div>
+                    </section>
+    </div>    </article>
+    <article class="news-item hidden  ">
+        <div class="post-list-item">
+            <header>
+            <h1 class="news-title"><a href="http://www.comicsetc.com.au/blog/2016/05/17/dc-universe-rebirth/">DC Universe Rebirth - Month 1</a></h1>
+        </header>
+        <section class="news-content">
+                            <div class="featured-image">
+                    <a href="http://www.comicsetc.com.au/blog/2016/05/17/dc-universe-rebirth/" title="DC Universe Rebirth - Month 1"><img src="http://www.comicsetc.com.au/blog-admin/wp-content/uploads/2016/05/DC-Universe-Rebirth-Banner.jpg" alt="DC Universe Rebirth - Month 1"/></a>
+                </div>
+                    </section>
+    </div>    </article>
+    <article class="news-item hidden  ">
+        <div class="post-list-item">
+            <header>
+            <h1 class="news-title"><a href="http://www.comicsetc.com.au/blog/2016/05/12/shipping-thursday-the-19th-of-may-2016/">Shipping Thursday the 19th of May 2016</a></h1>
+        </header>
+        <section class="news-content">
+                            <div class="featured-image">
+                    <a href="http://www.comicsetc.com.au/blog/2016/05/12/shipping-thursday-the-19th-of-may-2016/" title="Shipping Thursday the 19th of May 2016"><img src="http://www.comicsetc.com.au/blog-admin/wp-content/uploads/2016/05/2016-Week-20-Banner.jpg" alt="Shipping Thursday the 19th of May 2016"/></a>
+                </div>
+                    </section>
+    </div>    </article>
+    <article class="news-item hidden  ">
+        <div class="post-list-item">
+            <header>
+            <h1 class="news-title"><a href="http://www.comicsetc.com.au/blog/2016/05/05/shipping-thursday-the-12th-of-may-2016/">Shipping Thursday the 12th of May 2016</a></h1>
+        </header>
+        <section class="news-content">
+                            <div class="featured-image">
+                    <a href="http://www.comicsetc.com.au/blog/2016/05/05/shipping-thursday-the-12th-of-may-2016/" title="Shipping Thursday the 12th of May 2016"><img src="http://www.comicsetc.com.au/blog-admin/wp-content/uploads/2016/05/2016-Week-19-B-Banner.jpg" alt="Shipping Thursday the 12th of May 2016"/></a>
+                </div>
+                    </section>
+    </div>    </article>
+    <article class="news-item hidden  ">
+        <div class="post-list-item">
+            <header>
+            <h1 class="news-title"><a href="http://www.comicsetc.com.au/blog/2016/04/28/shipping-thursday-the-5th-of-may-2016/">Shipping Thursday the 5th of May 2016</a></h1>
+        </header>
+        <section class="news-content">
+                            <div class="featured-image">
+                    <a href="http://www.comicsetc.com.au/blog/2016/04/28/shipping-thursday-the-5th-of-may-2016/" title="Shipping Thursday the 5th of May 2016"><img src="http://www.comicsetc.com.au/blog-admin/wp-content/uploads/2016/04/2016-Week-18-Banner.jpg" alt="Shipping Thursday the 5th of May 2016"/></a>
+                </div>
+                    </section>
+    </div>    </article>
+    <article class="news-item hidden  ">
+        <div class="post-list-item">
+            <header>
+            <h1 class="news-title"><a href="http://www.comicsetc.com.au/blog/2016/04/21/shipping-thursday-the-28th-of-april-2016/">Shipping Thursday the 28th of April 2016</a></h1>
+        </header>
+        <section class="news-content">
+                            <div class="featured-image">
+                    <a href="http://www.comicsetc.com.au/blog/2016/04/21/shipping-thursday-the-28th-of-april-2016/" title="Shipping Thursday the 28th of April 2016"><img src="http://www.comicsetc.com.au/blog-admin/wp-content/uploads/2016/04/2016-Week-17-Banner.jpg" alt="Shipping Thursday the 28th of April 2016"/></a>
+                </div>
+                    </section>
+    </div>    </article>
+    <article class="news-item hidden  ">
+        <div class="post-list-item">
+            <header>
+            <h1 class="news-title"><a href="http://www.comicsetc.com.au/blog/2016/04/14/shipping-thursday-the-21st-of-april-2016/">Shipping Thursday the 21st of April 2016</a></h1>
+        </header>
+        <section class="news-content">
+                            <div class="featured-image">
+                    <a href="http://www.comicsetc.com.au/blog/2016/04/14/shipping-thursday-the-21st-of-april-2016/" title="Shipping Thursday the 21st of April 2016"><img src="http://www.comicsetc.com.au/blog-admin/wp-content/uploads/2016/04/2016-Week-16-Banner.jpg" alt="Shipping Thursday the 21st of April 2016"/></a>
+                </div>
+                    </section>
+    </div>    </article>
+    <article class="news-item hidden  ">
+        <div class="post-list-item">
+            <header>
+            <h1 class="news-title"><a href="http://www.comicsetc.com.au/blog/2016/04/07/shipping-thursday-the-14th-of-april-2016/">Shipping Thursday the 14th of April 2016</a></h1>
+        </header>
+        <section class="news-content">
+                            <div class="featured-image">
+                    <a href="http://www.comicsetc.com.au/blog/2016/04/07/shipping-thursday-the-14th-of-april-2016/" title="Shipping Thursday the 14th of April 2016"><img src="http://www.comicsetc.com.au/blog-admin/wp-content/uploads/2016/04/2016-Week-15-Banner.jpg" alt="Shipping Thursday the 14th of April 2016"/></a>
+                </div>
+                    </section>
+    </div>    </article>
+    <article class="news-item hidden  ">
+        <div class="post-list-item">
+            <header>
+            <h1 class="news-title"><a href="http://www.comicsetc.com.au/blog/2016/03/31/shipping-thursday-the-7th-of-april-2016/">Shipping Thursday the 7th of April 2016</a></h1>
+        </header>
+        <section class="news-content">
+                            <div class="featured-image">
+                    <a href="http://www.comicsetc.com.au/blog/2016/03/31/shipping-thursday-the-7th-of-april-2016/" title="Shipping Thursday the 7th of April 2016"><img src="http://www.comicsetc.com.au/blog-admin/wp-content/uploads/2016/03/2016-Week-14-Banner.jpg" alt="Shipping Thursday the 7th of April 2016"/></a>
+                </div>
+                    </section>
+    </div>    </article>
+    <article class="news-item hidden  ">
+        <div class="post-list-item">
+            <header>
+            <h1 class="news-title"><a href="http://www.comicsetc.com.au/blog/2016/03/24/shipping-thursday-the-31st-of-march-2016/">Shipping Thursday the 31st of March 2016</a></h1>
+        </header>
+        <section class="news-content">
+                            <div class="featured-image">
+                    <a href="http://www.comicsetc.com.au/blog/2016/03/24/shipping-thursday-the-31st-of-march-2016/" title="Shipping Thursday the 31st of March 2016"><img src="http://www.comicsetc.com.au/blog-admin/wp-content/uploads/2016/03/2016-Week-13-Banner.jpg" alt="Shipping Thursday the 31st of March 2016"/></a>
+                </div>
+                    </section>
+    </div>    </article>
+    <article class="news-item hidden  ">
+        <div class="post-list-item">
+            <header>
+            <h1 class="news-title"><a href="http://www.comicsetc.com.au/blog/2016/03/17/shipping-thursday-the-24th-of-march-2016/">Shipping Thursday the 24th of March 2016</a></h1>
+        </header>
+        <section class="news-content">
+                            <div class="featured-image">
+                    <a href="http://www.comicsetc.com.au/blog/2016/03/17/shipping-thursday-the-24th-of-march-2016/" title="Shipping Thursday the 24th of March 2016"><img src="http://www.comicsetc.com.au/blog-admin/wp-content/uploads/2016/03/2016-Week-12-Banner.jpg" alt="Shipping Thursday the 24th of March 2016"/></a>
+                </div>
+                    </section>
+    </div>    </article>
+    <article class="news-item hidden  ">
+        <div class="post-list-item">
+            <header>
+            <h1 class="news-title"><a href="http://www.comicsetc.com.au/blog/2016/03/10/shipping-thursday-the-17th-of-march-2016/">Shipping Thursday the 17th of March 2016</a></h1>
+        </header>
+        <section class="news-content">
+                            <div class="featured-image">
+                    <a href="http://www.comicsetc.com.au/blog/2016/03/10/shipping-thursday-the-17th-of-march-2016/" title="Shipping Thursday the 17th of March 2016"><img src="http://www.comicsetc.com.au/blog-admin/wp-content/uploads/2016/03/2016-Week-11-Banner.jpg" alt="Shipping Thursday the 17th of March 2016"/></a>
+                </div>
+                    </section>
+    </div>    </article>
+    <article class="news-item hidden  ">
+        <div class="post-list-item">
+            <header>
+            <h1 class="news-title"><a href="http://www.comicsetc.com.au/blog/2016/03/03/shipping-thursday-the-10th-of-march-2016/">Shipping Thursday the 10th of March 2016</a></h1>
+        </header>
+        <section class="news-content">
+                            <div class="featured-image">
+                    <a href="http://www.comicsetc.com.au/blog/2016/03/03/shipping-thursday-the-10th-of-march-2016/" title="Shipping Thursday the 10th of March 2016"><img src="http://www.comicsetc.com.au/blog-admin/wp-content/uploads/2016/03/2016-Week-10-Banner.jpg" alt="Shipping Thursday the 10th of March 2016"/></a>
+                </div>
+                    </section>
+    </div>    </article>
+    <article class="news-item hidden  ">
+        <div class="post-list-item">
+            <header>
+            <h1 class="news-title"><a href="http://www.comicsetc.com.au/blog/2016/02/25/shipping-thursday-the-3rd-of-march-2016/">Shipping Thursday the 3rd of March 2016</a></h1>
+        </header>
+        <section class="news-content">
+                            <div class="featured-image">
+                    <a href="http://www.comicsetc.com.au/blog/2016/02/25/shipping-thursday-the-3rd-of-march-2016/" title="Shipping Thursday the 3rd of March 2016"><img src="http://www.comicsetc.com.au/blog-admin/wp-content/uploads/2016/02/2016-Week-9-Banner.jpg" alt="Shipping Thursday the 3rd of March 2016"/></a>
+                </div>
+                    </section>
+    </div>    </article>
+    <article class="news-item hidden  ">
+        <div class="post-list-item">
+            <header>
+            <h1 class="news-title"><a href="http://www.comicsetc.com.au/blog/2016/02/18/shipping-thursday-the-25th-of-february-2016/">Shipping Thursday the 25th of February 2016</a></h1>
+        </header>
+        <section class="news-content">
+                            <div class="featured-image">
+                    <a href="http://www.comicsetc.com.au/blog/2016/02/18/shipping-thursday-the-25th-of-february-2016/" title="Shipping Thursday the 25th of February 2016"><img src="http://www.comicsetc.com.au/blog-admin/wp-content/uploads/2016/02/2016-Week-8-Banner.jpg" alt="Shipping Thursday the 25th of February 2016"/></a>
+                </div>
+                    </section>
+    </div>    </article>
+    <article class="news-item hidden  ">
+        <div class="post-list-item">
+            <header>
+            <h1 class="news-title"><a href="http://www.comicsetc.com.au/blog/2016/02/11/shipping-thursday-the-18th-of-february-2016/">Shipping Thursday the 18th of February 2016</a></h1>
+        </header>
+        <section class="news-content">
+                            <div class="featured-image">
+                    <a href="http://www.comicsetc.com.au/blog/2016/02/11/shipping-thursday-the-18th-of-february-2016/" title="Shipping Thursday the 18th of February 2016"><img src="http://www.comicsetc.com.au/blog-admin/wp-content/uploads/2016/02/2016-Week-7-Banner.jpg" alt="Shipping Thursday the 18th of February 2016"/></a>
+                </div>
+                    </section>
+    </div>    </article>
+    <article class="news-item hidden  ">
+        <div class="post-list-item">
+            <header>
+            <h1 class="news-title"><a href="http://www.comicsetc.com.au/blog/2016/02/04/shipping-thursday-the-11th-of-february-2016/">Shipping Thursday the 11th of February 2016</a></h1>
+        </header>
+        <section class="news-content">
+                            <div class="featured-image">
+                    <a href="http://www.comicsetc.com.au/blog/2016/02/04/shipping-thursday-the-11th-of-february-2016/" title="Shipping Thursday the 11th of February 2016"><img src="http://www.comicsetc.com.au/blog-admin/wp-content/uploads/2016/02/2016-Week-6-Banner.jpg" alt="Shipping Thursday the 11th of February 2016"/></a>
+                </div>
+                    </section>
+    </div>    </article>
+    <article class="news-item hidden  ">
+        <div class="post-list-item">
+            <header>
+            <h1 class="news-title"><a href="http://www.comicsetc.com.au/blog/2016/01/28/shipping-thursday-the-4th-of-february-2016/">Shipping Thursday the 4th of February  2016</a></h1>
+        </header>
+        <section class="news-content">
+                            <div class="featured-image">
+                    <a href="http://www.comicsetc.com.au/blog/2016/01/28/shipping-thursday-the-4th-of-february-2016/" title="Shipping Thursday the 4th of February  2016"><img src="http://www.comicsetc.com.au/blog-admin/wp-content/uploads/2016/01/2016-Week-5-Banner.jpg" alt="Shipping Thursday the 4th of February  2016"/></a>
+                </div>
+                    </section>
+    </div>    </article>
+    <article class="news-item hidden  ">
+        <div class="post-list-item">
+            <header>
+            <h1 class="news-title"><a href="http://www.comicsetc.com.au/blog/2016/01/21/shipping-thursday-the-28th-of-january-2016/">Shipping Thursday the 28th of January 2016</a></h1>
+        </header>
+        <section class="news-content">
+                            <div class="featured-image">
+                    <a href="http://www.comicsetc.com.au/blog/2016/01/21/shipping-thursday-the-28th-of-january-2016/" title="Shipping Thursday the 28th of January 2016"><img src="http://www.comicsetc.com.au/blog-admin/wp-content/uploads/2016/01/2016-Week-4-Banner.jpg" alt="Shipping Thursday the 28th of January 2016"/></a>
+                </div>
+                    </section>
+    </div>    </article>
+    <article class="news-item hidden  ">
+        <div class="post-list-item">
+            <header>
+            <h1 class="news-title"><a href="http://www.comicsetc.com.au/blog/2016/01/14/shipping-thursday-the-21st-of-january-2016/">Shipping Thursday the 21st of January 2016</a></h1>
+        </header>
+        <section class="news-content">
+                            <div class="featured-image">
+                    <a href="http://www.comicsetc.com.au/blog/2016/01/14/shipping-thursday-the-21st-of-january-2016/" title="Shipping Thursday the 21st of January 2016"><img src="http://www.comicsetc.com.au/blog-admin/wp-content/uploads/2016/01/2016-Week-3-Banner.jpg" alt="Shipping Thursday the 21st of January 2016"/></a>
+                </div>
+                    </section>
+    </div>    </article>
+    <article class="news-item hidden  ">
+        <div class="post-list-item">
+            <header>
+            <h1 class="news-title"><a href="http://www.comicsetc.com.au/blog/2016/01/07/shipping-thursday-the-14th-of-january-2016/">Shipping Thursday the 14th of January 2016</a></h1>
+        </header>
+        <section class="news-content">
+                            <div class="featured-image">
+                    <a href="http://www.comicsetc.com.au/blog/2016/01/07/shipping-thursday-the-14th-of-january-2016/" title="Shipping Thursday the 14th of January 2016"><img src="http://www.comicsetc.com.au/blog-admin/wp-content/uploads/2016/01/2016-Week-2-Banner.jpg" alt="Shipping Thursday the 14th of January 2016"/></a>
+                </div>
+                    </section>
+    </div>    </article>
+    <article class="news-item hidden  ">
+        <div class="post-list-item">
+            <header>
+            <h1 class="news-title"><a href="http://www.comicsetc.com.au/blog/2015/12/31/shipping-thursday-the-6th-of-january-2016/">Shipping Thursday the 6th of January 2016</a></h1>
+        </header>
+        <section class="news-content">
+                            <div class="featured-image">
+                    <a href="http://www.comicsetc.com.au/blog/2015/12/31/shipping-thursday-the-6th-of-january-2016/" title="Shipping Thursday the 6th of January 2016"><img src="http://www.comicsetc.com.au/blog-admin/wp-content/uploads/2015/12/2016-Week-1-Banner.jpg" alt="Shipping Thursday the 6th of January 2016"/></a>
+                </div>
+                    </section>
+    </div>    </article>
+    <article class="news-item hidden  ">
+        <div class="post-list-item">
+            <header>
+            <h1 class="news-title"><a href="http://www.comicsetc.com.au/blog/2015/12/24/shipping-thursday-the-31st-of-december-2015/">Shipping Thursday the 31st of December 2015</a></h1>
+        </header>
+        <section class="news-content">
+                            <div class="featured-image">
+                    <a href="http://www.comicsetc.com.au/blog/2015/12/24/shipping-thursday-the-31st-of-december-2015/" title="Shipping Thursday the 31st of December 2015"><img src="http://www.comicsetc.com.au/blog-admin/wp-content/uploads/2015/12/shipping31122015.jpg" alt="Shipping Thursday the 31st of December 2015"/></a>
+                </div>
+                    </section>
+    </div>    </article>
+    <article class="news-item hidden  ">
+        <div class="post-list-item">
+            <header>
+            <h1 class="news-title"><a href="http://www.comicsetc.com.au/blog/2015/12/17/shipping-thursday-the-24th-of-december-2015/">Shipping Thursday the 24th of December 2015</a></h1>
+        </header>
+        <section class="news-content">
+                            <div class="featured-image">
+                    <a href="http://www.comicsetc.com.au/blog/2015/12/17/shipping-thursday-the-24th-of-december-2015/" title="Shipping Thursday the 24th of December 2015"><img src="http://www.comicsetc.com.au/blog-admin/wp-content/uploads/2015/12/shippinglist24122015wordpress2.jpg" alt="Shipping Thursday the 24th of December 2015"/></a>
+                </div>
+                    </section>
+    </div>    </article>
+    <article class="news-item hidden  ">
+        <div class="post-list-item">
+            <header>
+            <h1 class="news-title"><a href="http://www.comicsetc.com.au/blog/2015/12/16/trinity-new-batman-vs-superman-posters/">Trinity! New Batman V Superman: Dawn of Justice posters</a></h1>
+        </header>
+        <section class="news-content">
+                            <div class="featured-image">
+                    <a href="http://www.comicsetc.com.au/blog/2015/12/16/trinity-new-batman-vs-superman-posters/" title="Trinity! New Batman V Superman: Dawn of Justice posters"><img src="http://www.comicsetc.com.au/blog-admin/wp-content/uploads/2015/12/batman2.jpg" alt="Trinity! New Batman V Superman: Dawn of Justice posters"/></a>
+                </div>
+                    </section>
+    </div>    </article>
+    <article class="news-item hidden  ">
+        <div class="post-list-item">
+            <header>
+            <h1 class="news-title"><a href="http://www.comicsetc.com.au/blog/2015/12/16/shipping-thursday-the-17th-of-december-2015/">Shipping Thursday the 17th of December 2015</a></h1>
+        </header>
+        <section class="news-content">
+                            <div class="featured-image">
+                    <a href="http://www.comicsetc.com.au/blog/2015/12/16/shipping-thursday-the-17th-of-december-2015/" title="Shipping Thursday the 17th of December 2015"><img src="http://www.comicsetc.com.au/blog-admin/wp-content/uploads/2015/12/shipping17122015.jpg" alt="Shipping Thursday the 17th of December 2015"/></a>
+                </div>
+                    </section>
+    </div>    </article>
+</div>
+<!-- Start of the facebook feed area -->
+<article class="fbFeed">
+    <header class="fbHeader">
+        <div id="likeHolder">
+            <div class="fb-like" data-href="http://www.facebook.com/comicsetc" data-send="false" data-width="296" data-show-faces="false" data-colorscheme="dark" data-font="arial"></div>
+        </div>
+    </header> 
+
+    <div class="fbFeedContent" id="fbFeedView">
+        <div id="feedBg-one">
+            <div class="feedItem accelerate"></div>
+        </div>
+        <div id="feedBg-two">
+            <div class="feedItem accelerate"></div>
+        </div>
+        <div id="feedBg-three">
+            <div class="feedItem accelerate"></div>
+        </div>
+    </div>
+
+    <nav>
+        <a href="http://www.facebook.com/comicsetc" target="_blank" id="fbLinkContainer"></a>
+    </nav>
+</article>
+<div class="block block-subscribe">
+    <div class="subscribe-hero"></div>
+    <div class="subscribe-text">Keep up to date<br />
+with all the latest<br />
+news, new releases<br />
+and promotions.</div>
+    <form action="/newsletter/subscriber/asyncnew/" method="post" class="subscribe-form" id="newsletter-validate-detail">
+        <div class="block-content form-list">
+            <label for="newsletter">E-mail Address</label>
+            <div class="input-box">
+               <input type="text" name="email" id="newsletter" title="Sign up for our newsletter" 
+                      class="input-text required-entry validate-email" />
+                <button type="submit" title="Subscribe"><span><span>Subscribe</span></span></button>
+                <div class="wait-icon-on-black subscribe-wait-icon hidden">Ticker</div>
+            </div>
+        </div>
+    </form>
+    </div>
+</div>
+
+
+
+                </div>
+                <div class="after-content">
+                                    </div>
+            </div>
+            </div>
+            </div>
+        </div>
+        </div>
+        <footer> 
+            <div id="city-wrapper">
+<!--    This will be the actual city in the static version - it will have the city image as the background-->
+    <div id="city-container" class="fade out accelerate">
+<!--        This is where the actual content will be loaded into , whether it is a canvas tag or the swf or further divs-->
+        <div id="city-content"></div> 
+    </div>
+</div>             <div id="hulk">
+    <div id="hulk-01"></div>
+    <div id="hulk-02"></div>
+</div>
+<div class="footer-container">
+    <div class="footer">
+        
+        <div id="footer-social">
+            <div class="social-wrapper">
+    <div class="social">
+        <div class="fb-like" data-href="http://www.facebook.com/comicsetc" data-appid="302386589814657" data-send="false" data-width="450" data-show-faces="false" data-font="arial" data-colorscheme="dark"></div>
+        <div class="g-plusone" data-annotation="inline" data-href="www.comicsetc.com.au"></div>
+    </div>
+</div>        </div>
+        
+        <div class="column">
+            <article id="footer-about-us">
+                <img src="http://cdn2.comicsetc.com.au/skin/frontend/default/comics/images/logo-white-transparent-rotated.png" class="logo" />
+                <h1>About Us</h1>
+<p>Since 2016, Comics Etc has been Philadelphia&rsquo;s leading Comic Book retailer. With an unrivalled selection of new release comics, trade paperbacks, statues, collectables and more. </p>            </article>
+            <div id="footer-navigation" class="clearfix">
+    <div class="col">
+        <h3>Shop Online</h3>
+        <ul>
+<li><span class="widget widget-category-link-inline"><a href="http://www.comicsetc.com.au/catalogue/#!/new-and-fresh"><span>New and Fresh</span></a></span>
+</li>
+<li><span class="widget widget-category-link-inline"><a href="http://www.comicsetc.com.au/catalogue/#!/pre-order"><span>Pre-order Comics</span></a></span>
+</li>
+<li></li>
+<li><span class="widget widget-category-link-inline"><a href="http://www.comicsetc.com.au/catalogue/#!/collectables"><span>Collectables</span></a></span>
+</li>
+<li><span class="widget widget-category-link-inline"><a href="http://www.comicsetc.com.au/catalogue/#!/best-sellers"><span>Best Sellers</span></a></span>
+</li>
+</ul>    </div>
+    <div class="col">
+    <h3>Categories</h3>
+    <ul>
+<li><span class="widget widget-category-link-inline"><a href="http://www.comicsetc.com.au/catalogue/#!/comics"><span>Comics</span></a></span>
+</li>
+<li><span class="widget widget-category-link"><a href="http://www.comicsetc.com.au/catalogue/#!/trade-paperbacks"><span>Trade Paperbacks</span></a></span>
+</li>
+<li><span class="widget widget-category-link-inline"><a href="http://www.comicsetc.com.au/catalogue/#!/manga"><span>Manga</span></a></span>
+</li>
+<li><span class="widget widget-category-link-inline"><a href="http://www.comicsetc.com.au/catalogue/#!/collectables"><span>Collectables</span></a></span>
+</li>
+<li><span class="widget widget-category-link-inline"><a href="http://www.comicsetc.com.au/catalogue/#!/collectables/toy"><span>Toy</span></a></span>
+</li>
+<li><span class="widget widget-category-link-inline"><a href="http://www.comicsetc.com.au/catalogue/#!/collectables/magazine"><span>Magazine</span></a></span>
+</li>
+<li><span class="widget widget-category-link-inline"><a href="http://www.comicsetc.com.au/catalogue/#!/collectables/statue"><span>Statue</span></a></span>
+</li>
+</ul>    </div>
+    <div class="col">
+    <h3>My Account</h3>
+    <ul>
+<li><a href="http://www.comicsetc.com.au/customer/account">My Account</a></li>
+<li><a href="http://www.comicsetc.com.au/checkout/cart">Shopping Cart</a></li>
+<li><a href="http://www.comicsetc.com.au/wishlist/">Wishlist</a></li>
+<li><a href="http://www.comicsetc.com.au/faq" title="FAQ"><span>FAQ</span></a></li>
+<li><a href="http://www.comicsetc.com.au/shipping-and-returns" title="Shipping &amp; Returns"><span>Shipping &amp; Returns</span></a></li>
+</ul>    </div>
+    <div class="col">
+    <h3>Comics Etc</h3>
+    <ul>
+<li><a href="http://www.comicsetc.com.au/about-comics-etc" title="About Us"><span>About Us</span></a></li>
+<li><a href="http://www.comicsetc.com.au/standing-order-accounts" title="Standing Orders"><span>Standing Orders</span></a></li>
+<li><a href="http://www.comicsetc.com.au/location" title="Store Location"><span>Store Location</span></a></li>
+<li><a href="http://www.comicsetc.com.au/contact" title="Contact Us"><span>Contact Us</span></a></li>
+</ul>    </div>
+</div><nav class="icons clearfix">
+    <ul>
+        <li id="icon-swing-by-the-store" class="first"><a href="/catalogue/#!/comics"><span class="sprite footer-sprite footer-icon icon-swing-by-the-store"></span><span class="icon-text">Swing By<br /> The Store</span></a></li>
+        <li id="icon-new-this-week"><a href="/catalogue/#!/new-and-fresh"><span class="sprite footer-sprite footer-icon icon-new-this-week"></span><span class="icon-text">New This<br /> Week</span></a></li>
+        <li id="icon-pre-order-comics"><a href="/catalogue/#!/pre-order"><span class="sprite footer-sprite footer-icon icon-pre-order-comics"></span><span class="icon-text">Pre-order<br /> Comics</span></a></li>
+        <li id="icon-our-best-sellers"><a href="/catalogue/#!/best-sellers"><span class="sprite footer-sprite footer-icon icon-our-best-sellers"></span><span class="icon-text">Our Best<br /> Sellers</span></a></li>
+        <li id="icon-log-in"><a href="/"><span class="sprite footer-sprite footer-icon icon-log-in"></span><span class="icon-text">Log In</span></a></li>
+        <li id="icon-create-account" class="last"><a href="/"><span class="sprite footer-sprite footer-icon icon-create-account"></span><span class="icon-text">Create Account</span></a></li>
+    </ul>
+</nav>
+<ul>
+<li><a href="http://www.comicsetc.com.au/terms-and-conditions" title="Terms &amp; Conditions"><span>Terms &amp; Conditions</span></a></li>
+<li  class="last privacy"><a href="http://www.comicsetc.com.au/privacy-policy" title="Privacy Policy"><span>Privacy Policy</span></a></li>
+</ul>            <address>Copyright 2016 Comics Etc. All Rights Reserved.</address>
+            <div id="credits">
+                <a href="https://twitter.com/_ebonyparris"><span class="link-text">WEB DESIGN EBONY| SITE BY EBONY</span><span class="sprite footer-sprite icon-cru-digital"></span></a>
+              
+            </div>
+        </div>
+    </div>
+</div>
+
+            <div id="footer-cart-wrapper" class="hidden">
+    <div class="footer-cart-shadow"></div>
+    <div id="footer-cart-main-container">
+        <div id="footer-cart-top-bar">
+            <div class="footer-cart-arrow footer-cart-left-arrow"></div>
+            
+            <div id="footer-cart-center-container">
+                <div class="footer-cart-title"></div>
+        <a title="My Cart" href="http://www.comicsetc.com.au/checkout/cart/" id="footer-cart-details">
+                    <div class="footer-cart-separator first-spacer sprite-vertical-site-wide"></div>
+                    <div class="wait-icon-on-black cart-wait-icon hidden"></div>
+                    <div class="cart-details-inner">
+                        <div id="footer-cart-total">$0.00</div>
+                        <div class="footer-cart-icon cart-icon"></div>
+                        <div id="footer-cart-count">0</div>
+                    </div>
+                    <div class="footer-cart-separator last-spacer sprite-vertical-site-wide"></div>
+                </a>
+                
+                <div class="footer-cart-wishlist">
+                    <a id="footer-cart-wishlist-btn" title="My Wishlist" href="https://www.comicsetc.com.au/wishlist/" ><div class="yellow-star sprite-vertical-site-wide">&nbsp;</div><span>My Wishlist</span></a>
+                    <div class="footer-cart-separator last-spacer sprite-vertical-site-wide"></div>
+                </div>
+                <a href="http://www.comicsetc.com.au/checkout/cart/" id="checkout-btn" class="footer-cart-checkout-btn ir">
+                    <div id="foot-cart-checkout-arrow"></div>
+                    <span>Checkout</span>
+                </a>
+
+            </div>
+            
+            <div class="footer-cart-arrow footer-cart-right-arrow"></div>
+        </div>
+        <div id="footer-cart-bottom-area">
+            <div class="footer-cart-bar-shadow"></div>
+            
+            <div class="footer-cart-product-container"> 
+
+                <!--Carousel control buttons go here-->
+
+                <div class="footer-cart-left-mask"></div>
+                <div class="footer-cart-right-mask"></div>
+
+                <!--Product carousel goes here--> 
+                <div id="cart-products">
+                    <ul id="footer-product-list"></ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- These are the add to cart animations-->
+<div id="edge-container" class="hidden">
+    <div id="edge-inner">
+        <div id="stage_zap" class="zap"></div>
+        <div id="stage" class="bash"></div>
+        <div id="stage_zonk" class="zonk"></div>
+        <div id="stage_woosh" class="woosh"></div>
+        <div id="stage_kablam" class="kablam"></div>
+        <div id="stage_boom" class="boom"></div>
+    </div>
+</div>
+
+        </footer>
+            </div>
+</div>
+<script src="/skin/frontend/default/comics/js/libs/LAB.min.js"></script><script>
+                    var $jQ;
+                    $LAB
+                        .script("http://cdn2.comicsetc.com.au/media/js/51c1b26ecb007d6a43a88b43d026725b.js")
+                        .wait(function() {
+                            window.jQuery || document.write('<script src="/skin/frontend/default/comics/js/libs/jquery-1.7.1.min.js"><\/script>');
+                            $jQ = jQuery.noConflict();
+                        })
+                        .script("/skin/frontend/default/comics/js/libs/cru/JSCore.js")
+                        .script("/skin/frontend/default/comics/js/libs/jquery.imgpreload.js")
+                        .script("/skin/frontend/default/comics/js/libs/jquery.transit.min.js")
+                        
+                        .script("/skin/frontend/default/comics/js/libs/greensock/uncompressed/easing/EasePack.js")
+                        .script("/skin/frontend/default/comics/js/libs/greensock/uncompressed/plugins/CSSPlugin.js")
+                        .script("/skin/frontend/default/comics/js/libs/greensock/uncompressed/TweenLite.js")
+                        
+                        .script("/skin/frontend/default/comics/js/libs/edge.0.1.6.min.custom.js")
+                        .script("/skin/frontend/default/comics/js/libs/json2_min.js")
+                        
+                        .wait()
+                        .script("/skin/frontend/default/comics/js/libs/cru/utils/DisplayUtils.js")
+                        .script("/skin/frontend/default/comics/js/libs/cru/JSCoreModule.js")
+                        .wait()
+                        .script("/skin/frontend/default/comics/js/libs/cru/model.js")
+                        .script("/skin/frontend/default/comics/js/libs/cru/view.js")
+                        .script("/skin/frontend/default/comics/js/libs/cru/controller.js")
+                        /*
+                        .script("/skin/frontend/default/comics/js/libs/cru/mvc.min.1.0.js")
+                        */
+                        .wait()
+                        .script("/skin/frontend/default/comics/js/local/comics/cart.model.js")
+                        .script("/skin/frontend/default/comics/js/local/comics/wishlist.model.js")
+                        .script("/skin/frontend/default/comics/js/local/comics/custom/SimpleFollowElement.js")
+                        .wait(function() { 
+                            // create the simple follow sprite
+                            window.cru.followSprite = new cru.SimpleFollowElement("#waitCursorFollower", {offsetX:20, offsetY:20});
+
+                            $jQ(window).on("beforeunload",function () {
+                                window.cru.followSprite.show();
+                            });
+
+                            // create the site-wide models: Cart and Wishlist
+                            window.cru.cartModel = window.cru.jsCore.registerModel(new cru.CartModel("/custom/cart"), "cart");
+                            window.cru.wishlistModel = window.cru.jsCore.registerModel(new cru.WishlistModel("/custom/wishlist"), "wishlist");
+                        })
+                        .script("/skin/frontend/default/comics/js/blog/inview.js")
+                        .script("/skin/frontend/default/comics/js/blog/scripts.js")
+                        .script("http://cdn2.comicsetc.com.au/media/js/ad3098ee8d4ee8605b14b01905f6160c.js").wait(function() {trace("run javascript snippets");
+$jQ('select').replaceFormElements();
+                    $jQ('input, textarea').placeholder();
+trace("javascript snippet #1");
+// start up the JS MVC stack
+                    new cru.MegaMenuController();
+                    new cru.SpecialsController('http://www.comicsetc.com.au/custom_admin/specials/');
+trace("javascript snippet #2");
+function cityInit() {
+                        new cru.CityController({"facebook":"http:\/\/www.facebook.com\/comicsetc","twitter":"http:\/\/www.twitter.com\/comicsetc","email":"mailto:sales@comicsetc.com.au"});
+                    }
+                    
+                    // use WindowOnLoad utility class to register a window load method - we will wait half a second - it is below the fold, so we are prioritising the higher elements
+                    cru.windowOnLoad.addCallback(cityInit, this, 750);
+trace("javascript snippet #3");
+function footerCartInit() {
+                        new cru.FooterCartController();
+                    }
+                    
+                    // use WindowOnLoad utility class to register a window load method - we will wait half a second - it is asyncronous, so we are prioritising the higher elements
+                    cru.windowOnLoad.addCallback(footerCartInit, this, 100);
+trace("javascript snippet #4");
+new cru.TopController();
+trace("javascript snippet #5");
+// start up the JS MVC stack
+                        var heroController = new cru.HeroController('http://cdn2.comicsetc.com.au/skin/frontend/default/comics/images/homepage/hero/');
+trace("javascript snippet #6");
+// use WindowOnLoad utility class to register a window load method
+                    //cru.windowOnLoad.addCallback(facebookInit, this, 250);
+                    new cru.NewsView('.news-container');
+trace("javascript snippet #7");
+function fbFeedInit() {
+                            new cru.FBFeedController('302386589814657');
+                        }
+
+                        // use WindowOnLoad utility class to register a window load method
+                        cru.windowOnLoad.addCallback(fbFeedInit, this, 250);
+trace("javascript snippet #8");
+Mage.Cookies.path     = '/';
+    Mage.Cookies.domain   = '.www.comicsetc.com.au';
+trace("javascript snippet #9");
+var dataForm = new VarienForm('form-register-validate', true);
+trace("javascript snippet #10");
+var searchForm = new Varien.searchForm('search_mini_form', 'search-input', 'Search entire store here...');
+        searchForm.initAutocomplete('http://www.comicsetc.com.au/catalogsearch/ajax/suggest/', 'search_autocomplete');
+trace("javascript snippet #11");
+new cru.NewTitlesController(
+        new cru.NewTitlesView("#latest-products"),
+        new cru.NewTitlesModel([{"image":{},"url":"http:\/\/www.comicsetc.com.au\/catalogue\/#!\/product\/tank-girl-2-girls-1-tank-2","id":"102309","sku":"07447068271400211","regularPrice":6.4},{"image":{},"url":"http:\/\/www.comicsetc.com.au\/catalogue\/#!\/product\/vikings-2","id":"102307","sku":"07447068302500211","regularPrice":6.4},{"image":{},"url":"http:\/\/www.comicsetc.com.au\/catalogue\/#!\/product\/simpsons-comics-230","id":"102304","sku":"79834202851523011","regularPrice":6.4},{"image":{},"url":"http:\/\/www.comicsetc.com.au\/catalogue\/#!\/product\/joyners-1","id":"102297","sku":"84428400563000111","regularPrice":6.4},{"image":{},"url":"http:\/\/www.comicsetc.com.au\/catalogue\/#!\/product\/klaus-6","id":"102299","sku":"84428400511100611","regularPrice":6.4},{"image":{},"url":"http:\/\/www.comicsetc.com.au\/catalogue\/#!\/product\/independence-day-5","id":"102294","sku":"07447068114400511","regularPrice":6.4},{"image":{},"url":"http:\/\/www.comicsetc.com.au\/catalogue\/#!\/product\/smosh-2","id":"102291","sku":"72513024752002011","regularPrice":6.4},{"image":{},"url":"http:\/\/www.comicsetc.com.au\/catalogue\/#!\/product\/spidey-volume-1-now","id":"102293","sku":"978130290205651599","regularPrice":19.5},{"image":{},"url":"http:\/\/www.comicsetc.com.au\/catalogue\/#!\/product\/hip-hop-family-tree-10","id":"102290","sku":"60922436876901011","regularPrice":6.4},{"image":{},"url":"http:\/\/www.comicsetc.com.au\/catalogue\/#!\/product\/dejah-thoris-5","id":"102286","sku":"72513024475805011","regularPrice":6.4},{"image":{},"url":"http:\/\/www.comicsetc.com.au\/catalogue\/#!\/product\/devolution-5","id":"102287","sku":"72513024365205011","regularPrice":6.4},{"image":{},"url":"http:\/\/www.comicsetc.com.au\/catalogue\/#!\/product\/assassin-s-creed-templars-3","id":"102284","sku":"07447068267700311","regularPrice":6.4},{"image":{},"url":"http:\/\/www.comicsetc.com.au\/catalogue\/#!\/product\/dc-universe-rebirth-1-2nd-dc-universe-rebirth","id":"102280","sku":"76194134013500112","regularPrice":9},{"image":{},"url":"http:\/\/www.comicsetc.com.au\/catalogue\/#!\/product\/my-little-pony-friendship-14100","id":"102272","sku":"82771400398704311","regularPrice":6.4},{"image":{},"url":"http:\/\/www.comicsetc.com.au\/catalogue\/#!\/product\/new-suicide-squad-21","id":"102273","sku":"76194132184402111","regularPrice":5},{"image":{},"url":"http:\/\/www.comicsetc.com.au\/catalogue\/#!\/product\/nova-8","id":"102274","sku":"75960608353400811","regularPrice":6.4},{"image":{},"url":"http:\/\/www.comicsetc.com.au\/catalogue\/#!\/product\/october-faction-17","id":"102275","sku":"82771400727501711","regularPrice":6.4},{"image":{},"url":"http:\/\/www.comicsetc.com.au\/catalogue\/#!\/product\/patsy-walker-aka-hellcat-7","id":"102276","sku":"75960608407400711","regularPrice":6.4},{"image":{},"url":"http:\/\/www.comicsetc.com.au\/catalogue\/#!\/product\/patsy-walker-aka-hellcat-volume-1","id":"102277","sku":"978130290035951799","regularPrice":23},{"image":{},"url":"http:\/\/www.comicsetc.com.au\/catalogue\/#!\/product\/poison-ivy-circle-of-life-6","id":"102279","sku":"76194133551300611","regularPrice":5},{"image":{},"url":"http:\/\/www.comicsetc.com.au\/catalogue\/#!\/product\/x-files-season-11-volume-2-hc","id":"102268","sku":"978163140643052499","regularPrice":35},{"image":{},"url":"http:\/\/www.comicsetc.com.au\/catalogue\/#!\/product\/a-year-of-marvels-incredible","id":"102269","sku":"75960608483800211","regularPrice":8},{"image":{},"url":"http:\/\/www.comicsetc.com.au\/catalogue\/#!\/product\/outcast-volume-3","id":"102270","sku":"978163215693851499","regularPrice":18.5},{"image":{},"url":"http:\/\/www.comicsetc.com.au\/catalogue\/#!\/product\/ringside-volume-1","id":"102271","sku":"978163215695250999","regularPrice":13.5},{"image":{},"url":"http:\/\/www.comicsetc.com.au\/catalogue\/#!\/product\/sex-criminals-volume-3","id":"102267","sku":"978163215542951499","regularPrice":18.5},{"image":{},"url":"http:\/\/www.comicsetc.com.au\/catalogue\/#!\/product\/star-wars-4573","id":"102265","sku":"75960608113402011","regularPrice":6.4},{"image":{},"url":"http:\/\/www.comicsetc.com.au\/catalogue\/#!\/product\/transformers-54","id":"102266","sku":"82771400306205411","regularPrice":6.4},{"image":{},"url":"http:\/\/www.comicsetc.com.au\/catalogue\/#!\/product\/scarlet-218","id":"102256","sku":"75960607361001011","regularPrice":6.4},{"image":{},"url":"http:\/\/www.comicsetc.com.au\/catalogue\/#!\/product\/scooby-apocalypse-2","id":"102257","sku":"76194133864400211","regularPrice":6.4},{"image":{},"url":"http:\/\/www.comicsetc.com.au\/catalogue\/#!\/product\/scooby-apocalypse-2-variant","id":"102258","sku":"76194133864400221","regularPrice":8},{"image":{},"url":"http:\/\/www.comicsetc.com.au\/catalogue\/#!\/product\/spider-gwen-1930","id":"102259","sku":"75960608313800911","regularPrice":6.4},{"image":{},"url":"http:\/\/www.comicsetc.com.au\/catalogue\/#!\/product\/spidey-7","id":"102260","sku":"75960608356500711","regularPrice":6.4},{"image":{},"url":"http:\/\/www.comicsetc.com.au\/catalogue\/#!\/product\/squadron-supreme-8","id":"102261","sku":"75960608316900811","regularPrice":6.4},{"image":{},"url":"http:\/\/www.comicsetc.com.au\/catalogue\/#!\/product\/squadron-supreme-volume-1-now","id":"102262","sku":"978078519971751599","regularPrice":19.5},{"image":{},"url":"http:\/\/www.comicsetc.com.au\/catalogue\/#!\/product\/transformers-till-all-are-1","id":"102248","sku":"82771401096100111","regularPrice":6.4},{"image":{},"url":"http:\/\/www.comicsetc.com.au\/catalogue\/#!\/product\/uncanny-inhumans-10","id":"102250","sku":"75960608181301011","regularPrice":6.4},{"image":{},"url":"http:\/\/www.comicsetc.com.au\/catalogue\/#!\/product\/uncanny-x-men-8","id":"102251","sku":"75960608331200811","regularPrice":6.4},{"image":{},"url":"http:\/\/www.comicsetc.com.au\/catalogue\/#!\/product\/vote-loki-1","id":"102252","sku":"75960608538500111","regularPrice":6.4},{"image":{},"url":"http:\/\/www.comicsetc.com.au\/catalogue\/#!\/product\/vote-loki-1-variant","id":"102253","sku":"75960608538500121","regularPrice":20},{"image":{},"url":"http:\/\/www.comicsetc.com.au\/catalogue\/#!\/product\/walt-disney-comics-732","id":"102254","sku":"82771400889073211","regularPrice":6.4}])
+    );
+trace("javascript snippet #12");
+/* var newsletterSubscriberFormDetail = new VarienForm("newsletter-validate-detail"); */
+        new cru.SubscribeController(
+            new cru.SubscribeView("newsletter-validate-detail", new VarienForm("newsletter-validate-detail")),
+            new cru.SubscribeModel()
+        );
+trace("javascript snippet #13");
+function socialInit() {
+                            trace('socialInit');
+                            
+                            // async facebook JS all - this is also loaded by the homepage facebook element
+                                (function(d, s, id) {
+                                  var js, fjs = d.getElementsByTagName(s)[0];
+                                  if (d.getElementById(id)) return;
+                                  js = d.createElement(s); js.id = id;
+                                  js.src = '//connect.facebook.net/en_GB/all.js#xfbml=1&appId=302386589814657';
+                                  fjs.parentNode.insertBefore(js, fjs);
+                                }(document, 'script', 'facebook-jssdk'));
+
+                            // google plus 1 button async loading - NOT IN IE7
+                            if ($jQ.browser.msie != true || $jQ.browser.msie == null || $jQ.browser.msie == 'undefined' || ($jQ.browser.msie && parseInt($jQ.browser.version, 10) > 7)) {
+                                //(function() {
+                                    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+                                    po.src = 'https://apis.google.com/js/plusone.js';
+                                    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+                                  //})();
+                            }
+                        };
+                        
+                        // use WindowOnLoad utility class to register a window load method - we will also wait another half 500ms after the window has loaded - for performance
+                        cru.windowOnLoad.addCallback(socialInit, this, 500);
+trace("javascript snippet #14");
+trace("finish javascript snippets");
+                    var Translator = new Translate([]);
+                });
+                </script>
+<!--[if lt IE 9 ]>
+<script src="/skin/frontend/default/comics/js/libs/respond.min.js"></script>
+<link href="http://cdn2.comicsetc.com.au/skin/frontend/default/comics/js/cross-domain/respond-proxy.html" id="respond-proxy" rel="respond-proxy" />
+<link href="/skin/frontend/default/comics/js/cross-domain/respond.proxy.gif" id="respond-redirect" rel="respond-redirect" />
+<script src="/skin/frontend/default/comics/js/cross-domain/respond.proxy.js"></script>
+
+<![endif]-->
+
+<!-- Facebook root required div -->
+<div id="fb-root"></div></body>
+</html>
